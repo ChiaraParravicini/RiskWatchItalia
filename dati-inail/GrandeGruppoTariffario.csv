@@ -1,0 +1,12 @@
+GrandeGruppoTariffario;DescrGrandeGruppoTariffario
+1;GG1 Lav. agricole e alimenti
+2;GG2 Chimica, carta e cuoi
+3;GG3 Costruzioni e impianti
+4;GG4 Energia e comunicazioni
+5;GG5 Legno e affini
+6;GG6 Metalli e macchinari
+7;GG7 Mineraria, rocce e vetro
+8;GG8 Tessile e confezioni
+9;GG9 Trasporti e magazzini
+0;GG0 Attività varie
+ND;X Non determinato
