@@ -1673,3 +1673,7 @@ section {
     padding-top: 5px;
   }
 }
+
+.custom-hover:hover {
+  background-color: rgb(252, 124, 92);
+}
