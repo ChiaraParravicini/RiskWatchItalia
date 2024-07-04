@@ -1,0 +1,42 @@
+Area Geografica,Anno,Regione,Fascia d'età,Occupati,Count,Percentage,PercentageOccupati
+,2018,AbruzzoBasilicataFriuli-Venezia GiuliaFriuli-Venezia GiuliaFriuli-Venezia GiuliaSardegnaSardegnaSardegnaTrentino Alto AdigeValle D'Aosta,65+65+15+15-6465+15+15-6465+65+65+,2193739,0,0.0,0.0
+,2019,BasilicataFriuli-Venezia GiuliaFriuli-Venezia GiuliaFriuli-Venezia GiuliaSardegnaSardegnaSardegnaValle D'Aosta,65+15+15-6465+15+15-6465+65+,2186796,0,0.0,0.0
+,2020,Friuli-Venezia GiuliaFriuli-Venezia GiuliaFriuli-Venezia GiuliaSardegnaSardegnaSardegna,15+15-6465+15+15-6465+,2115912,0,0.0,0.0
+,2021,Friuli-Venezia GiuliaFriuli-Venezia GiuliaFriuli-Venezia GiuliaMoliseSardegnaSardegnaSardegna,15+15-6465+65+15+15-6465+,2150264,0,0.0,0.0
+,2022,Friuli-Venezia GiuliaFriuli-Venezia GiuliaFriuli-Venezia GiuliaMoliseSardegnaSardegnaSardegnaValle D'Aosta,15+15-6465+65+15+15-6465+65+,2178239,0,0.0,0.0
+,2023,BasilicataCalabriaFriuli-Venezia GiuliaFriuli-Venezia GiuliaFriuli-Venezia GiuliaLiguriaMoliseMoliseMolisePiemonteSardegnaSardegnaSardegnaUmbriaValle D'AostaVenetoVenetoVeneto,65+65+15+15-6465+65+15+15-6465+65+15+15-6465+65+65+15+15-6465+,6978609,0,0.0,0.0
+Centro,2018,LazioLazioLazioMarcheMarcheMarcheToscanaToscanaToscanaUmbriaUmbriaUmbria,15+15-6465+15+15-6465+15+15-6465+15+15-6465+,9769580,482,12.644281217208814,0.0907809914932841
+Centro,2019,LazioLazioLazioLazioMarcheMarcheMarcheToscanaToscanaToscanaUmbriaUmbriaUmbria,0-1415+15-6465+15+15-6465+15+15-6465+15+15-6465+,9816722,489,13.415637860082304,0.10705320099935506
+Centro,2020,LazioLazioLazioMarcheMarcheMarcheToscanaToscanaToscanaUmbriaUmbriaUmbria,15+15-6465+15+15-6465+15+15-6465+15+15-6465+,9526866,610,12.045813586097946,0.14425919463556283
+Centro,2021,LazioLazioLazioMarcheMarcheMarcheToscanaToscanaToscanaUmbriaUmbriaUmbria,15+15-6465+15+15-6465+15+15-6465+15+15-6465+,9565680,544,12.940057088487155,0.1282195917385272
+Centro,2022,LazioLazioLazioMarcheMarcheMarcheToscanaToscanaToscanaToscanaUmbriaUmbriaUmbria,15+15-6465+15+15-6465+0-1415+15-6465+15+15-6465+,9860310,525,14.3993417443774,0.12088832061598165
+Centro,2023,LazioLazioLazioLazioMarcheMarcheMarcheToscanaToscanaToscanaToscanaUmbriaUmbria,0-1415+15-6465+15+15-6465+0-1415+15-6465+15+15-64,9997990,146,15.352260778128285,0.026534963734364096
+Centro,2024,LazioLazioLazioMarcheMarcheMarcheToscanaToscanaToscanaToscanaUmbriaUmbriaUmbria,15+15-6465+15+15-6465+0-1415+15-6465+15+15-6465+,0,129,12.622309197651663,0.0
+NordEst,2018,Emilia RomagnaEmilia RomagnaEmilia RomagnaFriuli Venezia GiuliaFriuli Venezia GiuliaTrentino Alto AdigeTrentino Alto AdigeVenetoVenetoVeneto,15+15-6465+15+15-6415+15-6415+15-6465+,9220076,590,15.477439664218258,0.07954267250244909
+NordEst,2019,Emilia RomagnaEmilia RomagnaEmilia RomagnaFriuli Venezia GiuliaFriuli Venezia GiuliaFriuli Venezia GiuliaFriuli Venezia GiuliaTrentino Alto AdigeTrentino Alto AdigeTrentino Alto AdigeVenetoVenetoVenetoVeneto,15+15-6465+0-1415+15-6465+15+15-6465+0-1415+15-6465+,9359670,556,15.253772290809328,0.08436598227450266
+NordEst,2020,Emilia RomagnaEmilia RomagnaEmilia RomagnaFriuli Venezia GiuliaFriuli Venezia GiuliaFriuli Venezia GiuliaTrentino Alto AdigeTrentino Alto AdigeTrentino Alto AdigeVenetoVenetoVenetoVeneto,15+15-6465+15+15-6465+15+15-6465+0-1415+15-6465+,9055680,618,12.203791469194313,0.1514650448562751
+NordEst,2021,Emilia RomagnaEmilia RomagnaEmilia RomagnaEmilia RomagnaFriuli Venezia GiuliaFriuli Venezia GiuliaFriuli Venezia GiuliaTrentino Alto AdigeTrentino Alto AdigeTrentino Alto AdigeVenetoVenetoVeneto,0-1415+15-6465+15+15-6465+15+15-6465+15+15-6465+,9092098,623,14.819219790675547,0.09414496912899882
+NordEst,2022,Emilia RomagnaEmilia RomagnaEmilia RomagnaFriuli Venezia GiuliaFriuli Venezia GiuliaFriuli Venezia GiuliaTrentino Alto AdigeTrentino Alto AdigeTrentino Alto AdigeVenetoVenetoVeneto,15+15-6465+15+15-6465+15+15-6465+15+15-6465+,9305906,566,15.523861766319254,0.08075554179927345
+NordEst,2023,Emilia RomagnaEmilia RomagnaEmilia RomagnaFriuli Venezia GiuliaFriuli Venezia GiuliaFriuli Venezia GiuliaTrentino Alto AdigeTrentino Alto AdigeTrentino Alto Adige,15+15-6465+15+15-6465+15+15-6465+,5061716,88,9.253417455310199,0.015716683687985275
+NordEst,2024,Emilia RomagnaEmilia RomagnaEmilia RomagnaEmilia RomagnaFriuli Venezia GiuliaFriuli Venezia GiuliaFriuli Venezia GiuliaTrentino Alto AdigeTrentino Alto AdigeTrentino Alto Adige,0-1415+15-6465+15+15-6465+15+15-6465+,0,117,11.448140900195694,0.0
+NordOvest,2018,LiguriaLiguriaLiguriaLombardiaLombardiaLombardiaLombardiaPiemontePiemontePiemonteValle D'AostaValle D'Aosta,15+15-6465+0-1415+15-6465+15+15-6465+15+15-64,13729379,695,18.231899265477438,0.09255972411399915
+NordOvest,2019,LiguriaLiguriaLiguriaLombardiaLombardiaLombardiaPiemontePiemontePiemonteValle D'AostaValle D'Aosta,15+15-6465+15+15-6465+15+15-6465+15+15-64,13839461,650,17.83264746227709,0.07640155323748177
+NordOvest,2020,LiguriaLiguriaLiguriaLombardiaLombardiaLombardiaPiemontePiemontePiemonteValle D'AostaValle D'AostaValle D'Aosta,15+15-6465+15+15-6465+15+15-6465+15+15-6465+,13391850,1102,21.761453396524487,0.27228000407943037
+NordOvest,2021,LiguriaLiguriaLiguriaLombardiaLombardiaLombardiaPiemontePiemontePiemonteValle D'AostaValle D'AostaValle D'Aosta,15+15-6465+15+15-6465+15+15-6465+15+15-6465+,13494316,734,17.459562321598476,0.20924993215275375
+NordOvest,2022,LiguriaLiguriaLiguriaLombardiaLombardiaLombardiaPiemontePiemontePiemonteValle D'AostaValle D'Aosta,15+15-6465+15+15-6465+15+15-6465+15+15-64,13760643,666,18.266593527153045,0.08674826951411889
+NordOvest,2023,LiguriaLiguriaLombardiaLombardiaLombardiaPiemontePiemonteValle D'AostaValle D'Aosta,15+15-6415+15-6465+15+15-6415+15-64,13902939,216,22.71293375394322,0.019276372093344835
+NordOvest,2024,LiguriaLiguriaLiguriaLombardiaLombardiaLombardiaLombardiaPiemontePiemontePiemonteValle D'AostaValle D'AostaValle D'Aosta,15+15-6465+0-1415+15-6465+15+15-6465+15+15-6465+,0,211,20.645792563600782,0.0
+Sud,2018,AbruzzoAbruzzoBasilicataBasilicataCalabriaCalabriaCalabriaCampaniaCampaniaCampaniaMoliseMoliseMolisePugliaPugliaPugliaSiciliaSiciliaSicilia,15+15-6415+15-6415+15-6465+15+15-6465+15+15-6465+15+15-6465+15+15-6465+,11004682,774,20.30430220356768,0.27529011201479503
+Sud,2019,AbruzzoAbruzzoAbruzzoBasilicataBasilicataCalabriaCalabriaCalabriaCampaniaCampaniaCampaniaMoliseMoliseMolisePugliaPugliaPugliaSiciliaSiciliaSicilia,15+15-6465+15+15-6415+15-6465+15+15-6465+15+15-6465+15+15-6465+15+15-6465+,11016161,734,20.137174211248286,0.23564970617611894
+Sud,2020,AbruzzoAbruzzoAbruzzoBasilicataBasilicataBasilicataCalabriaCalabriaCalabriaCampaniaCampaniaCampaniaMoliseMoliseMolisePugliaPugliaPugliaSiciliaSiciliaSiciliaSicilia,15+15-6465+15+15-6465+15+15-6465+15+15-6465+15+15-6465+15+15-6465+0-1415+15-6465+,10680208,1045,20.635860979462876,0.38916745919117596
+Sud,2021,AbruzzoAbruzzoAbruzzoBasilicataBasilicataBasilicataCalabriaCalabriaCalabriaCampaniaCampaniaCampaniaCampaniaMoliseMolisePugliaPugliaPugliaSiciliaSiciliaSicilia,15+15-6465+15+15-6465+15+15-6465+0-1415+15-6465+15+15-6415+15-6465+15+15-6465+,10805554,901,21.43196955280685,0.29363998857905044
+Sud,2022,AbruzzoAbruzzoAbruzzoAbruzzoBasilicataBasilicataBasilicataCalabriaCalabriaCalabriaCampaniaCampaniaCampaniaMoliseMolisePugliaPugliaPugliaSiciliaSiciliaSicilia,0-1415+15-6465+15+15-6465+15+15-6465+15+15-6465+15+15-6415+15-6465+15+15-6465+,11093684,673,18.45858475041141,0.22047480497946959
+Sud,2023,AbruzzoAbruzzoAbruzzoBasilicataBasilicataCalabriaCalabriaCampaniaCampaniaCampaniaPugliaPugliaPugliaPugliaSiciliaSiciliaSicilia,15+15-6465+15+15-6415+15-6415+15-6465+0-1415+15-6465+15+15-6465+,11218640,183,19.242902208201894,0.05438117173734255
+Sud,2024,AbruzzoAbruzzoAbruzzoBasilicataBasilicataCalabriaCalabriaCalabriaCampaniaCampaniaCampaniaCampaniaMoliseMolisePugliaPugliaPugliaSiciliaSiciliaSicilia,15+15-6465+15+15-6415+15-6465+0-1415+15-6465+15+65+15+15-6465+15+15-6465+,0,223,21.81996086105675,0.0
+Total,2018,TotalTotalTotal,0-1415-6465+,0,1271,33.3420776495278,0.0
+Total,2019,TotalTotalTotal,0-1415-6465+,0,1216,33.36076817558299,0.0
+Total,2020,TotalTotalTotal,0-1415-6465+,0,1689,33.35308056872038,0.0
+Total,2021,TotalTotalTotal,0-1415-6465+,0,1402,33.34919124643197,0.0
+Total,2022,TotalTotalTotal,0-1415-6465+,0,1216,33.351618211738895,0.0
+Total,2023,TotalTotalTotal,0-1415-6465+,0,318,33.4384858044164,0.0
+Total,2024,TotalTotalTotal,0-1415-6465+,0,342,33.4637964774951,0.0
