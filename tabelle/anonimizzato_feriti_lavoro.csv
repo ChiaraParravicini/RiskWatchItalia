@@ -1,0 +1,769 @@
+Anno,DescrAtecoLiv1,Settore,Area Geografica,Occupati,Numero Incidenti,Percentage,PercentageOccupati
+2018,"Agricoltura, silvicoltura e pesca",Primario,Centro,4884790,319,0.016832831514437714,0.32752957072298683
+2018,"Agricoltura, silvicoltura e pesca",Primario,NordEst,5123503,523,0.02759740088417218,0.3435354924547289
+2018,"Agricoltura, silvicoltura e pesca",Primario,NordOvest,6865335,217,0.011450546829570482,0.46032689745505884
+2018,"Agricoltura, silvicoltura e pesca",Primario,Sud,5511350,233,0.012294826780137892,0.3695409832570353
+2018,"Agricoltura, silvicoltura e pesca",Primario,Total,45917456,2584,0.13635121201663655,3.0788067966835087
+2018,Altre attivita' di servizi,Terziario,Centro,4884790,1490,0.07862357039658995,0.32752957072298683
+2018,Altre attivita' di servizi,Terziario,NordEst,5123503,1731,0.09134053715201156,0.3435354924547289
+2018,Altre attivita' di servizi,Terziario,NordOvest,6865335,1851,0.09767263678126711,0.46032689745505884
+2018,Altre attivita' di servizi,Terziario,Sud,5511350,1079,0.05693612916638964,0.3695409832570353
+2018,Altre attivita' di servizi,Terziario,Total,45917456,12302,0.6491457469925165,3.0788067966835087
+2018,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Centro,4884790,2943,0.15529474340749277,0.32752957072298683
+2018,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordEst,5123503,4229,0.22315374443434827,0.3435354924547289
+2018,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordOvest,6865335,3434,0.18120358439053014,0.46032689745505884
+2018,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Sud,5511350,3390,0.17888181452646976,0.3695409832570353
+2018,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Total,45917456,27992,1.4770677735176818,3.0788067966835087
+2018,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Centro,4884790,1054,0.055616941743628065,0.32752957072298683
+2018,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordEst,5123503,1170,0.06173797138524178,0.3435354924547289
+2018,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordOvest,6865335,1119,0.059046829042808155,0.46032689745505884
+2018,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Sud,5511350,921,0.04859886465453647,0.3695409832570353
+2018,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Total,45917456,8528,0.45000121365242896,3.0788067966835087
+2018,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Centro,4884790,7190,0.3793983027862294,0.32752957072298683
+2018,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordEst,5123503,9885,0.5216067069599273,0.3435354924547289
+2018,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordOvest,6865335,8415,0.4440384865015466,0.46032689745505884
+2018,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Sud,5511350,4628,0.24420797570162303,0.3695409832570353
+2018,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Total,45917456,60236,3.1785029438986525,3.0788067966835087
+2018,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Centro,3903153,7,0.0003693724783732414,0.2617099254125844
+2018,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordEst,4120203,4,0.00021106998764185223,0.27626332347584287
+2018,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordOvest,6810558,17,0.000897047447477872,0.4566540502506769
+2018,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Sud,1342938,2,0.00010553499382092612,0.09004520289461503
+2018,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Total,45917456,60,0.0031660498146277834,3.0788067966835087
+2018,Attivita' finanziarie e assicurative,Terziario,Centro,4884790,1209,0.06379590376474983,0.32752957072298683
+2018,Attivita' finanziarie e assicurative,Terziario,NordEst,5123503,1105,0.058308084086061675,0.3435354924547289
+2018,Attivita' finanziarie e assicurative,Terziario,NordOvest,6865335,1768,0.09329293453769869,0.46032689745505884
+2018,Attivita' finanziarie e assicurative,Terziario,Sud,5511350,679,0.035829130402204416,0.3695409832570353
+2018,Attivita' finanziarie e assicurative,Terziario,Total,45917456,9522,0.5024521055814292,3.0788067966835087
+2018,Attivita' immobiliari,Terziario,Centro,4884790,417,0.022004046211663096,0.32752957072298683
+2018,Attivita' immobiliari,Terziario,NordEst,5123503,613,0.03234647560611385,0.3435354924547289
+2018,Attivita' immobiliari,Terziario,NordOvest,6865335,702,0.037042782831145066,0.46032689745505884
+2018,Attivita' immobiliari,Terziario,Sud,5405392,214,0.011292244338839094,0.36243640388828735
+2018,Attivita' immobiliari,Terziario,Total,45917456,3892,0.20537109797552222,3.0788067966835087
+2018,Attivita' manifatturiere,Secondario,Centro,4884790,14864,0.7843360740771228,0.32752957072298683
+2018,Attivita' manifatturiere,Secondario,NordEst,5123503,43740,2.308050314863654,0.3435354924547289
+2018,Attivita' manifatturiere,Secondario,NordOvest,6865335,34126,1.8007435995664622,0.46032689745505884
+2018,Attivita' manifatturiere,Secondario,Sud,5511350,9771,0.5155912123121345,0.3695409832570353
+2018,Attivita' manifatturiere,Secondario,Total,45917456,205002,10.817442401638749,3.0788067966835087
+2018,"Attivita' professionali, scientifiche e tecniche",Terziario,Centro,4884790,1420,0.07492984561285754,0.32752957072298683
+2018,"Attivita' professionali, scientifiche e tecniche",Terziario,NordEst,5123503,1671,0.08817448733738376,0.3435354924547289
+2018,"Attivita' professionali, scientifiche e tecniche",Terziario,NordOvest,6865335,2411,0.12722243505112643,0.46032689745505884
+2018,"Attivita' professionali, scientifiche e tecniche",Terziario,Sud,5511350,673,0.03551252542074164,0.3695409832570353
+2018,"Attivita' professionali, scientifiche e tecniche",Terziario,Total,45917456,12350,0.6516785868442188,3.0788067966835087
+2018,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Centro,4884790,9999,0.5276222016077201,0.32752957072298683
+2018,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordEst,5123503,14815,0.7817504667285101,0.3435354924547289
+2018,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordOvest,6865335,14920,0.7872910539041088,0.46032689745505884
+2018,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Sud,5511350,8228,0.43417096457929,0.3695409832570353
+2018,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Total,45917456,95924,5.061669373639258,3.0788067966835087
+2018,Costruzioni,Secondario,Centro,4884790,8004,0.42235104527134626,0.32752957072298683
+2018,Costruzioni,Secondario,NordEst,5123503,13788,0.7275582474014646,0.3435354924547289
+2018,Costruzioni,Secondario,NordOvest,6865335,10816,0.5707332465835684,0.46032689745505884
+2018,Costruzioni,Secondario,Sud,5511350,6480,0.3419333799798006,0.3695409832570353
+2018,Costruzioni,Secondario,Total,45917456,78176,4.12515183847236,3.0788067966835087
+2018,Estrazione di minerali da cave e miniere,Primario,Centro,4884790,173,0.009128776965510108,0.32752957072298683
+2018,Estrazione di minerali da cave e miniere,Primario,NordEst,5123503,122,0.006437634623076493,0.3435354924547289
+2018,Estrazione di minerali da cave e miniere,Primario,NordOvest,6865335,120,0.006332099629255567,0.46032689745505884
+2018,Estrazione di minerali da cave e miniere,Primario,Sud,5405392,101,0.005329517187956769,0.36243640388828735
+2018,Estrazione di minerali da cave e miniere,Primario,Total,45917456,1032,0.054456056811597875,3.0788067966835087
+2018,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Centro,4884790,3383,0.17851244204809652,0.32752957072298683
+2018,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordEst,5123503,2266,0.11957114799910928,0.3435354924547289
+2018,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordOvest,6865335,3200,0.1688559901134818,0.46032689745505884
+2018,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Sud,5511350,4326,0.2282721916346632,0.3695409832570353
+2018,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Total,45917456,26350,1.3904235435907015,3.0788067966835087
+2018,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Centro,4884790,228,0.012030989295585577,0.32752957072298683
+2018,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordEst,5123503,247,0.013033571736884375,0.3435354924547289
+2018,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordOvest,6865335,346,0.018257553931020215,0.46032689745505884
+2018,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Sud,5511350,185,0.009761986928435665,0.3695409832570353
+2018,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Total,45917456,2012,0.10616820378385167,3.0788067966835087
+2018,Istruzione,Terziario,Centro,4884790,725,0.038256435260085715,0.32752957072298683
+2018,Istruzione,Terziario,NordEst,5123503,1825,0.09630068186159507,0.3435354924547289
+2018,Istruzione,Terziario,NordOvest,6865335,2737,0.1444246390439374,0.46032689745505884
+2018,Istruzione,Terziario,Sud,5511350,344,0.018152018937199293,0.3695409832570353
+2018,Istruzione,Terziario,Total,45917456,11262,0.5942675502056349,3.0788067966835087
+2018,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Centro,4884790,7463,0.39380382944278575,0.32752957072298683
+2018,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordEst,5123503,8284,0.43712594440627595,0.3435354924547289
+2018,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordOvest,6865335,10075,0.5316325313729153,0.46032689745505884
+2018,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Sud,5511350,4919,0.25956331730256776,0.3695409832570353
+2018,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Total,45917456,61482,3.2442512450490892,3.0788067966835087
+2018,Non determinato,Terziario,Centro,4884790,39984,2.109855596467955,0.32752957072298683
+2018,Non determinato,Terziario,NordEst,5123503,70368,3.7131432225954644,0.3435354924547289
+2018,Non determinato,Terziario,NordOvest,6865335,62279,3.2863069400867286,0.46032689745505884
+2018,Non determinato,Terziario,Sud,5511350,46224,2.439124777189244,0.3695409832570353
+2018,Non determinato,Terziario,Total,45917456,437710,23.096861072678784,3.0788067966835087
+2018,Organizzazioni ed organismi extraterritoriali,Terziario,Centro,3903153,43,0.0022690023671499116,0.2617099254125844
+2018,Organizzazioni ed organismi extraterritoriali,Terziario,NordEst,4627332,43,0.0022690023671499116,0.3102667798518954
+2018,Organizzazioni ed organismi extraterritoriali,Terziario,NordOvest,6810558,5,0.00026383748455231527,0.4566540502506769
+2018,Organizzazioni ed organismi extraterritoriali,Terziario,Sud,1640948,4,0.00021106998764185223,0.11002704190328425
+2018,Organizzazioni ed organismi extraterritoriali,Terziario,Total,45917456,190,0.01002582441298798,3.0788067966835087
+2018,Sanita' e assistenza sociale,Terziario,Centro,4884790,10631,0.5609712596551327,0.32752957072298683
+2018,Sanita' e assistenza sociale,Terziario,NordEst,5123503,13261,0.6997497765296506,0.3435354924547289
+2018,Sanita' e assistenza sociale,Terziario,NordOvest,6865335,15058,0.7945729684777527,0.46032689745505884
+2018,Sanita' e assistenza sociale,Terziario,Sud,5511350,12123,0.6397003650455436,0.3695409832570353
+2018,Sanita' e assistenza sociale,Terziario,Total,45917456,102146,5.389988739416159,3.0788067966835087
+2018,Servizi di informazione e comunicazione,Terziario,Centro,4884790,1646,0.0868552999146222,0.32752957072298683
+2018,Servizi di informazione e comunicazione,Terziario,NordEst,5123503,1079,0.05693612916638964,0.3435354924547289
+2018,Servizi di informazione e comunicazione,Terziario,NordOvest,6865335,1891,0.09978333665768564,0.46032689745505884
+2018,Servizi di informazione e comunicazione,Terziario,Sud,5511350,682,0.0359874328929358,0.3695409832570353
+2018,Servizi di informazione e comunicazione,Terziario,Total,45917456,10596,0.5591243972632666,3.0788067966835087
+2018,Trasporto e magazzinaggio,Terziario,Centro,4884790,10151,0.5356428611381104,0.32752957072298683
+2018,Trasporto e magazzinaggio,Terziario,NordEst,5123503,14171,0.747768198718172,0.3435354924547289
+2018,Trasporto e magazzinaggio,Terziario,NordOvest,6865335,14672,0.7742047146703139,0.46032689745505884
+2018,Trasporto e magazzinaggio,Terziario,Sud,5511350,8034,0.42393407017866025,0.3695409832570353
+2018,Trasporto e magazzinaggio,Terziario,Total,45917456,94056,4.963099689410513,3.0788067966835087
+2019,"Agricoltura, silvicoltura e pesca",Primario,Centro,4908361,296,0.01563291383254086,0.3270675565551436
+2019,"Agricoltura, silvicoltura e pesca",Primario,NordEst,5188001,504,0.026618204633785787,0.3457013065004065
+2019,"Agricoltura, silvicoltura e pesca",Primario,NordOvest,6865303,194,0.010245896228084212,0.4574679566602165
+2019,"Agricoltura, silvicoltura e pesca",Primario,Sud,5510508,188,0.009929012839586764,0.3671914895700563
+2019,"Agricoltura, silvicoltura e pesca",Primario,Total,46218810,2364,0.12485205506799525,3.0797802471306484
+2019,Altre attivita' di servizi,Terziario,Centro,4908361,1485,0.07842863865311885,0.3270675565551436
+2019,Altre attivita' di servizi,Terziario,NordEst,5188001,1732,0.0914736714795972,0.3457013065004065
+2019,Altre attivita' di servizi,Terziario,NordOvest,6920502,1798,0.09495938875306915,0.4611461298944769
+2019,Altre attivita' di servizi,Terziario,Sud,5510508,987,0.05212731740783051,0.3671914895700563
+2019,Altre attivita' di servizi,Terziario,Total,46218810,12004,0.6339780325872314,3.0797802471306484
+2019,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Centro,4908361,2966,0.15664602171390607,0.3270675565551436
+2019,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordEst,5188001,4248,0.22435343905619454,0.3457013065004065
+2019,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordOvest,6920502,3234,0.1708001464001255,0.4611461298944769
+2019,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Sud,5510508,3194,0.16868759047680917,0.3671914895700563
+2019,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Total,46218810,27284,1.4409743952940706,3.0797802471306484
+2019,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Centro,4908361,1034,0.0546095706177272,0.3270675565551436
+2019,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordEst,5188001,1258,0.06643988378829865,0.3457013065004065
+2019,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordOvest,6920502,1186,0.06263728312632927,0.4611461298944769
+2019,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Sud,5510508,965,0.05096541165000652,0.3671914895700563
+2019,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Total,46218810,8886,0.46930429836472326,3.0797802471306484
+2019,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Centro,4908361,7383,0.3899250095461121,0.3270675565551436
+2019,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordEst,5188001,10105,0.5336844401277885,0.3457013065004065
+2019,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordOvest,6920502,8751,0.46217442212353066,0.4611461298944769
+2019,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Sud,5510508,4782,0.25255606063246755,0.3671914895700563
+2019,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Total,46218810,62042,3.2766798648597972,3.0797802471306484
+2019,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Centro,3917589,10,0.0005281389808290831,0.2610476820709211
+2019,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordEst,2026012,4,0.00021125559233163327,0.1350028643759902
+2019,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordOvest,6263555,16,0.0008450223693265331,0.417370610922618
+2019,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Sud,4183177,5,0.00026406949041454157,0.27874508008430426
+2019,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Total,46218810,70,0.003696972865803582,3.0797802471306484
+2019,Attivita' finanziarie e assicurative,Terziario,Centro,4908361,1145,0.06047191330493002,0.3270675565551436
+2019,Attivita' finanziarie e assicurative,Terziario,NordEst,5188001,1032,0.054503942821561374,0.3457013065004065
+2019,Attivita' finanziarie e assicurative,Terziario,NordOvest,6920502,1779,0.09395592468949389,0.4611461298944769
+2019,Attivita' finanziarie e assicurative,Terziario,Sud,5510508,660,0.03485717273471949,0.3671914895700563
+2019,Attivita' finanziarie e assicurative,Terziario,Total,46218810,9232,0.4875779071014096,3.0797802471306484
+2019,Attivita' immobiliari,Terziario,Centro,4908361,411,0.021706512112075315,0.3270675565551436
+2019,Attivita' immobiliari,Terziario,NordEst,5188001,465,0.024558462608552368,0.3457013065004065
+2019,Attivita' immobiliari,Terziario,NordOvest,6920502,614,0.032427733422905704,0.4611461298944769
+2019,Attivita' immobiliari,Terziario,Sud,5510508,198,0.010457151820415846,0.3671914895700563
+2019,Attivita' immobiliari,Terziario,Total,46218810,3376,0.17829971992789848,3.0797802471306484
+2019,Attivita' manifatturiere,Secondario,Centro,4908361,15010,0.7927366102244537,0.3270675565551436
+2019,Attivita' manifatturiere,Secondario,NordEst,5188001,43621,2.3037950482745435,0.3457013065004065
+2019,Attivita' manifatturiere,Secondario,NordOvest,6920502,33765,1.7832612687693994,0.4611461298944769
+2019,Attivita' manifatturiere,Secondario,Sud,5510508,9565,0.505164935163018,0.3671914895700563
+2019,Attivita' manifatturiere,Secondario,Total,46218810,203922,10.769915724862829,3.0797802471306484
+2019,"Attivita' professionali, scientifiche e tecniche",Terziario,Centro,4908361,1293,0.06828837022120045,0.3270675565551436
+2019,"Attivita' professionali, scientifiche e tecniche",Terziario,NordEst,5188001,1598,0.08439660913648749,0.3457013065004065
+2019,"Attivita' professionali, scientifiche e tecniche",Terziario,NordOvest,6920502,2353,0.12427110218908326,0.4611461298944769
+2019,"Attivita' professionali, scientifiche e tecniche",Terziario,Sud,5510508,716,0.037814751027362356,0.3671914895700563
+2019,"Attivita' professionali, scientifiche e tecniche",Terziario,Total,46218810,11920,0.629541665148267,3.0797802471306484
+2019,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Centro,4908361,10240,0.5408143163689811,0.3270675565551436
+2019,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordEst,5188001,14765,0.7797972051941412,0.3457013065004065
+2019,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordOvest,6920502,14949,0.7895149624413964,0.4611461298944769
+2019,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Sud,5510508,8038,0.42451811279041707,0.3671914895700563
+2019,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Total,46218810,95984,5.069289193589872,3.0797802471306484
+2019,Costruzioni,Secondario,Centro,4908361,8200,0.43307396427984823,0.3270675565551436
+2019,Costruzioni,Secondario,NordEst,5188001,13949,0.7367010643584881,0.3457013065004065
+2019,Costruzioni,Secondario,NordOvest,6920502,11405,0.6023425076355693,0.4611461298944769
+2019,Costruzioni,Secondario,Sud,5510508,6468,0.341600292800251,0.3671914895700563
+2019,Costruzioni,Secondario,Total,46218810,80044,4.2274356581483135,3.0797802471306484
+2019,Estrazione di minerali da cave e miniere,Primario,Centro,4908361,150,0.007922084712436247,0.3270675565551436
+2019,Estrazione di minerali da cave e miniere,Primario,NordEst,5188001,109,0.005756714891037007,0.3457013065004065
+2019,Estrazione di minerali da cave e miniere,Primario,NordOvest,6865303,105,0.005545459298705373,0.4574679566602165
+2019,Estrazione di minerali da cave e miniere,Primario,Sud,5510508,87,0.004594809133213023,0.3671914895700563
+2019,Estrazione di minerali da cave e miniere,Primario,Total,46218810,902,0.047638136070783293,3.0797802471306484
+2019,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Centro,4908361,3407,0.17993695076846863,0.3270675565551436
+2019,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordEst,5188001,2203,0.116349017476647,0.3457013065004065
+2019,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordOvest,6920502,3251,0.17169798266753492,0.4611461298944769
+2019,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Sud,5510508,4368,0.23069110682614352,0.3671914895700563
+2019,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Total,46218810,26458,1.3973501154775883,3.0797802471306484
+2019,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Centro,4908361,235,0.012411266049483453,0.3270675565551436
+2019,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordEst,5188001,256,0.01352035790922453,0.3457013065004065
+2019,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordOvest,6920502,319,0.016847633488447752,0.4611461298944769
+2019,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Sud,5510508,188,0.009929012839586764,0.3671914895700563
+2019,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Total,46218810,1996,0.105416540573485,3.0797802471306484
+2019,Istruzione,Terziario,Centro,4908361,748,0.03950479576601542,0.3270675565551436
+2019,Istruzione,Terziario,NordEst,5188001,1762,0.09305808842208445,0.3457013065004065
+2019,Istruzione,Terziario,NordOvest,6920502,2856,0.15083649292478615,0.4611461298944769
+2019,Istruzione,Terziario,Sud,5510508,376,0.019858025679173528,0.3671914895700563
+2019,Istruzione,Terziario,Total,46218810,11484,0.6065148055841191,3.0797802471306484
+2019,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Centro,4908361,7499,0.3960514217237294,0.3270675565551436
+2019,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordEst,5188001,8297,0.4381969123938903,0.3457013065004065
+2019,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordOvest,6920502,10168,0.5370117157070117,0.4611461298944769
+2019,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Sud,5510508,4827,0.25493268604619845,0.3671914895700563
+2019,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Total,46218810,61582,3.25238547174166,3.0797802471306484
+2019,Non determinato,Terziario,Centro,4908361,40285,2.1276078842699615,0.3270675565551436
+2019,Non determinato,Terziario,NordEst,5188001,69350,3.662643832049692,0.3457013065004065
+2019,Non determinato,Terziario,NordOvest,6920502,61069,3.2252919420251276,0.4611461298944769
+2019,Non determinato,Terziario,Sud,5510508,45827,2.4203025074454394,0.3671914895700563
+2019,Non determinato,Terziario,Total,46218810,433062,22.87169233158044,3.0797802471306484
+2019,Organizzazioni ed organismi extraterritoriali,Terziario,Centro,3917589,54,0.002851950496477049,0.2610476820709211
+2019,Organizzazioni ed organismi extraterritoriali,Terziario,NordEst,4687835,35,0.001848486432901791,0.312372855008766
+2019,Organizzazioni ed organismi extraterritoriali,Terziario,NordOvest,6263555,7,0.0003696972865803582,0.417370610922618
+2019,Organizzazioni ed organismi extraterritoriali,Terziario,Sud,1625581,1,5.281389808290832e-05,0.10832023269121135
+2019,Organizzazioni ed organismi extraterritoriali,Terziario,Total,46218810,194,0.010245896228084212,3.0797802471306484
+2019,Sanita' e assistenza sociale,Terziario,Centro,4908361,10982,0.5800022287464991,0.3270675565551436
+2019,Sanita' e assistenza sociale,Terziario,NordEst,5188001,13680,0.7224941257741857,0.3457013065004065
+2019,Sanita' e assistenza sociale,Terziario,NordOvest,6920502,15427,0.8147600057250265,0.4611461298944769
+2019,Sanita' e assistenza sociale,Terziario,Sud,5510508,12062,0.63704123867604,0.3671914895700563
+2019,Sanita' e assistenza sociale,Terziario,Total,46218810,104302,5.508595197843503,3.0797802471306484
+2019,Servizi di informazione e comunicazione,Terziario,Centro,4908361,1609,0.08497756201539948,0.3270675565551436
+2019,Servizi di informazione e comunicazione,Terziario,NordEst,5188001,1029,0.05434550112731265,0.3457013065004065
+2019,Servizi di informazione e comunicazione,Terziario,NordOvest,6920502,1807,0.09543471383581532,0.4611461298944769
+2019,Servizi di informazione e comunicazione,Terziario,Sud,5510508,662,0.0349628005308853,0.3671914895700563
+2019,Servizi di informazione e comunicazione,Terziario,Total,46218810,10214,0.5394411550188255,3.0797802471306484
+2019,Trasporto e magazzinaggio,Terziario,Centro,4908361,10128,0.5348991597836954,0.3270675565551436
+2019,Trasporto e magazzinaggio,Terziario,NordEst,5188001,14302,0.7553443703817547,0.3457013065004065
+2019,Trasporto e magazzinaggio,Terziario,NordOvest,6920502,15071,0.7959582580075113,0.4611461298944769
+2019,Trasporto e magazzinaggio,Terziario,Sud,5510508,7985,0.42171897619202287,0.3671914895700563
+2019,Trasporto e magazzinaggio,Terziario,Total,46218810,94972,5.015841528729968,3.0797802471306484
+2020,"Agricoltura, silvicoltura e pesca",Primario,Centro,4763433,335,0.019907167233872373,0.3286944589980896
+2020,"Agricoltura, silvicoltura e pesca",Primario,NordEst,5034056,443,0.02632500025255361,0.34736844487706386
+2020,"Agricoltura, silvicoltura e pesca",Primario,NordOvest,6642822,177,0.010518115225060925,0.45837923688873283
+2020,"Agricoltura, silvicoltura e pesca",Primario,Sud,5340104,177,0.010518115225060925,0.36848688651095424
+2020,"Agricoltura, silvicoltura e pesca",Primario,Total,44770516,2264,0.13453679587309567,3.0893308535430886
+2020,Altre attivita' di servizi,Terziario,Centro,4763433,1252,0.07439932351286033,0.3286944589980896
+2020,Altre attivita' di servizi,Terziario,NordEst,5034056,1366,0.0811737028103572,0.34736844487706386
+2020,Altre attivita' di servizi,Terziario,NordOvest,6695925,1725,0.10250705515949207,0.46204353989376634
+2020,Altre attivita' di servizi,Terziario,Sud,5340104,972,0.057760497168131184,0.36848688651095424
+2020,Altre attivita' di servizi,Terziario,Total,44770516,10630,0.6316811573016816,3.0893308535430886
+2020,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Centro,4763433,2195,0.130436513666716,0.3286944589980896
+2020,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordEst,5034056,3013,0.17904565634524613,0.34736844487706386
+2020,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordOvest,6695925,3412,0.20275598388648516,0.46204353989376634
+2020,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Sud,5340104,2445,0.145292608617367,0.36848688651095424
+2020,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Total,44770516,22130,1.3150615250316287,3.0893308535430886
+2020,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Centro,4763433,736,0.043736343534716615,0.3286944589980896
+2020,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordEst,5034056,913,0.05425445875977754,0.34736844487706386
+2020,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordOvest,6695925,898,0.053363093062738474,0.46204353989376634
+2020,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Sud,5340104,643,0.03820987621307444,0.36848688651095424
+2020,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Total,44770516,6380,0.37912754314061414,3.0893308535430886
+2020,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Centro,4763433,4037,0.23989622126311272,0.3286944589980896
+2020,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordEst,5034056,5932,0.35250542098904747,0.34736844487706386
+2020,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordOvest,6695925,5332,0.31685079310748504,0.46204353989376634
+2020,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Sud,5340104,2967,0.17631213487432634,0.36848688651095424
+2020,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Total,44770516,36536,2.171129140467943,3.0893308535430886
+2020,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Centro,2258785,7,0.0004159706586182287,0.1558645022545714
+2020,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordEst,1966238,3,0.00017827313940781229,0.13567767945334505
+2020,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordOvest,6063305,14,0.0008319413172364574,0.4183904248711825
+2020,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Sud,2875123,3,0.00017827313940781229,0.19839409917972278
+2020,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Total,44770516,54,0.0032089165093406214,3.0893308535430886
+2020,Attivita' finanziarie e assicurative,Terziario,Centro,4763433,729,0.043320372876098384,0.3286944589980896
+2020,Attivita' finanziarie e assicurative,Terziario,NordEst,5034056,636,0.037793905554456206,0.34736844487706386
+2020,Attivita' finanziarie e assicurative,Terziario,NordOvest,6695925,1069,0.06352466200898378,0.46204353989376634
+2020,Attivita' finanziarie e assicurative,Terziario,Sud,5340104,428,0.02543363455551455,0.36848688651095424
+2020,Attivita' finanziarie e assicurative,Terziario,Total,44770516,5724,0.3401451499901058,3.0893308535430886
+2020,Attivita' immobiliari,Terziario,Centro,4763433,195,0.0115877540615078,0.3286944589980896
+2020,Attivita' immobiliari,Terziario,NordEst,5034056,246,0.014618397431440607,0.34736844487706386
+2020,Attivita' immobiliari,Terziario,NordOvest,6695925,340,0.02020428913288539,0.46204353989376634
+2020,Attivita' immobiliari,Terziario,Sud,5340104,141,0.008378837552167177,0.36848688651095424
+2020,Attivita' immobiliari,Terziario,Total,44770516,1844,0.10957855635600196,3.0893308535430886
+2020,Attivita' manifatturiere,Secondario,Centro,4763433,10712,0.6365539564454951,0.3286944589980896
+2020,Attivita' manifatturiere,Secondario,NordEst,5034056,32613,1.9380072985023273,0.34736844487706386
+2020,Attivita' manifatturiere,Secondario,NordOvest,6695925,23912,1.4209557698398692,0.46204353989376634
+2020,Attivita' manifatturiere,Secondario,Sud,5340104,7484,0.4447320584426891,0.36848688651095424
+2020,Attivita' manifatturiere,Secondario,Total,44770516,149442,8.880498166460761,3.0893308535430886
+2020,"Attivita' professionali, scientifiche e tecniche",Terziario,Centro,4763433,836,0.049678781514977025,0.3286944589980896
+2020,"Attivita' professionali, scientifiche e tecniche",Terziario,NordEst,5034056,1099,0.06530739340306191,0.34736844487706386
+2020,"Attivita' professionali, scientifiche e tecniche",Terziario,NordOvest,6695925,1315,0.07814305944042439,0.46204353989376634
+2020,"Attivita' professionali, scientifiche e tecniche",Terziario,Sud,5340104,521,0.030960101877156733,0.36848688651095424
+2020,"Attivita' professionali, scientifiche e tecniche",Terziario,Total,44770516,7542,0.4481786724712401,3.0893308535430886
+2020,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Centro,4763433,7371,0.43801710352499473,0.3286944589980896
+2020,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordEst,5034056,11223,0.6669198145246257,0.34736844487706386
+2020,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordOvest,6695925,11026,0.6552132117035128,0.46204353989376634
+2020,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Sud,5340104,6409,0.3808508501548897,0.36848688651095424
+2020,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Total,44770516,72058,4.282001959816046,3.0893308535430886
+2020,Costruzioni,Secondario,Centro,4763433,6307,0.374789563415024,0.3286944589980896
+2020,Costruzioni,Secondario,NordEst,5034056,11413,0.6782104466871206,0.34736844487706386
+2020,Costruzioni,Secondario,NordOvest,6695925,9008,0.5352948132618577,0.46204353989376634
+2020,Costruzioni,Secondario,Sud,5340104,5397,0.3207133777946543,0.36848688651095424
+2020,Costruzioni,Secondario,Total,44770516,64250,3.8180164023173133,3.0893308535430886
+2020,Estrazione di minerali da cave e miniere,Primario,Centro,4763433,118,0.007012076816707284,0.3286944589980896
+2020,Estrazione di minerali da cave e miniere,Primario,NordEst,5034056,94,0.005585891701444785,0.34736844487706386
+2020,Estrazione di minerali da cave e miniere,Primario,NordOvest,6695925,87,0.005169921042826557,0.46204353989376634
+2020,Estrazione di minerali da cave e miniere,Primario,Sud,5340104,65,0.0038625846871692664,0.36848688651095424
+2020,Estrazione di minerali da cave e miniere,Primario,Total,44770516,728,0.043260948496295776,3.0893308535430886
+2020,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Centro,4763433,2480,0.14737246191045816,0.3286944589980896
+2020,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordEst,5034056,1744,0.10363611837574155,0.34736844487706386
+2020,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordOvest,6695925,2530,0.15034368090058836,0.46204353989376634
+2020,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Sud,5340104,3413,0.20281540826628777,0.36848688651095424
+2020,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Total,44770516,20334,1.2083353389061517,3.0893308535430886
+2020,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Centro,4763433,123,0.007309198715720304,0.3286944589980896
+2020,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordEst,5034056,192,0.011409480922099986,0.34736844487706386
+2020,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordOvest,6695925,196,0.011647178441310403,0.46204353989376634
+2020,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Sud,5340104,123,0.007309198715720304,0.36848688651095424
+2020,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Total,44770516,1268,0.07535011358970199,3.0893308535430886
+2020,Istruzione,Terziario,Centro,4763433,563,0.033455925828866105,0.3286944589980896
+2020,Istruzione,Terziario,NordEst,5034056,1038,0.061682506235103046,0.34736844487706386
+2020,Istruzione,Terziario,NordOvest,6695925,1655,0.09834734857330978,0.46204353989376634
+2020,Istruzione,Terziario,Sud,5236125,189,0.011231207782692173,0.36131195172082237
+2020,Istruzione,Terziario,Total,44770516,6890,0.4094339768399422,3.0893308535430886
+2020,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Centro,4763433,5488,0.3261209963566913,0.3286944589980896
+2020,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordEst,5034056,6415,0.38120739643370527,0.34736844487706386
+2020,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordOvest,6695925,8063,0.4791387743483968,0.46204353989376634
+2020,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Sud,5340104,4030,0.23948025060449452,0.36848688651095424
+2020,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Total,44770516,47992,2.8518948354865756,3.0893308535430886
+2020,Non determinato,Terziario,Centro,4763433,25895,1.538794314988433,0.3286944589980896
+2020,Non determinato,Terziario,NordEst,5034056,43988,2.6139596187569487,0.34736844487706386
+2020,Non determinato,Terziario,NordOvest,6695925,33696,2.0023639018285477,0.46204353989376634
+2020,Non determinato,Terziario,Sud,5340104,26057,1.548421064516455,0.36848688651095424
+2020,Non determinato,Terziario,Total,44770516,259272,15.407077800180769,3.0893308535430886
+2020,Organizzazioni ed organismi extraterritoriali,Terziario,Centro,3803252,29,0.0017233070142755186,0.26243842593637867
+2020,Organizzazioni ed organismi extraterritoriali,Terziario,NordEst,2581643,24,0.0014261851152624983,0.1781428959347607
+2020,Organizzazioni ed organismi extraterritoriali,Terziario,NordOvest,6063305,6,0.00035654627881562457,0.4183904248711825
+2020,Organizzazioni ed organismi extraterritoriali,Terziario,Sud,1569819,3,0.00017827313940781229,0.10832330525692752
+2020,Organizzazioni ed organismi extraterritoriali,Terziario,Total,44770516,124,0.007368623095522908,3.0893308535430886
+2020,Sanita' e assistenza sociale,Terziario,Centro,4763433,24052,1.4292751830122337,0.3286944589980896
+2020,Sanita' e assistenza sociale,Terziario,NordEst,5034056,42774,2.5418184216765876,0.34736844487706386
+2020,Sanita' e assistenza sociale,Terziario,NordOvest,6695925,69399,4.123992533920921,0.46204353989376634
+2020,Sanita' e assistenza sociale,Terziario,Sud,5340104,25406,1.5097357932649598,0.36848688651095424
+2020,Sanita' e assistenza sociale,Terziario,Total,44770516,323262,19.209643863749402,3.0893308535430886
+2020,Servizi di informazione e comunicazione,Terziario,Centro,4763433,1171,0.0695859487488494,0.3286944589980896
+2020,Servizi di informazione e comunicazione,Terziario,NordEst,5034056,797,0.047361230702675464,0.34736844487706386
+2020,Servizi di informazione e comunicazione,Terziario,NordOvest,6695925,1108,0.06584221282128534,0.46204353989376634
+2020,Servizi di informazione e comunicazione,Terziario,Sud,5340104,585,0.03476326218452339,0.36848688651095424
+2020,Servizi di informazione e comunicazione,Terziario,Total,44770516,7322,0.43510530891466714,3.0893308535430886
+2020,Trasporto e magazzinaggio,Terziario,Centro,4763433,7861,0.4671350496282708,0.3286944589980896
+2020,Trasporto e magazzinaggio,Terziario,NordEst,5034056,11582,0.6882531668737606,0.34736844487706386
+2020,Trasporto e magazzinaggio,Terziario,NordOvest,6695925,11726,0.6968102775653356,0.46204353989376634
+2020,Trasporto e magazzinaggio,Terziario,Sud,5340104,6745,0.4008174417685646,0.36848688651095424
+2020,Trasporto e magazzinaggio,Terziario,Total,44770516,75828,4.506031871671863,3.0893308535430886
+2021,"Agricoltura, silvicoltura e pesca",Primario,Centro,4782840,282,0.016999329069033554,0.3269582106070506
+2021,"Agricoltura, silvicoltura e pesca",Primario,NordEst,5056349,427,0.02574011883857208,0.34565547274103875
+2021,"Agricoltura, silvicoltura e pesca",Primario,NordOvest,6694417,181,0.010910916884734301,0.45763492054457605
+2021,"Agricoltura, silvicoltura e pesca",Primario,Sud,5404412,159,0.009584728092114662,0.3694492972592166
+2021,"Agricoltura, silvicoltura e pesca",Primario,Total,45107912,2098,0.1264701857689092,3.083607687428454
+2021,Altre attivita' di servizi,Terziario,Centro,4782840,1292,0.07788345091202606,0.3269582106070506
+2021,Altre attivita' di servizi,Terziario,NordEst,5056349,1436,0.08656395937280915,0.34565547274103875
+2021,Altre attivita' di servizi,Terziario,NordOvest,6747158,1590,0.09584728092114662,0.4612403313435211
+2021,Altre attivita' di servizi,Terziario,Sud,5404412,998,0.060160746137927254,0.3694492972592166
+2021,Altre attivita' di servizi,Terziario,Total,45107912,10632,0.6409108746878182,3.083607687428454
+2021,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Centro,4782840,2171,0.1308707213080562,0.3269582106070506
+2021,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordEst,5056349,3728,0.22472871904027333,0.34565547274103875
+2021,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordOvest,6747158,3496,0.2107434554090117,0.4612403313435211
+2021,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Sud,5404412,2396,0.14443401577802975,0.3694492972592166
+2021,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Total,45107912,23582,1.421553823070742,3.083607687428454
+2021,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Centro,4782840,912,0.05497655358495957,0.3269582106070506
+2021,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordEst,5056349,1090,0.06570662654342756,0.34565547274103875
+2021,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordOvest,6747158,1006,0.060642996607970755,0.4612403313435211
+2021,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Sud,5404412,793,0.04780307784306244,0.3694492972592166
+2021,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Total,45107912,7602,0.45825850915884064,3.083607687428454
+2021,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Centro,4782840,4927,0.2970060082380437,0.3269582106070506
+2021,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordEst,5056349,7214,0.4348693613617306,0.34565547274103875
+2021,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordOvest,6747158,6122,0.3690421722007922,0.4612403313435211
+2021,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Sud,5404412,3649,0.21996649564859375,0.3694492972592166
+2021,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Total,45107912,43824,2.6417680748983203,3.083607687428454
+2021,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Centro,3812029,7,0.0004219691612880669,0.2605929072731232
+2021,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordEst,4058968,2,0.00012056261751087626,0.2774738260513166
+2021,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordOvest,6694417,16,0.00096450094008701,0.45763492054457605
+2021,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Sud,1310864,1,6.028130875543813e-05,0.08961155877871742
+2021,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Total,45107912,52,0.0031346280552827822,3.083607687428454
+2021,Attivita' finanziarie e assicurative,Terziario,Centro,4782840,710,0.04279972921636107,0.3269582106070506
+2021,Attivita' finanziarie e assicurative,Terziario,NordEst,5056349,724,0.043643667538937204,0.34565547274103875
+2021,Attivita' finanziarie e assicurative,Terziario,NordOvest,6747158,989,0.059618214359128306,0.4612403313435211
+2021,Attivita' finanziarie e assicurative,Terziario,Sud,5404412,415,0.02501674313350682,0.3694492972592166
+2021,Attivita' finanziarie e assicurative,Terziario,Total,45107912,5676,0.3421567084958668,3.083607687428454
+2021,Attivita' immobiliari,Terziario,Centro,4782840,244,0.014708639336326903,0.3269582106070506
+2021,Attivita' immobiliari,Terziario,NordEst,5056349,224,0.01350301316121814,0.34565547274103875
+2021,Attivita' immobiliari,Terziario,NordOvest,6747158,358,0.02158070853444685,0.4612403313435211
+2021,Attivita' immobiliari,Terziario,Sud,5404412,156,0.009403884165848348,0.3694492972592166
+2021,Attivita' immobiliari,Terziario,Total,45107912,1964,0.11839249039568049,3.083607687428454
+2021,Attivita' manifatturiere,Secondario,Centro,4782840,13025,0.7851640465395816,0.3269582106070506
+2021,Attivita' manifatturiere,Secondario,NordEst,5056349,39165,2.3609174574067344,0.34565547274103875
+2021,Attivita' manifatturiere,Secondario,NordOvest,6747158,28912,1.742853198737227,0.4612403313435211
+2021,Attivita' manifatturiere,Secondario,Sud,5404412,8156,0.4916543542093534,0.3694492972592166
+2021,Attivita' manifatturiere,Secondario,Total,45107912,178516,10.761178113785792,3.083607687428454
+2021,"Attivita' professionali, scientifiche e tecniche",Terziario,Centro,4782840,981,0.059135963889084806,0.3269582106070506
+2021,"Attivita' professionali, scientifiche e tecniche",Terziario,NordEst,5056349,1293,0.0779437322207815,0.34565547274103875
+2021,"Attivita' professionali, scientifiche e tecniche",Terziario,NordOvest,6747158,1695,0.10217681834046764,0.4612403313435211
+2021,"Attivita' professionali, scientifiche e tecniche",Terziario,Sud,5404412,596,0.035927660018241124,0.3694492972592166
+2021,"Attivita' professionali, scientifiche e tecniche",Terziario,Total,45107912,9130,0.5503683489371501,3.083607687428454
+2021,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Centro,4782840,8689,0.5237842917760018,0.3269582106070506
+2021,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordEst,5056349,12931,0.7794976035165704,0.34565547274103875
+2021,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordOvest,6747158,12896,0.7773877577101301,0.4612403313435211
+2021,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Sud,5404412,7227,0.4356530183755513,0.3694492972592166
+2021,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Total,45107912,83486,5.032645342756507,3.083607687428454
+2021,Costruzioni,Secondario,Centro,4782840,8282,0.4992497991125386,0.3269582106070506
+2021,Costruzioni,Secondario,NordEst,5056349,13591,0.8192832672951597,0.34565547274103875
+2021,Costruzioni,Secondario,NordOvest,6747158,11451,0.6902812665585221,0.4612403313435211
+2021,Costruzioni,Secondario,Sud,5404412,6744,0.4065371462466747,0.3694492972592166
+2021,Costruzioni,Secondario,Total,45107912,80136,4.83070295842579,3.083607687428454
+2021,Estrazione di minerali da cave e miniere,Primario,Centro,4782840,127,0.007655726211940643,0.3269582106070506
+2021,Estrazione di minerali da cave e miniere,Primario,NordEst,5056349,102,0.006148693493054689,0.34565547274103875
+2021,Estrazione di minerali da cave e miniere,Primario,NordOvest,6694417,107,0.006450100036831879,0.45763492054457605
+2021,Estrazione di minerali da cave e miniere,Primario,Sud,5404412,103,0.006208974801810127,0.3694492972592166
+2021,Estrazione di minerali da cave e miniere,Primario,Total,45107912,878,0.052926989087274674,3.083607687428454
+2021,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Centro,4782840,2873,0.17318820005437374,0.3269582106070506
+2021,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordEst,5056349,1935,0.11664433244177277,0.34565547274103875
+2021,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordOvest,6747158,2871,0.17306763743686285,0.4612403313435211
+2021,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Sud,5404412,3419,0.20610179463484293,0.3694492972592166
+2021,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Total,45107912,22196,1.3380039291357047,3.083607687428454
+2021,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Centro,4782840,114,0.006872069198119946,0.3269582106070506
+2021,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordEst,5056349,221,0.013322169234951825,0.34565547274103875
+2021,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordOvest,6747158,223,0.013442731852462704,0.4612403313435211
+2021,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Sud,5404412,148,0.008921633695804843,0.3694492972592166
+2021,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Total,45107912,1412,0.08511720796267863,3.083607687428454
+2021,Istruzione,Terziario,Centro,4782840,609,0.03671131703206182,0.3269582106070506
+2021,Istruzione,Terziario,NordEst,5056349,1369,0.08252511168619481,0.34565547274103875
+2021,Istruzione,Terziario,NordOvest,6747158,2105,0.12689215493019726,0.4612403313435211
+2021,Istruzione,Terziario,Sud,5404412,293,0.01766242346534337,0.3694492972592166
+2021,Istruzione,Terziario,Total,45107912,8752,0.5275820142275945,3.083607687428454
+2021,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Centro,4782840,6296,0.37953111992423844,0.3269582106070506
+2021,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordEst,5056349,7583,0.45711316429248733,0.34565547274103875
+2021,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordOvest,6747158,8660,0.5220361338220941,0.4612403313435211
+2021,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Sud,5404412,4124,0.24860011730742682,0.3694492972592166
+2021,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Total,45107912,53326,3.2145610706924934,3.083607687428454
+2021,Non determinato,Terziario,Centro,4782840,28514,1.7188612378525627,0.3269582106070506
+2021,Non determinato,Terziario,NordEst,5056349,54131,3.263087524240621,0.34565547274103875
+2021,Non determinato,Terziario,NordOvest,6747158,43694,2.6339315047601137,0.4612403313435211
+2021,Non determinato,Terziario,Sud,5404412,29088,1.753462709078184,0.3694492972592166
+2021,Non determinato,Terziario,Total,45107912,310854,18.738685951862962,3.083607687428454
+2021,Organizzazioni ed organismi extraterritoriali,Terziario,Centro,3812029,29,0.0017481579539077058,0.2605929072731232
+2021,Organizzazioni ed organismi extraterritoriali,Terziario,NordEst,4569268,28,0.0016878766451522676,0.3123582827491735
+2021,Organizzazioni ed organismi extraterritoriali,Terziario,NordOvest,4332517,4,0.0002411252350217525,0.29617382261263747
+2021,Organizzazioni ed organismi extraterritoriali,Terziario,Sud,1592095,3,0.00018084392626631438,0.10883670210929747
+2021,Organizzazioni ed organismi extraterritoriali,Terziario,Total,45107912,128,0.00771600752069608,3.083607687428454
+2021,Sanita' e assistenza sociale,Terziario,Centro,4782840,15198,0.9161553304651487,0.3269582106070506
+2021,Sanita' e assistenza sociale,Terziario,NordEst,5056349,20618,1.2428800239196232,0.34565547274103875
+2021,Sanita' e assistenza sociale,Terziario,NordOvest,6747158,25246,1.521861920839791,0.4612403313435211
+2021,Sanita' e assistenza sociale,Terziario,Sud,5404412,16872,1.0170662413217522,0.3694492972592166
+2021,Sanita' e assistenza sociale,Terziario,Total,45107912,155868,9.39592703309263,3.083607687428454
+2021,Servizi di informazione e comunicazione,Terziario,Centro,4782840,1469,0.08855324256173862,0.3269582106070506
+2021,Servizi di informazione e comunicazione,Terziario,NordEst,5056349,878,0.052926989087274674,0.34565547274103875
+2021,Servizi di informazione e comunicazione,Terziario,NordOvest,6747158,1353,0.08156061074610779,0.4612403313435211
+2021,Servizi di informazione e comunicazione,Terziario,Sud,5404412,758,0.0456932320366221,0.3694492972592166
+2021,Servizi di informazione e comunicazione,Terziario,Total,45107912,8916,0.5374681488634864,3.083607687428454
+2021,Trasporto e magazzinaggio,Terziario,Centro,4782840,10080,0.6076355922548163,0.3269582106070506
+2021,Trasporto e magazzinaggio,Terziario,NordEst,5056349,14434,0.8701004105759939,0.34565547274103875
+2021,Trasporto e magazzinaggio,Terziario,NordOvest,6747158,15258,0.9197722089904748,0.4612403313435211
+2021,Trasporto e magazzinaggio,Terziario,Sud,5404412,8677,0.5230609160709366,0.3694492972592166
+2021,Trasporto e magazzinaggio,Terziario,Total,45107912,96898,5.841138255784443,3.083607687428454
+2022,"Agricoltura, silvicoltura e pesca",Primario,Centro,4930155,250,0.012091418865128444,0.3294533574958457
+2022,"Agricoltura, silvicoltura e pesca",Primario,NordEst,5173470,468,0.022635136115520448,0.3457126726044177
+2022,"Agricoltura, silvicoltura e pesca",Primario,NordOvest,6825830,178,0.008609090231971452,0.45613020507385027
+2022,"Agricoltura, silvicoltura e pesca",Primario,Sud,5548621,165,0.007980336450984773,0.37078181475469973
+2022,"Agricoltura, silvicoltura e pesca",Primario,Total,46198782,2122,0.10263196332721024,3.087193778312982
+2022,Altre attivita' di servizi,Terziario,Centro,4930155,1610,0.07786873749142718,0.3294533574958457
+2022,Altre attivita' di servizi,Terziario,NordEst,5173470,1564,0.07564391642024355,0.3457126726044177
+2022,Altre attivita' di servizi,Terziario,NordOvest,6880994,1731,0.08372098422214935,0.45981649181593054
+2022,Altre attivita' di servizi,Terziario,Sud,5548621,1006,0.04865586951327686,0.37078181475469973
+2022,Altre attivita' di servizi,Terziario,Total,46198782,11822,0.571779015294194,3.087193778312982
+2022,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Centro,4930155,3409,0.16487858764489147,0.3294533574958457
+2022,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordEst,5173470,4061,0.19641300804514647,0.3457126726044177
+2022,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordOvest,6880994,4280,0.20700509097099895,0.45981649181593054
+2022,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Sud,5548621,3098,0.14983686257667167,0.37078181475469973
+2022,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Total,46198782,29696,1.4362670984754171,3.087193778312982
+2022,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Centro,4930155,1103,0.053347340032946694,0.3294533574958457
+2022,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordEst,5173470,1251,0.06050546000110273,0.3457126726044177
+2022,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordOvest,6880994,1153,0.055765623805972386,0.45981649181593054
+2022,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Sud,5548621,937,0.04531863790650141,0.37078181475469973
+2022,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Total,46198782,8888,0.4298741234930465,3.087193778312982
+2022,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Centro,4930155,6619,0.32013240587314074,0.3294533574958457
+2022,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordEst,5173470,8591,0.4155095178812739,0.3457126726044177
+2022,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordOvest,6880994,8106,0.3920521652829247,0.45981649181593054
+2022,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Sud,5548621,4421,0.21382465121093142,0.37078181475469973
+2022,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Total,46198782,55474,2.6830374804965413,3.087193778312982
+2022,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Centro,3938596,7,0.0003385597282235965,0.2631932821624691
+2022,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordEst,2665878,2,9.673135092102755e-05,0.17814499904654318
+2022,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordOvest,6209714,7,0.0003385597282235965,0.4149587845390171
+2022,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Sud,1641300,1,4.836567546051378e-05,0.10967845750446618
+2022,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Total,46198782,34,0.0016444329656574686,3.087193778312982
+2022,Attivita' finanziarie e assicurative,Terziario,Centro,4930155,783,0.03787032388558229,0.3294533574958457
+2022,Attivita' finanziarie e assicurative,Terziario,NordEst,5173470,724,0.035016749033411974,0.3457126726044177
+2022,Attivita' finanziarie e assicurative,Terziario,NordOvest,6880994,1201,0.05808717622807705,0.45981649181593054
+2022,Attivita' finanziarie e assicurative,Terziario,Sud,5548621,448,0.021667822606310175,0.37078181475469973
+2022,Attivita' finanziarie e assicurative,Terziario,Total,46198782,6312,0.305284143506763,3.087193778312982
+2022,Attivita' immobiliari,Terziario,Centro,4930155,266,0.012865269672496666,0.3294533574958457
+2022,Attivita' immobiliari,Terziario,NordEst,5173470,259,0.01252670994427307,0.3457126726044177
+2022,Attivita' immobiliari,Terziario,NordOvest,6825830,376,0.01818549397315318,0.45613020507385027
+2022,Attivita' immobiliari,Terziario,Sud,5359860,181,0.008754187258352994,0.3581680236641005
+2022,Attivita' immobiliari,Terziario,Total,46198782,2164,0.10466332169655182,3.087193778312982
+2022,Attivita' manifatturiere,Secondario,Centro,4930155,13751,0.6650764032575249,0.3294533574958457
+2022,Attivita' manifatturiere,Secondario,NordEst,5173470,40642,1.965677782066201,0.3457126726044177
+2022,Attivita' manifatturiere,Secondario,NordOvest,6880994,30049,1.4533401819129785,0.45981649181593054
+2022,Attivita' manifatturiere,Secondario,Sud,5548621,8459,0.40912524872048606,0.37078181475469973
+2022,Attivita' manifatturiere,Secondario,Total,46198782,185802,8.986439231914382,3.087193778312982
+2022,"Attivita' professionali, scientifiche e tecniche",Terziario,Centro,4930155,1101,0.05325060868202567,0.3294533574958457
+2022,"Attivita' professionali, scientifiche e tecniche",Terziario,NordEst,5173470,1385,0.06698646051281158,0.3457126726044177
+2022,"Attivita' professionali, scientifiche e tecniche",Terziario,NordOvest,6880994,1948,0.09421633579708083,0.45981649181593054
+2022,"Attivita' professionali, scientifiche e tecniche",Terziario,Sud,5548621,617,0.029841621759137002,0.37078181475469973
+2022,"Attivita' professionali, scientifiche e tecniche",Terziario,Total,46198782,10102,0.48859005350211016,3.087193778312982
+2022,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Centro,4930155,9163,0.44317468424468776,0.3294533574958457
+2022,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordEst,5173470,13467,0.6513405514267391,0.3457126726044177
+2022,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordOvest,6880994,14668,0.7094277276548161,0.45981649181593054
+2022,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Sud,5548621,7331,0.3545687668010265,0.37078181475469973
+2022,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Total,46198782,89258,4.317023460254539,3.087193778312982
+2022,Costruzioni,Secondario,Centro,4930155,9184,0.4441903634293585,0.3294533574958457
+2022,Costruzioni,Secondario,NordEst,5173470,13996,0.6769259937453509,0.3457126726044177
+2022,Costruzioni,Secondario,NordOvest,6880994,11793,0.570376410705839,0.45981649181593054
+2022,Costruzioni,Secondario,Sud,5548621,8135,0.3934547698712796,0.37078181475469973
+2022,Costruzioni,Secondario,Total,46198782,86216,4.169895075503656,3.087193778312982
+2022,Estrazione di minerali da cave e miniere,Primario,Centro,4930155,131,0.006335903485327305,0.3294533574958457
+2022,Estrazione di minerali da cave e miniere,Primario,NordEst,5173470,96,0.004643104844209323,0.3457126726044177
+2022,Estrazione di minerali da cave e miniere,Primario,NordOvest,6880994,92,0.0044496421423672675,0.45981649181593054
+2022,Estrazione di minerali da cave e miniere,Primario,Sud,5445528,81,0.003917619712301616,0.3638927139081099
+2022,Estrazione di minerali da cave e miniere,Primario,Total,46198782,800,0.03869254036841102,3.087193778312982
+2022,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Centro,4930155,3002,0.14519375773246235,0.3294533574958457
+2022,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordEst,5173470,2147,0.10384110521372308,0.3457126726044177
+2022,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordOvest,6880994,2991,0.1446617353023967,0.45981649181593054
+2022,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Sud,5548621,3583,0.17329421517502086,0.37078181475469973
+2022,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Total,46198782,23446,1.133981626847206,3.087193778312982
+2022,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Centro,4930155,140,0.006771194564471929,0.3294533574958457
+2022,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordEst,5173470,211,0.010205157522168407,0.3457126726044177
+2022,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordOvest,6880994,234,0.011317568057760224,0.45981649181593054
+2022,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Sud,5548621,159,0.0076901423982216905,0.37078181475469973
+2022,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Total,46198782,1488,0.0719681250852445,3.087193778312982
+2022,Istruzione,Terziario,Centro,4930155,592,0.02863247987262416,0.3294533574958457
+2022,Istruzione,Terziario,NordEst,5173470,1482,0.07167793103248142,0.3457126726044177
+2022,Istruzione,Terziario,NordOvest,6880994,2612,0.126331144302862,0.45981649181593054
+2022,Istruzione,Terziario,Sud,5548621,377,0.018233859648613696,0.37078181475469973
+2022,Istruzione,Terziario,Total,46198782,10126,0.48975082971316247,3.087193778312982
+2022,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Centro,4930155,6759,0.32690360043761263,0.3294533574958457
+2022,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordEst,5173470,7709,0.37285099212510076,0.3457126726044177
+2022,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordOvest,6880994,9308,0.4501877071864622,0.45981649181593054
+2022,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Sud,5548621,4591,0.22204681603921875,0.37078181475469973
+2022,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Total,46198782,56734,2.7439782315767887,3.087193778312982
+2022,Non determinato,Terziario,Centro,4930155,35693,1.7263160542121185,0.3294533574958457
+2022,Non determinato,Terziario,NordEst,5173470,61449,2.972022391373111,0.3457126726044177
+2022,Non determinato,Terziario,NordOvest,6880994,53854,2.6046850862505093,0.45981649181593054
+2022,Non determinato,Terziario,Sud,5548621,38401,1.8572903033591894,0.37078181475469973
+2022,Non determinato,Terziario,Total,46198782,378794,18.320627670389854,3.087193778312982
+2022,Organizzazioni ed organismi extraterritoriali,Terziario,Centro,4290894,53,0.00256338079940723,0.28673529228975136
+2022,Organizzazioni ed organismi extraterritoriali,Terziario,NordEst,2665878,27,0.001305873237433872,0.17814499904654318
+2022,Organizzazioni ed organismi extraterritoriali,Terziario,NordOvest,6209714,2,9.673135092102755e-05,0.4149587845390171
+2022,Organizzazioni ed organismi extraterritoriali,Terziario,Sud,1641300,1,4.836567546051378e-05,0.10967845750446618
+2022,Organizzazioni ed organismi extraterritoriali,Terziario,Total,46198782,166,0.008028702126445287,3.087193778312982
+2022,Sanita' e assistenza sociale,Terziario,Centro,4930155,25927,1.2539768676647407,0.3294533574958457
+2022,Sanita' e assistenza sociale,Terziario,NordEst,5173470,29277,1.416001880457462,0.3457126726044177
+2022,Sanita' e assistenza sociale,Terziario,NordOvest,6880994,54610,2.6412495368986577,0.45981649181593054
+2022,Sanita' e assistenza sociale,Terziario,Sud,5548621,32075,1.5513290403959794,0.37078181475469973
+2022,Sanita' e assistenza sociale,Terziario,Total,46198782,283778,13.725114650833678,3.087193778312982
+2022,Servizi di informazione e comunicazione,Terziario,Centro,4930155,1384,0.06693809483735107,0.3294533574958457
+2022,Servizi di informazione e comunicazione,Terziario,NordEst,5173470,842,0.040723898737752603,0.3457126726044177
+2022,Servizi di informazione e comunicazione,Terziario,NordOvest,6880994,1217,0.058861027035445275,0.45981649181593054
+2022,Servizi di informazione e comunicazione,Terziario,Sud,5548621,596,0.028825942574466214,0.37078181475469973
+2022,Servizi di informazione e comunicazione,Terziario,Total,46198782,8078,0.39069792637003037,3.087193778312982
+2022,Trasporto e magazzinaggio,Terziario,Centro,4930155,16248,0.7858454948824278,0.3294533574958457
+2022,Trasporto e magazzinaggio,Terziario,NordEst,5173470,16885,0.8166544301507752,0.3457126726044177
+2022,Trasporto e magazzinaggio,Terziario,NordOvest,6880994,16512,0.7986140332040035,0.45981649181593054
+2022,Trasporto e magazzinaggio,Terziario,Sud,5548621,13899,0.672234523225681,0.37078181475469973
+2022,Trasporto e magazzinaggio,Terziario,Total,46198782,127088,6.146696962925775,3.087193778312982
+2023,"Agricoltura, silvicoltura e pesca",Primario,Centro,5006144,363,0.057182283888773375,0.3394109592304544
+2023,"Agricoltura, silvicoltura e pesca",Primario,NordEst,3050774,684,0.10774843575735808,0.2068390621075483
+2023,"Agricoltura, silvicoltura e pesca",Primario,NordOvest,6991407,100,0.01575269528616346,0.4740095682905872
+2023,"Agricoltura, silvicoltura e pesca",Primario,Sud,5729162,187,0.029457540185125676,0.38843077027082495
+2023,"Agricoltura, silvicoltura e pesca",Primario,Total,47159894,2668,0.4202819102348412,3.1973880215484316
+2023,Altre attivita' di servizi,Terziario,Centro,5006144,374,0.05891508037025135,0.3394109592304544
+2023,Altre attivita' di servizi,Terziario,NordEst,3050774,247,0.03890915735682376,0.2068390621075483
+2023,Altre attivita' di servizi,Terziario,NordOvest,6991407,451,0.07104465574059722,0.4740095682905872
+2023,Altre attivita' di servizi,Terziario,Sud,5729162,301,0.04741561281135202,0.38843077027082495
+2023,Altre attivita' di servizi,Terziario,Total,47159894,2746,0.4325690125580487,3.1973880215484316
+2023,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Centro,5006144,595,0.0937285369526726,0.3394109592304544
+2023,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordEst,3050774,755,0.11893284941053414,0.2068390621075483
+2023,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordOvest,6991407,1137,0.1791081454036786,0.4740095682905872
+2023,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Sud,5729162,884,0.139253826329685,0.38843077027082495
+2023,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Total,47159894,6742,1.0620467161931408,3.1973880215484316
+2023,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Centro,5006144,357,0.05623712217160356,0.3394109592304544
+2023,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordEst,3050774,247,0.03890915735682376,0.2068390621075483
+2023,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordOvest,6991407,504,0.07939358424226385,0.4740095682905872
+2023,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Sud,5729162,282,0.04442260070698096,0.38843077027082495
+2023,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Total,47159894,2780,0.4379249289553443,3.1973880215484316
+2023,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Centro,5006144,1987,0.31300605533606796,0.3394109592304544
+2023,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordEst,3050774,1539,0.24243398045405568,0.2068390621075483
+2023,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordOvest,6991407,2263,0.35648349432587917,0.4740095682905872
+2023,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Sud,5729162,999,0.15736942590877298,0.38843077027082495
+2023,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Total,47159894,13576,2.138585912049552,3.1973880215484316
+2023,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Centro,4003441,5,0.0007876347643081731,0.2714288182746101
+2023,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordEst,2023150,2,0.00031505390572326926,0.13716730524872914
+2023,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordOvest,4500716,3,0.00047258085858490386,0.3051435066158412
+2023,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Sud,2703422,2,0.00031505390572326926,0.1832889853397572
+2023,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Total,47159894,24,0.003780646868679231,3.1973880215484316
+2023,Attivita' finanziarie e assicurative,Terziario,Centro,5006144,288,0.04536776242415077,0.3394109592304544
+2023,Attivita' finanziarie e assicurative,Terziario,NordEst,3050774,160,0.02520431245786154,0.2068390621075483
+2023,Attivita' finanziarie e assicurative,Terziario,NordOvest,6991407,400,0.06301078114465385,0.4740095682905872
+2023,Attivita' finanziarie e assicurative,Terziario,Sud,5729162,180,0.02835485151509423,0.38843077027082495
+2023,Attivita' finanziarie e assicurative,Terziario,Total,47159894,2056,0.3238754150835208,3.1973880215484316
+2023,Attivita' immobiliari,Terziario,Centro,5006144,245,0.03859410345110048,0.3394109592304544
+2023,Attivita' immobiliari,Terziario,NordEst,3050774,60,0.009451617171698078,0.2068390621075483
+2023,Attivita' immobiliari,Terziario,NordOvest,6991407,218,0.03434087572383635,0.4740095682905872
+2023,Attivita' immobiliari,Terziario,Sud,5534987,60,0.009451617171698078,0.3752659226338865
+2023,Attivita' immobiliari,Terziario,Total,47159894,1166,0.18367642703666598,3.1973880215484316
+2023,Attivita' manifatturiere,Secondario,Centro,5006144,4909,0.7732998115977644,0.3394109592304544
+2023,Attivita' manifatturiere,Secondario,NordEst,3050774,7836,1.234381202623769,0.2068390621075483
+2023,Attivita' manifatturiere,Secondario,NordOvest,6991407,11087,1.746501326376943,0.4740095682905872
+2023,Attivita' manifatturiere,Secondario,Sud,5729162,3097,0.48786097301248244,0.38843077027082495
+2023,Attivita' manifatturiere,Secondario,Total,47159894,53858,8.484086627221918,3.1973880215484316
+2023,"Attivita' professionali, scientifiche e tecniche",Terziario,Centro,5006144,402,0.06332583505037712,0.3394109592304544
+2023,"Attivita' professionali, scientifiche e tecniche",Terziario,NordEst,3050774,390,0.061435511616037504,0.2068390621075483
+2023,"Attivita' professionali, scientifiche e tecniche",Terziario,NordOvest,6991407,762,0.12003553808056558,0.4740095682905872
+2023,"Attivita' professionali, scientifiche e tecniche",Terziario,Sud,5729162,366,0.05765486474735827,0.38843077027082495
+2023,"Attivita' professionali, scientifiche e tecniche",Terziario,Total,47159894,3840,0.604903498988677,3.1973880215484316
+2023,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Centro,5006144,3122,0.4917991468340233,0.3394109592304544
+2023,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordEst,3050774,2714,0.4275281500664764,0.2068390621075483
+2023,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordOvest,6991407,4539,0.7150148390389596,0.4740095682905872
+2023,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Sud,5729162,2614,0.41177545478031286,0.38843077027082495
+2023,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Total,47159894,25978,4.092235181439544,3.1973880215484316
+2023,Costruzioni,Secondario,Centro,5006144,2995,0.4717932238205957,0.3394109592304544
+2023,Costruzioni,Secondario,NordEst,3050774,2550,0.4016937297971683,0.2068390621075483
+2023,Costruzioni,Secondario,NordOvest,6991407,3547,0.558748101800218,0.4740095682905872
+2023,Costruzioni,Secondario,Sud,5729162,2622,0.413035670403206,0.38843077027082495
+2023,Costruzioni,Secondario,Total,47159894,23428,3.6905414516423765,3.1973880215484316
+2023,Estrazione di minerali da cave e miniere,Primario,Centro,5006144,41,0.006458605067327019,0.3394109592304544
+2023,Estrazione di minerali da cave e miniere,Primario,NordEst,3050774,24,0.003780646868679231,0.2068390621075483
+2023,Estrazione di minerali da cave e miniere,Primario,NordOvest,6934594,41,0.006458605067327019,0.47015771048810295
+2023,Estrazione di minerali da cave e miniere,Primario,Sud,5729162,26,0.0040957007744025,0.38843077027082495
+2023,Estrazione di minerali da cave e miniere,Primario,Total,47159894,264,0.041587115555471545,3.1973880215484316
+2023,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Centro,5006144,994,0.15658179114446483,0.3394109592304544
+2023,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordEst,3050774,392,0.06175056552176078,0.2068390621075483
+2023,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordOvest,6991407,953,0.1501231860771378,0.4740095682905872
+2023,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Sud,5729162,948,0.1493355513128296,0.38843077027082495
+2023,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Total,47159894,6574,1.0355821881123861,3.1973880215484316
+2023,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Centro,5006144,48,0.007561293737358462,0.3394109592304544
+2023,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordEst,3050774,49,0.007718820690220098,0.2068390621075483
+2023,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordOvest,6991407,114,0.017958072626226347,0.4740095682905872
+2023,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Sud,5622849,40,0.006301078114465385,0.38122286787954984
+2023,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Total,47159894,502,0.07907853033654058,3.1973880215484316
+2023,Istruzione,Terziario,Centro,5006144,332,0.0522989483500627,0.3394109592304544
+2023,Istruzione,Terziario,NordEst,3050774,370,0.058284972558804805,0.2068390621075483
+2023,Istruzione,Terziario,NordOvest,6991407,1193,0.1879296547639301,0.4740095682905872
+2023,Istruzione,Terziario,Sud,5729162,146,0.022998935117798658,0.38843077027082495
+2023,Istruzione,Terziario,Total,47159894,4082,0.6430250215811926,3.1973880215484316
+2023,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Centro,5006144,2220,0.3497098353528289,0.3394109592304544
+2023,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordEst,3050774,1578,0.24857753161565943,0.2068390621075483
+2023,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordOvest,6991407,2884,0.45430773205295427,0.4740095682905872
+2023,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Sud,5729162,1414,0.22274311134635136,0.38843077027082495
+2023,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Total,47159894,16192,2.550676420735588,3.1973880215484316
+2023,Non determinato,Terziario,Centro,5006144,21726,3.4224305778718738,0.3394109592304544
+2023,Non determinato,Terziario,NordEst,3050774,22996,3.62248980800615,0.2068390621075483
+2023,Non determinato,Terziario,NordOvest,6991407,35701,5.623869744113217,0.4740095682905872
+2023,Non determinato,Terziario,Sud,5729162,21416,3.3735972224847672,0.38843077027082495
+2023,Non determinato,Terziario,Total,47159894,203678,32.08477470495202,3.1973880215484316
+2023,Organizzazioni ed organismi extraterritoriali,Terziario,Centro,4003441,19,0.002993012104371058,0.2714288182746101
+2023,Organizzazioni ed organismi extraterritoriali,Terziario,NordEst,519916,6,0.0009451617171698077,0.035249722796479865
+2023,Organizzazioni ed organismi extraterritoriali,Terziario,Sud,1683953,1,0.00015752695286163463,0.11417012835208122
+2023,Organizzazioni ed organismi extraterritoriali,Terziario,Total,47159894,52,0.008191401548805,3.1973880215484316
+2023,Sanita' e assistenza sociale,Terziario,Centro,5006144,3045,0.47966957146367745,0.3394109592304544
+2023,Sanita' e assistenza sociale,Terziario,NordEst,3050774,2169,0.3416759607568855,0.2068390621075483
+2023,Sanita' e assistenza sociale,Terziario,NordOvest,6991407,3839,0.6047459720358153,0.4740095682905872
+2023,Sanita' e assistenza sociale,Terziario,Sud,5729162,3664,0.5771787552850293,0.38843077027082495
+2023,Sanita' e assistenza sociale,Terziario,Total,47159894,25434,4.006540519082815,3.1973880215484316
+2023,Servizi di informazione e comunicazione,Terziario,Centro,5006144,524,0.08254412329949655,0.3394109592304544
+2023,Servizi di informazione e comunicazione,Terziario,NordEst,3050774,159,0.025046785504999905,0.2068390621075483
+2023,Servizi di informazione e comunicazione,Terziario,NordOvest,6991407,412,0.06490110457899347,0.4740095682905872
+2023,Servizi di informazione e comunicazione,Terziario,Sud,5729162,259,0.04079948079116336,0.38843077027082495
+2023,Servizi di informazione e comunicazione,Terziario,Total,47159894,2708,0.4265829883493066,3.1973880215484316
+2023,Trasporto e magazzinaggio,Terziario,Centro,5006144,2928,0.4612389179788662,0.3394109592304544
+2023,Trasporto e magazzinaggio,Terziario,NordEst,3050774,2458,0.38720125013389795,0.2068390621075483
+2023,Trasporto e magazzinaggio,Terziario,NordOvest,6991407,4511,0.7106040843588338,0.4740095682905872
+2023,Trasporto e magazzinaggio,Terziario,Sud,5729162,2533,0.39901577159852053,0.38843077027082495
+2023,Trasporto e magazzinaggio,Terziario,Total,47159894,24860,3.916120048140237,3.1973880215484316
+2024,"Agricoltura, silvicoltura e pesca",Primario,Centro,0,96,0.014791189997457764,nan
+2024,"Agricoltura, silvicoltura e pesca",Primario,NordEst,0,91,0.014020815518423504,nan
+2024,"Agricoltura, silvicoltura e pesca",Primario,NordOvest,0,48,0.007395594998728882,nan
+2024,"Agricoltura, silvicoltura e pesca",Primario,Sud,0,68,0.010477092914865916,nan
+2024,"Agricoltura, silvicoltura e pesca",Primario,Total,0,606,0.09336938685895213,nan
+2024,Altre attivita' di servizi,Terziario,Centro,0,469,0.07226112613341346,nan
+2024,Altre attivita' di servizi,Terziario,NordEst,0,312,0.04807136749173773,nan
+2024,Altre attivita' di servizi,Terziario,NordOvest,0,508,0.07827004706988067,nan
+2024,Altre attivita' di servizi,Terziario,Sud,0,315,0.048533592179158286,nan
+2024,Altre attivita' di servizi,Terziario,Total,0,3208,0.4942722657483803,nan
+2024,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Centro,0,820,0.1263414145616184,nan
+2024,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordEst,0,1126,0.17348833267851502,nan
+2024,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,NordOvest,0,1110,0.1710231343456054,nan
+2024,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Sud,0,801,0.12341399154128822,nan
+2024,"Amministrazione pubblica e difesa, assicurazione sociale obbligatoria",Terziario,Total,0,7714,1.1885337462540542,nan
+2024,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Centro,0,426,0.06563590561371882,nan
+2024,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordEst,0,251,0.03867279884751978,nan
+2024,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,NordOvest,0,504,0.07765374748665325,nan
+2024,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Sud,0,334,0.05146101519948847,nan
+2024,"Attivita' artistiche, sportive, di intrattenimento e divertimento",Terziario,Total,0,3030,0.46684693429476065,nan
+2024,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Centro,0,2337,0.36007303150061243,nan
+2024,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordEst,0,1757,0.27070959193263844,nan
+2024,Attivita' dei servizi di alloggio e di ristorazione,Terziario,NordOvest,0,2716,0.4184674170114092,nan
+2024,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Sud,0,1344,0.2070766599644087,nan
+2024,Attivita' dei servizi di alloggio e di ristorazione,Terziario,Total,0,16308,2.512653400818138,nan
+2024,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Centro,0,3,0.0004622246874205551,nan
+2024,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordEst,0,1,0.00015407489580685171,nan
+2024,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,NordOvest,0,7,0.001078524270647962,nan
+2024,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Sud,0,1,0.00015407489580685171,nan
+2024,"Attivita' di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze",Terziario,Total,0,24,0.003697797499364441,nan
+2024,Attivita' finanziarie e assicurative,Terziario,Centro,0,287,0.04421949509656644,nan
+2024,Attivita' finanziarie e assicurative,Terziario,NordEst,0,144,0.022186784996186645,nan
+2024,Attivita' finanziarie e assicurative,Terziario,NordOvest,0,444,0.06840925373824217,nan
+2024,Attivita' finanziarie e assicurative,Terziario,Sud,0,185,0.028503855724267564,nan
+2024,Attivita' finanziarie e assicurative,Terziario,Total,0,2120,0.32663877911052563,nan
+2024,Attivita' immobiliari,Terziario,Centro,0,168,0.025884582495551086,nan
+2024,Attivita' immobiliari,Terziario,NordEst,0,57,0.008782269060990546,nan
+2024,Attivita' immobiliari,Terziario,NordOvest,0,160,0.02465198332909627,nan
+2024,Attivita' immobiliari,Terziario,Sud,0,69,0.010631167810672767,nan
+2024,Attivita' immobiliari,Terziario,Total,0,908,0.13990000539262137,nan
+2024,Attivita' manifatturiere,Secondario,Centro,0,5090,0.7842412196568752,nan
+2024,Attivita' manifatturiere,Secondario,NordEst,0,8087,1.2460036823900098,nan
+2024,Attivita' manifatturiere,Secondario,NordOvest,0,11394,1.7555293628232684,nan
+2024,Attivita' manifatturiere,Secondario,Sud,0,3245,0.4999730368932338,nan
+2024,Attivita' manifatturiere,Secondario,Total,0,55632,8.571494603526775,nan
+2024,"Attivita' professionali, scientifiche e tecniche",Terziario,Centro,0,533,0.08212191946505197,nan
+2024,"Attivita' professionali, scientifiche e tecniche",Terziario,NordEst,0,252,0.03882687374332663,nan
+2024,"Attivita' professionali, scientifiche e tecniche",Terziario,NordOvest,0,759,0.11694284591740045,nan
+2024,"Attivita' professionali, scientifiche e tecniche",Terziario,Sud,0,240,0.03697797499364441,nan
+2024,"Attivita' professionali, scientifiche e tecniche",Terziario,Total,0,3568,0.5497392282388469,nan
+2024,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Centro,0,3449,0.5314043156378315,nan
+2024,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordEst,0,3026,0.46623063471153325,nan
+2024,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,NordOvest,0,5108,0.7870145677813986,nan
+2024,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Sud,0,2844,0.4381890036746863,nan
+2024,"Commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",Terziario,Total,0,28854,4.4456770436109,nan
+2024,Costruzioni,Secondario,Centro,0,3541,0.5455792060520619,nan
+2024,Costruzioni,Secondario,NordEst,0,3035,0.4676173087737949,nan
+2024,Costruzioni,Secondario,NordOvest,0,4117,0.6343263460368085,nan
+2024,Costruzioni,Secondario,Sud,0,3046,0.46931213262767035,nan
+2024,Costruzioni,Secondario,Total,0,27478,4.233669986980671,nan
+2024,Estrazione di minerali da cave e miniere,Primario,Centro,0,46,0.0070874452071151796,nan
+2024,Estrazione di minerali da cave e miniere,Primario,NordEst,0,20,0.0030814979161370337,nan
+2024,Estrazione di minerali da cave e miniere,Primario,NordOvest,0,37,0.005700771144853513,nan
+2024,Estrazione di minerali da cave e miniere,Primario,Sud,0,33,0.005084471561626106,nan
+2024,Estrazione di minerali da cave e miniere,Primario,Total,0,272,0.041908371659463664,nan
+2024,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Centro,0,1154,0.17780242976110688,nan
+2024,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordEst,0,457,0.07041222738373124,nan
+2024,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,NordOvest,0,1145,0.1764157556988452,nan
+2024,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Sud,0,1346,0.2073848097560224,nan
+2024,"Fornitura di acqua, reti fognarie, attivita' di gestione dei rifiuti e risanamento",Secondario,Total,0,8204,1.2640304451994113,nan
+2024,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Centro,0,72,0.011093392498093322,nan
+2024,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordEst,0,68,0.010477092914865916,nan
+2024,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,NordOvest,0,107,0.016486013851333133,nan
+2024,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Sud,0,63,0.009706718435831657,nan
+2024,"Fornitura di energia elettrica, gas, vapore e aria condizionata",Secondario,Total,0,620,0.09552643540024806,nan
+2024,Istruzione,Terziario,Centro,0,387,0.05962698467725161,nan
+2024,Istruzione,Terziario,NordEst,0,529,0.08150561988182456,nan
+2024,Istruzione,Terziario,NordOvest,0,1767,0.272250340890707,nan
+2024,Istruzione,Terziario,Sud,0,192,0.029582379994915527,nan
+2024,Istruzione,Terziario,Total,0,5750,0.8859306508893973,nan
+2024,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Centro,0,2560,0.3944317332655403,nan
+2024,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordEst,0,1919,0.29566972505334843,nan
+2024,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,NordOvest,0,3537,0.5449629064688345,nan
+2024,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Sud,0,1687,0.25992434922615887,nan
+2024,"Noleggio, agenzie di viaggio, servizi di supporto alle imprese",Terziario,Total,0,19406,2.989977428027764,nan
+2024,Non determinato,Terziario,Centro,0,19641,3.026185028542374,nan
+2024,Non determinato,Terziario,NordEst,0,21457,3.305985039327617,nan
+2024,Non determinato,Terziario,NordOvest,0,31761,4.893572765721417,nan
+2024,Non determinato,Terziario,Sud,0,19733,3.0403599189566046,nan
+2024,Non determinato,Terziario,Total,0,185184,28.532205505096027,nan
+2024,Organizzazioni ed organismi extraterritoriali,Terziario,Centro,0,9,0.0013866740622616653,nan
+2024,Organizzazioni ed organismi extraterritoriali,Terziario,NordEst,0,5,0.0007703744790342584,nan
+2024,Organizzazioni ed organismi extraterritoriali,Terziario,Sud,0,2,0.00030814979161370343,nan
+2024,Organizzazioni ed organismi extraterritoriali,Terziario,Total,0,32,0.004930396665819255,nan
+2024,Sanita' e assistenza sociale,Terziario,Centro,0,3672,0.5657630174027595,nan
+2024,Sanita' e assistenza sociale,Terziario,NordEst,0,3266,0.5032086097051777,nan
+2024,Sanita' e assistenza sociale,Terziario,NordOvest,0,5326,0.8206028950672923,nan
+2024,Sanita' e assistenza sociale,Terziario,Sud,0,4396,0.6773132419669201,nan
+2024,Sanita' e assistenza sociale,Terziario,Total,0,33320,5.133775528284299,nan
+2024,Servizi di informazione e comunicazione,Terziario,Centro,0,522,0.0804270956111766,nan
+2024,Servizi di informazione e comunicazione,Terziario,NordEst,0,179,0.027579406349426457,nan
+2024,Servizi di informazione e comunicazione,Terziario,NordOvest,0,489,0.07534262404955049,nan
+2024,Servizi di informazione e comunicazione,Terziario,Sud,0,240,0.03697797499364441,nan
+2024,Servizi di informazione e comunicazione,Terziario,Total,0,2860,0.44065420200759586,nan
+2024,Trasporto e magazzinaggio,Terziario,Centro,0,3359,0.5175375750152149,nan
+2024,Trasporto e magazzinaggio,Terziario,NordEst,0,2745,0.42293558898980793,nan
+2024,Trasporto e magazzinaggio,Terziario,NordOvest,0,5193,0.800110933924981,nan
+2024,Trasporto e magazzinaggio,Terziario,Sud,0,2499,0.3850331646213224,nan
+2024,Trasporto e magazzinaggio,Terziario,Total,0,27592,4.251234525102652,nan
