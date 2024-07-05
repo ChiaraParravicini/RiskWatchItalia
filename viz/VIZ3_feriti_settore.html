@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafico Feriti per Settore e Regione</title>
+    <!-- Styles -->
+    <style>
+        #chartdiv {
+        width: 100%;
+        height: 1000px;
+        }
+    </style>
+    
+    <!-- Resources -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <!-- Chart code -->
+    <script>
+    am5.ready(function() {
+    
+    // Create root element
+    var root = am5.Root.new("chartdiv");
+    
+    // Set themes
+    root.setThemes([am5themes_Animated.new(root)]);
+    
+    // Create chart
+    var chart = root.container.children.push(
+      am5xy.XYChart.new(root, {
+        panX: true,
+        panY: true,
+        wheelX: "panX",
+        wheelY: "zoomX",
+        layout: root.verticalLayout,
+        pinchZoomX: true
+      })
+    );
+    
+    // Create axes
+    var xAxis = chart.xAxes.push(
+      am5xy.CategoryAxis.new(root, {
+        categoryField: "Anno",
+        renderer: am5xy.AxisRendererX.new(root, {}),
+        tooltip: am5.Tooltip.new(root, {})
+      })
+    );
+    
+    var yAxis = chart.yAxes.push(
+      am5xy.ValueAxis.new(root, {
+        renderer: am5xy.AxisRendererY.new(root, {})
+      })
+    );
+    
+    // Add legend
+    var legend = chart.children.push(am5.Legend.new(root, {
+      centerX: am5.p50,
+      x: am5.p50
+    }));
+    
+    // Add cursor
+    var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
+      behavior: "none"
+    }));
+    cursor.lineY.set("visible", false);
+    
+    // Create series for each sector
+    var sectors = ["Primario", "Secondario", "Terziario"];
+    var seriesMap = {};
+    
+    sectors.forEach(function(sector) {
+      var series = chart.series.push(
+        am5xy.LineSeries.new(root, {
+          name: sector,
+          xAxis: xAxis,
+          yAxis: yAxis,
+          valueYField: sector,
+          categoryXField: "Anno",
+          tooltip: am5.Tooltip.new(root, {
+            labelText: "[bold]{name}[/]\n{categoryX}: {valueY}"
+          })
+        })
+      );
+    
+      series.bullets.push(function() {
+        return am5.Bullet.new(root, {
+          sprite: am5.Circle.new(root, {
+            radius: 5,
+            fill: series.get("fill")
+          })
+        });
+      });
+    
+      seriesMap[sector] = series;
+    });
+    
+    // Add scrollbar
+    chart.set("scrollbarX", am5.Scrollbar.new(root, {
+      orientation: "horizontal"
+    }));
+    
+    // Create a dropdown for Area Geografica selection
+    var areaSelector = document.createElement("select");
+    areaSelector.id = "areaSelector";
+    var areas = ["Centro", "NordEst", "NordOvest", "Sud"];
+    areas.forEach(function(area) {
+      var option = document.createElement("option");
+      option.value = area;
+      option.text = area;
+      areaSelector.appendChild(option);
+    });
+    
+    document.body.insertBefore(areaSelector, document.getElementById("chartdiv"));
+    
+    // Load CSV data
+    d3.csv("../tabelle/anonimizzato_feriti_settore.csv").then(function(csvData) {
+      console.log("CSV data loaded:", csvData);
+      if (csvData.length === 0) {
+        console.error("No data loaded from CSV");
+        return;
+      }
+
+      // Function to update the chart data
+      function updateChartData(selectedArea) {
+        var filteredData = csvData.filter(function(item) {
+          return item["Area Geografica"] === selectedArea;
+        });
+        console.log("Filtered data:", filteredData);
+
+        var chartData = {};
+        filteredData.forEach(function(item) {
+          if (!chartData[item.Anno]) {
+            chartData[item.Anno] = { Anno: item.Anno };
+          }
+          chartData[item.Anno][item.Settore] = parseInt(item["Numero Incidenti"], 10);
+        });
+        console.log("Chart data:", chartData);
+
+        var finalData = Object.values(chartData);
+        console.log("Final data:", finalData);
+
+        xAxis.data.setAll(finalData);
+        sectors.forEach(function(sector) {
+          var seriesData = finalData.map(function(item) {
+            return {
+              Anno: item.Anno,
+              [sector]: item[sector] || 0
+            };
+          });
+          console.log("Series data for " + sector + ":", seriesData);
+          seriesMap[sector].data.setAll(seriesData);
+        });
+      }
+    
+      // Event listener for dropdown change
+      areaSelector.addEventListener("change", function() {
+        updateChartData(this.value);
+      });
+    
+      // Initial chart update
+      updateChartData("Centro");
+    
+      // Make stuff animate on load
+      chart.appear(1000, 100);
+
+      console.log("Series map:", seriesMap);
+    }).catch(function(error) {
+      console.error("Error loading CSV:", error);
+    });
+    
+    }); // end am5.ready()
+    </script>
+    
+    <!-- HTML -->
+    <div id="chartdiv"></div>
+</body>
+</html>

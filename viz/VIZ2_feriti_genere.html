@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafico Feriti per Sesso e Regione</title>
+    <style>
+        #chartdiv {
+            width: 100%;
+            height: 1000px;
+        }
+    </style>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+    <select id="yearSelector" onchange="updateChart()">
+        <!-- Options will be populated by JavaScript -->
+    </select>
+    <select id="dataTypeSelector" onchange="updateChart()">
+        <option value="Count">Count</option>
+        <option value="Percentage">Percentage</option>
+    </select>
+    <div id="chartdiv"></div>
+
+    <script>
+        function formatValue(value, dataType) {
+            if (value === undefined || value === null) return "N/A";
+            if (dataType === 'Percentage') {
+                return Number(value).toFixed(2) + '%';
+            }
+            return Number(value).toLocaleString();
+        }
+
+        d3.csv('../tabelle/feriti_genere.csv').then(function(data) {
+            // Process data
+            let years = [...new Set(data.map(d => d.Year))];
+            let yearSelector = document.getElementById('yearSelector');
+            years.forEach(year => {
+                let option = document.createElement('option');
+                option.text = year;
+                option.value = year;
+                yearSelector.add(option);
+            });
+
+            window.chartData = data; // Make data available globally
+
+            // Initialize chart
+            am5.ready(function() {
+                var root = am5.Root.new("chartdiv");
+
+                var myTheme = am5.Theme.new(root);
+                myTheme.rule("Grid", ["base"]).setAll({
+                    strokeOpacity: 0.1
+                });
+
+                root.setThemes([
+                    am5themes_Animated.new(root),
+                    myTheme
+                ]);
+
+                var chart = root.container.children.push(am5xy.XYChart.new(root, {
+                    panX: false,
+                    panY: false,
+                    wheelX: "panY",
+                    wheelY: "zoomY",
+                    layout: root.verticalLayout
+                }));
+
+                var yAxis = chart.yAxes.push(am5xy.CategoryAxis.new(root, {
+                    categoryField: "Regione",
+                    renderer: am5xy.AxisRendererY.new(root, {})
+                }));
+
+                var xAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
+                    min: 0,
+                    renderer: am5xy.AxisRendererX.new(root, {}),
+                    numberFormat: "#.##'%'"
+                }));
+
+                var legend = chart.children.push(am5.Legend.new(root, {
+                    centerX: am5.p50,
+                    x: am5.p50
+                }));
+
+                function createSeries(name, fieldName) {
+                    var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+                        name: name,
+                        xAxis: xAxis,
+                        yAxis: yAxis,
+                        valueXField: fieldName,
+                        categoryYField: "Regione",
+                        stacked: true
+                    }));
+
+                    series.columns.template.setAll({
+                        tooltipText: "{name}, {categoryY}: {valueX}",
+                        width: am5.percent(90),
+                        tooltipY: 0
+                    });
+
+                    series.bullets.push(function() {
+                        return am5.Bullet.new(root, {
+                            locationX: 0.5,
+                            sprite: am5.Label.new(root, {
+                                text: "{bulletSettings.text" + fieldName + "}",
+                                fill: root.interfaceColors.get("alternativeText"),
+                                centerY: am5.p50,
+                                centerX: am5.p50,
+                                populateText: true,
+                                fontSize: 12,
+                                textAlign: "center"
+                            })
+                        });
+                    });
+
+                    legend.data.push(series);
+                }
+
+                function updateChart() {
+                    let selectedYear = document.getElementById('yearSelector').value;
+                    let selectedDataType = document.getElementById('dataTypeSelector').value;
+                    xAxis.set("numberFormat", selectedDataType === 'Percentage' ? "#.##'%'" : "#,###.##");
+                    let filteredData = window.chartData.filter(d => d.Year === selectedYear && d.DescrRegione != "Total");
+
+                    let processedData = {};
+                    filteredData.forEach(d => {
+                        if (!processedData[d.DescrRegione]) {
+                            processedData[d.DescrRegione] = { Regione: d.DescrRegione, M: 0, F: 0 };
+                        }
+                        let value = selectedDataType === 'Count' ? +d.Count : +d.Percentage;
+                        if (!isNaN(value)) {
+                            processedData[d.DescrRegione][d.Genere] = value;
+                        }
+                    });
+
+                    let chartData = Object.values(processedData);
+                    chartData.forEach(d => {
+                        d.bulletSettings = {
+                            textM: formatValue(d.M, selectedDataType),
+                            textF: formatValue(d.F, selectedDataType)
+                        };
+                    });
+
+                    chart.series.each(function(series) {
+                        series.data.setAll(chartData);
+                    });
+
+                    yAxis.data.setAll(chartData);
+
+                    if (chart.series.length === 0) {
+                        createSeries("Maschi", "M");
+                        createSeries("Femmine", "F");
+                    }
+
+                    // Aggiorna il titolo dell'asse X
+                    xAxis.set("title", am5.Label.new(root, {
+                        text: selectedDataType,
+                        fontSize: 16,
+                        fontWeight: "500",
+                        fill: am5.color(0x000000)
+                    }));
+                }
+                window.updateChart = updateChart;
+                updateChart();
+            });
+        });
+    </script>
+</body>
+</html>

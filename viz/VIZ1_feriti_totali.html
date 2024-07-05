@@ -95,9 +95,9 @@
                     var regionName = feature.properties.reg_name;
                     var csvRegionName = getStandardRegionName(regionName);
                     var yearData = csvData.find(function(d) {
-                        return getStandardRegionName(d.Regione) === csvRegionName && +d.Anno === year;
+                        return getStandardRegionName(d.DescrRegione) === csvRegionName && +d.Year === year;
                     });
-                    feature.properties.percentuale_occupati = yearData ? +yearData["Percentuale Occupati"] : 0;
+                    feature.properties.percentuale_occupati = yearData ? +yearData.IncidentiPerOccupati : 0;
                     feature.properties.count = yearData ? +yearData.Count : 0;
                 });
 
