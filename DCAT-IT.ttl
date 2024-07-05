@@ -21,13 +21,12 @@
 	dct:issued				"2024-07-03"^^xsd:date ;
 	dct:publisher  			<https://github.com/ChiaraParravicini> ;
 	dct:language			<http://publications.europa.eu/resource/authority/language/ITA>,  <http://publications.europa.eu/resource/authority/language/ENG>;
-	dcat:dataset    		<https://github.com/ChiaraParravicini/open_access/blob/main/occupazione-italia-2016-2024.csv>;
 	dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/feriti_eta.csv> ;
 	dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/feriti_genere.csv> ;
 	dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/feriti_nazionalita.csv> ;
-	dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/feriti_settore.csv> ;
+	dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/anonimizzato_feriti_settore.csv> ;
 	dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/feriti_totali.csv> ;
-    dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/feriti_lavoro.csv> ;
+    dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/anonimizzato_feriti_lavoro.csv> ;
 	dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/mortalita.csv> ;
 	dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/anonimizzato_morti_eta.csv> ;
 	dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/anonimizzato_morti_genere.csv> ;
@@ -70,36 +69,11 @@
 	 a 						skos:ConceptScheme ;
 	 dct:title				"Vocabulary Data Subject"@eng.
 
-<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/occupazione-italia-2016-2024.csv>
-	a 						dcatapit:Dataset , dcat:Dataset ;
-	dct:title 				"Dati occupazione lavorativa in Italia 2016 - 2024"@en;
-	dct:description "The dataset is the result of several SPARQL querys in the Open Data of the italian Senato. It contains the unique identifier for each bill, the status of the bill at different points in time, and the keywords of the bill. The keywords are based on the controlled and official vocabulary TESEO."@en;
-	dcat:theme  			<http://publications.europa.eu/resource/authority/data-theme/SOCI> , <http://publications.europa.eu/resource/authority/data-theme/HEAL> ;
-	dct:subject				<http://eurovoc.europa.eu/4406> , <http://eurovoc.europa.eu/1802>;
-	dct:spatial				<http://publications.europa.eu/resource/authority/4j8/geonom2023/IT> ;
-	dct:temporal [
-        a dct:PeriodOfTime ;
-        dcat:startDate "2016-01-01"^^xsd:date ;
-    ] ;
-	dcterms:issued "2024-03-31"^^xsd:date ;
-	dcat:keyword 			"Employment" , "Italy", "Labor" ;	
-	dct:rightsHolder 		<https://www.istat.it/dati/open-data/> ;
-	dct:publisher 			<https://github.com/ChiaraParravicini> ;
-	dct:creator 			<https://github.com/EricaAndreose>, <https://github.com/ChiaraParravicini>, <https://github.com/SpedicatiDaniele> ;
-    dcat:accessURL 			<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/occupazione-italia-2016-2024.csv> ;
-	dcat:landingPage		<https://ChiaraParravicini/.github.io/RiskWatchItalia> ; 
-    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-    dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
-    dct:license <https://creativecommons.org/licenses/by/3.0/> ;
-    dcat:contactPoint "chiara.parravicini@studio.unibo.it" ;
-    dct:modified "2024-06-03"^^xsd:date ;
-    dct:issued "2024-06-03"^^xsd:date ;
-	prov:wasDerivedFrom <https://www.istat.it/dati/open-data/>.
 	
 <https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/feriti_eta.csv>
     a                        dcatapit:Dataset , dcat:Dataset ;
-    dct:title               "Injuries at work in Italy - age group"@en;
-    dct:description         "The dataset is the result of various processes and groupings between ISTAT and INAIL data to join the injuries data with the age."@en;
+    dct:title               "Injuries at work in Italy - age ranges"@en;
+    dct:description         "The dataset is the result of various processes and groupings between ISTAT and INAIL data to join the injuries data with the age ranges."@en;
     dcat:theme              <http://publications.europa.eu/resource/authority/data-theme/SOCI> , <http://publications.europa.eu/resource/authority/data-theme/HEAL> ;
     dct:subject             <http://eurovoc.europa.eu/1993> , <http://eurovoc.europa.eu/385>;
     dct:spatial             <http://publications.europa.eu/resource/authority/4j8/geonom2023/IT> ;
@@ -109,7 +83,7 @@
         dcat:endDate "2024-01-01"^^xsd:date ;
     ] ;
     dcterms:issued          "2024-06-03"^^xsd:date ;
-    dcat:keyword            "Injuries", "Workplace", "Age Group", "Italy" ;
+    dcat:keyword            "Injuries", "Workplace", "Age Ranges", "Italy" ;
     dct:rightsHolder        <https://www.istat.it/dati/open-data/>, <https://dati.inail.it/portale/it.html> ;
     dct:publisher           <https://github.com/ChiaraParravicini> ;
     dct:creator             <https://github.com/EricaAndreose>, <https://github.com/ChiaraParravicini>, <https://github.com/SpedicatiDaniele> ;
@@ -177,7 +151,7 @@
     dct:issued              "2024-06-03"^^xsd:date ;
     prov:wasDerivedFrom     <https://www.istat.it/dati/open-data/>, <https://dati.inail.it/portale/it.html>.
 
-<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/feriti_settore.csv>
+<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/anonimizzato_feriti_settore.csv>
     a                        dcatapit:Dataset , dcat:Dataset ;
     dct:title               "Injuries at work in Italy - employment sector"@en;
     dct:description         "The dataset is the result of various processes and groupings between ISTAT and INAIL data to join the injuries data with the employment sector."@en;
@@ -194,7 +168,7 @@
     dct:rightsHolder        <https://www.istat.it/dati/open-data/>, <https://dati.inail.it/portale/it.html> ;
     dct:publisher           <https://github.com/ChiaraParravicini> ;
     dct:creator             <https://github.com/EricaAndreose>, <https://github.com/ChiaraParravicini>, <https://github.com/SpedicatiDaniele> ;
-    dcat:accessURL          <https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/feriti_settore.csv> ;
+    dcat:accessURL          <https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/anonimizzato_feriti_settore.csv> ;
     dcat:landingPage        <https://ChiaraParravicini/.github.io/RiskWatchItalia> ;
     dct:format              <http://publications.europa.eu/resource/authority/file-type/CSV> ;
     dcat:mediaType          <http://www.iana.org/assignments/media-types/text/csv> ;
@@ -231,7 +205,7 @@
     dct:issued              "2024-06-03"^^xsd:date ;
     prov:wasDerivedFrom     <https://www.istat.it/dati/open-data/>, <https://dati.inail.it/portale/it.html>.
 
-<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/feriti_lavoro.csv>
+<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/anonimizzato_feriti_lavoro.csv>
     a                        dcatapit:Dataset , dcat:Dataset ;
     dct:title               "Injuries at work in Italy - total"@en;
     dct:description         "The dataset is the result of various processes and groupings between ISTAT and INAIL data to join the injuries data with the work sector information."@en;
@@ -248,7 +222,7 @@
     dct:rightsHolder        <https://www.istat.it/dati/open-data/>, <https://dati.inail.it/portale/it.html> ;
     dct:publisher           <https://github.com/ChiaraParravicini> ;
     dct:creator             <https://github.com/EricaAndreose>, <https://github.com/ChiaraParravicini>, <https://github.com/SpedicatiDaniele> ;
-    dcat:accessURL          <https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/feriti_lavoro.csv> ;
+    dcat:accessURL          <https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/tabelle/anonimizzato_feriti_lavoro.csv> ;
     dcat:landingPage        <https://ChiaraParravicini/.github.io/RiskWatchItalia> ;
     dct:format              <http://publications.europa.eu/resource/authority/file-type/CSV> ;
     dcat:mediaType          <http://www.iana.org/assignments/media-types/text/csv> ;
