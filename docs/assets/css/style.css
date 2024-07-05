@@ -1677,3 +1677,8 @@ section {
 .custom-hover:hover {
   background-color: rgb(252, 124, 92);
 }
+
+#hover:hover {
+  color: rgb(252, 124, 92);
+  cursor:pointer;
+}
