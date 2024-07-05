@@ -114,9 +114,11 @@
                 We have decided to move forward with the analysis by focusing on some key aspects:
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> <b style="color: rgb(252, 124, 92);">Year span</b>: from 2016 to 2024</li>
-              <li><i class="ri-check-double-line"></i> <b style="color: rgb(252, 124, 92);">Gender</b> and <b style="color: rgb(252, 124, 92);">age range</b>: from ISTAT data</li>
-              <li><i class="ri-check-double-line"></i> <b style="color: rgb(252, 124, 92);">Job sectors</b>: from ATECO economic activity classification and economic sectors</li>
+              <li><i class="ri-check-double-line"></i> <b style="color: rgb(252, 124, 92);">Year span</b>: from 2018 to 2024, with the aim of highlighting the impact of COVID-19;</li>
+              <li><i class="ri-check-double-line"></i> <b style="color: rgb(252, 124, 92);">Gender</b>: we focus on the two conventional genders Male and Female due to the nature of our data;</li>
+              <li><i class="ri-check-double-line"></i> <b style="color: rgb(252, 124, 92);">Age range</b>: our analysis splits the population in three age groups according with the Italian Institute of Statistics (ISTAT): 0-14, 15-64, 65 and more;</li>
+              <li><i class="ri-check-double-line"></i> <b style="color: rgb(252, 124, 92);">Nationality</b>: we observe if the injured are Italian of foreigners;</li>
+              <li><i class="ri-check-double-line"></i> <b style="color: rgb(252, 124, 92);">Job sectors</b>: first-level <a href="https://www.istat.it/classificazione/classificazione-delle-attivita-economiche-ateco/">ATECO economic activity classification</a> have been grouped in three economic sectors: primary, secondary and tertiary.</li>
             </ul>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
@@ -133,27 +135,28 @@
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
       <div class="container">
-
+        <h5 style="text-align: center;">To begin: an overview on 2023</h5>
+        <br>
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Fatalities in 2023</p>
+            <span data-purecounter-start="0" data-purecounter-end="211604" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Injuries in Italy</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Injuries in 2023</p>
+            <span data-purecounter-start="0" data-purecounter-end="318" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Fatalities in Italy</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Region with higher injuries number in 2023</p>
+            <span data-purecounter-start="0" data-purecounter-end="47589" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Region with most injuries: Lombardy</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Working sector with higher fatalities number in 2023</p>
+            <span data-purecounter-start="0" data-purecounter-end="72" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Region with most fatalities: Lombardy</p>
           </div>
 
         </div>
@@ -258,7 +261,11 @@
             <div class="row content">
               <div class="col-lg-6">
                 <div style="text-align: center; color: rgb(252, 124, 92);"><h4>INAIL</h4></div>
-                <p>We downloaded and processed 26 CSV datasets from INAIL, which contain regional data on workplace accidents and fatalities. These datasets also include information on the birthplaces of the accident victims and the economic activities in which the work was carried out.</p>
+                <p>We downloaded and processed 46 CSV datasets from INAIL,, one for each region in two time periods (2018-2022 and 2023-2024). These datasets contain information about regional data on workplace accidents and fatalities. These datasets also include information on the birthplaces of the accident victims and the economic activities in which the work was carried out. 
+                  After downloading the single dataframes we performed operations of data cleaning and decoding. They have then been merged, firstly those of the two periods separately and then together. 
+                  The ISTAT dataframe was downloaded and cleaned. The relevant data (Age, Region and Year) have been harmonised with the INAIL once to perform an efficient merging. 
+                  From this merged dataframe we obtained the mashed up datasets and saved them as CSV files.
+                  </p>
               </div>
             
             
@@ -329,7 +336,7 @@
       <div class="container">
         <h3>Mashup Datasets</h3>
         <br>
-        <p style="text-align: center;">Merging INAIL and ISTAT dataset we generated 12 new cvs files.</p>
+        <p style="text-align: center;">Merging INAIL and ISTAT dataset we generated 13 new cvs files.</p>
         <div class="row d-flex justify-content-center">         
           
           
