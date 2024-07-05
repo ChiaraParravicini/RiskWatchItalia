@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choropleth 3</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-slider/dist/Slider.min.css" />
+    <style>
+        #choropleth3 { height: 600px; }
+        .slider-container { width: 80%; margin: auto; text-align: center; }
+        .slider { width: 80%; margin: auto; }
+        .year-labels { display: flex; justify-content: space-between; }
+    </style>
+</head>
+<body>
+    <div id="choropleth3"></div>
+    <div class="slider-container">
+        <input type="range" min="2018" max="2023" value="2018" step="1" id="yearSlider" class="slider">
+        <div class="year-labels">
+            <span>2018</span>
+            <span>2019</span>
+            <span>2020</span>
+            <span>2021</span>
+            <span>2022</span>
+            <span>2023</span>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-slider/dist/Slider.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script>
+        // Load the map
+        var map = L.map('choropleth3').setView([41.8719, 12.5674], 6);
+
+        // Add the tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+        }).addTo(map);
+
+        // Define the gradient color scale using d3
+        var colorScale = d3.scaleSequential(d3.interpolateYlOrRd)
+            .domain([0, 0.98]);  // Adjust the domain as per your data range
+
+        // Define a style function
+        function style(feature) {
+            return {
+                fillColor: colorScale(feature.properties.PercentageMorteAccadimento),
+                weight: 2,
+                opacity: 1,
+                color: 'white',
+                dashArray: '3',
+                fillOpacity: 0.7
+            };
+        }
+
+        // Define a function to add tooltips
+        function onEachFeature(feature, layer) {
+            layer.bindTooltip(
+                `<strong>${feature.properties.reg_name}</strong><br>Percentuale Morti su Incidenti: ${feature.properties.PercentageMorteAccadimento}`
+            );
+        }
+
+        // Define the mapping between CSV region names and GeoJSON region names
+        var regionNameMapping = {
+            "Valle D'Aosta": "Valle d'Aosta/Vallée d'Aoste",
+            "Trentino Alto Adige": "Trentino-Alto Adige/Südtirol",
+            "Emilia Romagna": "Emilia-Romagna",
+            "Friuli Venezia Giulia": "Friuli-Venezia Giulia"
+        };
+
+        // Function to get the standardized region name
+        function getStandardRegionName(csvRegionName) {
+            return regionNameMapping[csvRegionName] || csvRegionName;
+        }
+
+        // Load GeoJSON data
+        var geojsonData = null;
+        d3.json("limits_IT_regions.geojson").then(function(data) {
+            geojsonData = data;
+            updateMap(2018); // Initial map for the year 2018
+        });
+
+        // Load CSV data
+        var csvData = null;
+        d3.csv("../tabelle/mortalita.csv").then(function(data) {
+            csvData = data;
+        });
+
+        // Update the map based on the selected year
+        function updateMap(year) {
+            if (geojsonData && csvData) {
+                // Update the properties in geojsonData based on the year
+                geojsonData.features.forEach(function(feature) {
+                    var regionName = feature.properties.reg_name;
+                    var csvRegionName = getStandardRegionName(regionName);
+                    var yearData = csvData.find(function(d) {
+                        return getStandardRegionName(d.Regione) === csvRegionName && +d.Anno === year;
+                    });
+                    feature.properties.PercentageMorteAccadimento = yearData ? +yearData.PercentageMorteAccadimento : 0;
+                });
+
+                // Clear existing layers
+                if (window.geojsonLayer) {
+                    map.removeLayer(window.geojsonLayer);
+                }
+
+                // Add the new GeoJSON layer
+                window.geojsonLayer = L.geoJson(geojsonData, {
+                    style: style,
+                    onEachFeature: onEachFeature
+                }).addTo(map);
+            }
+        }
+
+        // Add an event listener to the slider
+        document.getElementById('yearSlider').addEventListener('input', function(e) {
+            var year = +e.target.value;
+            updateMap(year);
+        });
+    </script>
+</body>
+</html>
