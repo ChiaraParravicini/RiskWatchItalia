@@ -21,6 +21,7 @@
 	dct:issued				"2024-07-03"^^xsd:date ;
 	dct:publisher  			<https://github.com/ChiaraParravicini> ;
 	dct:language			<http://publications.europa.eu/resource/authority/language/ITA>,  <http://publications.europa.eu/resource/authority/language/ENG>;
+    dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/summarised-tables/mortalita.csv> ;
 	dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/summarised-tables/summarised_feriti_eta.csv> ;
 	dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/summarised-tables/summarised_feriti_genere.csv> ;
 	dcat:dataset    		<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/summarised-tables/summarised_feriti_lavoro.csv> ;
@@ -69,7 +70,36 @@
 	 a 						skos:ConceptScheme ;
 	 dct:title				"Vocabulary Data Subject"@eng.
 
-	
+<https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/summarised-tables/mortalita.csv>
+    a                        dcatapit:Dataset , dcat:Dataset ;
+    dct:title               "Injuries at work in Italy - age ranges"@en;
+    dct:description         "The dataset is the result of various processes and groupings between ISTAT and INAIL data to join the fatalities data with the regions of the country."@en;
+    dcat:theme              <http://publications.europa.eu/resource/authority/data-theme/SOCI> , <http://publications.europa.eu/resource/authority/data-theme/HEAL> ;
+    dct:subject             <http://eurovoc.europa.eu/1993> , <http://eurovoc.europa.eu/385>;
+    dct:spatial             <http://publications.europa.eu/resource/authority/4j8/geonom2023/IT> ;
+    dct:temporal [
+        a dct:PeriodOfTime ;
+        dcat:startDate "2018-01-01"^^xsd:date ;
+        dcat:endDate "2024-01-01"^^xsd:date ;
+    ] ;
+    dcterms:issued          "2024-06-05"^^xsd:date ;
+    dcat:keyword            "Injuries"@en, "Fatalities"@en, "Italy"@en ;
+    dct:rightsHolder        <https://www.istat.it/dati/open-data/>, <https://dati.inail.it/portale/it.html> ;
+    dct:publisher           <https://github.com/ChiaraParravicini> ;
+    dct:creator             <https://github.com/EricaAndreose>, <https://github.com/ChiaraParravicini>, <https://github.com/SpedicatiDaniele> ;
+    dcat:accessURL          <https://github.com/ChiaraParravicini/RiskWatchItalia/blob/main/summarised-tables/mortalita.csv> ;
+    dcat:landingPage        <https://ChiaraParravicini/.github.io/RiskWatchItalia> ;
+    dct:format              <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcat:mediaType          <http://www.iana.org/assignments/media-types/text/csv> ;
+    dcat:downloadURL        <https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/summarised-tables/mortalita.csv> ;
+    dcat:byteSize           "11000"^^xsd:decimal 
+    adms:status             <http://purl.org/adms/status/Completed> ;
+    dct:license             <https://creativecommons.org/licenses/by/3.0/> ;
+    dcat:contactPoint       "chiara.parravicini@studio.unibo.it" ;
+    dct:modified            "2024-06-05"^^xsd:date ;
+    dct:issued              "2024-06-05"^^xsd:date ;
+    prov:wasDerivedFrom     <https://www.istat.it/dati/open-data/>, <https://dati.inail.it/portale/it.html>.
+
 <https://raw.githubusercontent.com/ChiaraParravicini/RiskWatchItalia/main/summarised-tables/summarised_feriti_eta.csv>
     a                        dcatapit:Dataset , dcat:Dataset ;
     dct:title               "Injuries at work in Italy - age ranges"@en;
