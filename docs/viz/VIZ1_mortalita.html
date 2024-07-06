@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Choropleth 1</title>
+    <title>Choropleth 3</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-slider/dist/Slider.min.css" />
     <style>
-        #choropleth1 { height: 600px; }
+        #choropleth3 { height: 400px; }
         .slider-container { width: 80%; margin: auto; text-align: center; }
         .slider { width: 80%; margin: auto; }
         .year-labels { display: flex; justify-content: space-between; }
     </style>
 </head>
 <body>
-    <div id="choropleth1"></div>
+    <div id="choropleth3"></div>
     <div class="slider-container">
         <input type="range" min="2018" max="2023" value="2018" step="1" id="yearSlider" class="slider">
         <div class="year-labels">
@@ -31,7 +31,7 @@
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script>
         // Load the map
-        var map = L.map('choropleth1').setView([41.8719, 12.5674], 6);
+        var map = L.map('choropleth3').setView([41.8719, 12.5674], 5);
 
         // Add the tile layer
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -40,12 +40,12 @@
 
         // Define the gradient color scale using d3
         var colorScale = d3.scaleSequential(d3.interpolateYlOrRd)
-            .domain([0, 50000]); // Adjust the domain based on the extracted numeric values
+            .domain([0, 0.98]);  // Adjust the domain as per your data range
 
         // Define a style function
         function style(feature) {
             return {
-                fillColor: colorScale(feature.properties.Count),
+                fillColor: colorScale(feature.properties.PercentageMorteAccadimento),
                 weight: 2,
                 opacity: 1,
                 color: 'white',
@@ -57,7 +57,7 @@
         // Define a function to add tooltips
         function onEachFeature(feature, layer) {
             layer.bindTooltip(
-                `<strong>${feature.properties.reg_name}</strong><br>Numero infortuni: ${feature.properties.Count}<br>Percentuale Feriti su Occupati: ${(feature.properties.IncidentiPerOccupati).toFixed(2)}%`
+                `<strong>${feature.properties.reg_name}</strong><br>Percentuale Morti su Incidenti: ${feature.properties.PercentageMorteAccadimento}`
             );
         }
 
@@ -83,7 +83,7 @@
 
         // Load CSV data
         var csvData = null;
-        d3.csv("../summarised-tables/summarised_feriti_totali.csv").then(function(data) {
+        d3.csv("./summarised-tables/mortalita.csv").then(function(data) {
             csvData = data;
         });
 
@@ -97,8 +97,7 @@
                     var yearData = csvData.find(function(d) {
                         return getStandardRegionName(d.DescrRegione) === csvRegionName && +d.Year === year;
                     });
-                    feature.properties.IncidentiPerOccupati = yearData ? +yearData.IncidentiPerOccupati : 0;
-                    feature.properties.Count = yearData ? +yearData.Count : 0;
+                    feature.properties.PercentageMorteAccadimento = yearData ? +yearData.PercentageMorteAccadimento : 0;
                 });
 
                 // Clear existing layers

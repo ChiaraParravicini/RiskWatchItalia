@@ -2443,10 +2443,41 @@
 
         <div class="section-title">
           <h2>Visualization</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>In this section, we aim to provide a <b>comprehensive overview of workplace deaths and accidents</b> across Italy. <br/>
+            The <b>first part</b> focuses on presenting a <b>general overview using choropleth maps</b> with a time slider to select the year for which you want to view the data. This will also include the percentage comparison between workplace deaths and accidents.
+            
+            <br/>In the <b>second part</b>, we delve deeper into the data, analyzing it based on variables such as <b>gender, nationality, industry sector and age</b> of the individuals involved in workplace incidents. For the gender variable, a <b>stacked bar chart</b> is used. The nationality data is presented with a <b>clustered bar chart. Age data is visualized through a <b>stacked area graph</b>, and the industry sector data with a <b>line graph</b>,</b>.
+            
+            <br/>Some visualizations allow for <b>regional comparisons</b> by enabling the selection of specific years, while others provide a <b>diachronic perspective</b>, allowing the selection of individual regions.</p>        
         </div>
 
+        <div class="row content">
+          <div class="col-lg-4 align-items-stretch mb-5 mb-lg-0">
+            <div class="centered-subtitle">
+              <h4><center>Percentage Fatalities by Accidents</center></h4>
+            </div>
+            <!-- Code  -->
+            <iframe src="./viz/VIZ1_mortalita.html" width="100%" height="500px" frameborder="0"></iframe>
+          </div>
         
+          <div class="col-lg-4 align-items-stretch mb-5 mb-lg-0">
+            <div class="centered-subtitle">
+              <h4><center>Total Number of Accidents</center></h4>
+            </div>
+            <!-- Code  -->
+            <iframe src="./viz/VIZ1_feriti_totali.html" width="100%" height="500px" frameborder="0"></iframe>
+          </div>
+          
+          <div class="col-lg-4 align-items-stretch mb-5 mb-lg-0">
+            <div class="centered-subtitle">
+              <h4><center>Total Number of Fatalities</center></h4>
+            </div>
+            <!-- Code  -->
+            <iframe src="./viz/VIZ1_morti_totali.html" width="100%" height="500px" frameborder="0"></iframe>
+          </div>
+        </div>
+        
+
         <div class="align-items-stretch mb-5 mb-lg-0">
           <div class="analysis-box">
             <div class="analysis-box-title">
@@ -2457,10 +2488,9 @@
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <button class="nav-link active" id="gender-tab" data-bs-toggle="tab" data-bs-target="#gender" type="button" role="tab" aria-controls="gender" aria-selected="true"><b>Gender</b></button>
+                <button class="nav-link" id="nationality-tab" data-bs-toggle="tab" data-bs-target="#nationality" type="button" role="tab" aria-controls="nationality" aria-selected="false" tabindex="-1"><b>Nationality</b></button>
                 <button class="nav-link" id="work-tab" data-bs-toggle="tab" data-bs-target="#worksector" type="button" role="tab" aria-controls="worksector" aria-selected="false" tabindex="-1"><b>Work Sector</b></button>
                 <button class="nav-link" id="age-tab" data-bs-toggle="tab" data-bs-target="#age" type="button" role="tab" aria-controls="age" aria-selected="false" tabindex="-1"><b>Age</b></button>
-                <button class="nav-link" id="nationality" data-bs-toggle="tab" data-bs-target="#nationality" type="button" role="tab" aria-controls="nationality" aria-selected="false" tabindex="-1"><b>Nationality</b></button>
-
               </div>
             </nav>
 
@@ -2474,21 +2504,48 @@
                 <div class="row content">
                   <div class="col-lg-12">
                     <div class="centered-subtitle">
-                      <p class="factor-text">Accidents by Gender</p>
+                      <h4>Accidents by Gender</h4>
                     </div>
                     <!-- Code  -->
-                    <iframe src="../viz/VIZ2_feriti_genere.html" width="100%" height="600px" frameborder="0"></iframe>
+                    <iframe src="./viz/VIZ2_feriti_genere.html" width="100%" height="600px" frameborder="0"></iframe>
                   </div>
                 </div>
-
+                <br/>
                 <!-- Deaths -->
                 <div class="row content">
                   <div class="col-lg-12">
                     <div class="centered-subtitle">
-                      <p class="factor-text">Deaths by Gender</p>
+                      <h4>Fatalities by Gender</h4>
                     </div>
                     <!-- Code  -->
-                    <iframe src="../viz/VIZ2_morti_genere.html" width="100%" height="600px" frameborder="0"></iframe>
+                    <iframe src="./viz/VIZ2_morti_genere.html" width="100%" height="600px" frameborder="0"></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Nationality -->
+              <div class="tab-pane fade" id="nationality" role="tabpanel" aria-labelledby="nationality-tab">
+                <p class="explanatory-text">                </p>
+
+                <!-- Accidents -->
+                <div class="row content">
+                  <div class="col-lg-12">
+                    <div class="centered-subtitle">
+                      <h4>Accidents by Nationality</h4>
+                    </div>
+                    <!-- Code  -->
+                    <iframe src="./viz/VIZ5_feriti_nazionalita.html" width="100%" height="600px" frameborder="0"></iframe>
+                  </div>
+                </div>
+                <br/>
+                <!-- Deaths -->
+                <div class="row content">
+                  <div class="col-lg-12">
+                    <div class="centered-subtitle">
+                      <h4>Fatalities by Nationality</h4>
+                    </div>
+                    <!-- Code  -->
+                    <iframe src="./viz/VIZ5_morti_nazionalita.html" width="100%" height="600px" frameborder="0"></iframe>
                   </div>
                 </div>
               </div>
@@ -2501,21 +2558,21 @@
                 <div class="row content">
                   <div class="col-lg-12">
                     <div class="centered-subtitle">
-                      <p class="factor-text">Accidents by Work Sector</p>
+                      <h4>Accidents by Work Sector</h4>
                     </div>
                     <!-- Code  -->
-                    <iframe src="../viz/VIZ3_feriti_settore.html" width="100%" height="600px" frameborder="0"></iframe>
+                    <iframe src="./viz/VIZ3_feriti_settore.html" width="100%" height="600px" frameborder="0"></iframe>
                   </div>
                 </div>
-
+                <br/>
                 <!-- Deaths -->
                 <div class="row content">
                   <div class="col-lg-12">
                     <div class="centered-subtitle">
-                      <p class="factor-text">Deaths by Work Sector</p>
+                      <h4>Fatalities by Work Sector</h4>
                     </div>
                     <!-- Code  -->
-                    <iframe src="../viz/VIZ3_morti_settore.html" width="100%" height="600px" frameborder="0"></iframe>
+                    <iframe src="./viz/VIZ3_morti_settore.html" width="100%" height="600px" frameborder="0"></iframe>
                   </div>
                 </div>
               </div>
@@ -2528,48 +2585,21 @@
                 <div class="row content">
                   <div class="col-lg-12">
                     <div class="centered-subtitle">
-                      <p class="factor-text">Accidents by Age</p>
+                      <h4>Accidents by Age</h4>
                     </div>
                     <!-- Code  -->
-                    <iframe src="../viz/VIZ4_feriti_eta.html" width="100%" height="600px" frameborder="0"></iframe>
+                    <iframe src="./viz/VIZ4_feriti_eta.html" width="100%" height="600px" frameborder="0"></iframe>
                   </div>
                 </div>
-
+                <br/>
                 <!-- Deaths -->
                 <div class="row content">
                   <div class="col-lg-12">
                     <div class="centered-subtitle">
-                      <p class="factor-text">Deaths by Work Sector</p>
+                      <h4>Fatalities by Age</h4>
                     </div>
                     <!-- Code  -->
-                    <iframe src="../viz/VIZ4_morti_eta.html" width="100%" height="600px" frameborder="0"></iframe>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Nationality -->
-              <div class="tab-pane fade" id="nationality" role="tabpanel" aria-labelledby="nationality-tab">
-                <p class="explanatory-text">                </p>
-
-                <!-- Accidents -->
-                <div class="row content">
-                  <div class="col-lg-12">
-                    <div class="centered-subtitle">
-                      <p class="factor-text">Accidents by Nationality</p>
-                    </div>
-                    <!-- Code  -->
-                    <iframe src="../viz/VIZ5_feriti_nazionalita.html" width="100%" height="600px" frameborder="0"></iframe>
-                  </div>
-                </div>
-
-                <!-- Deaths -->
-                <div class="row content">
-                  <div class="col-lg-12">
-                    <div class="centered-subtitle">
-                      <p class="factor-text">Deaths by Nationality/p>
-                    </div>
-                    <!-- Code  -->
-                    <iframe src="../viz/VIZ5_morti_nazionalita.html" width="100%" height="600px" frameborder="0"></iframe>
+                    <iframe src="./viz/VIZ4_morti_eta.html" width="100%" height="600px" frameborder="0"></iframe>
                   </div>
                 </div>
               </div>

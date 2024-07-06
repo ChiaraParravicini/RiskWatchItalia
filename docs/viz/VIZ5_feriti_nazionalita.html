@@ -26,7 +26,7 @@
             return Number(value).toLocaleString();
         }
     
-        d3.csv('../summarised-tables/summarised_morti_nazionalita.csv').then(function(data) {
+        d3.csv('./summarised-tables/summarised_feriti_nazionalita.csv').then(function(data) {
             // Process data
             let years = [...new Set(data.map(d => d.Year))];
             let yearSelector = document.getElementById('yearSelector');
@@ -93,14 +93,12 @@
                         valueXField: fieldName,
                         categoryYField: "Regione",
                         sequencedInterpolation: true,
+                        tooltip: am5.Tooltip.new(root, {
+                            dy: -30,
+                            pointerOrientation: "vertical",
+                            labelText: "[bold]{name}[/]\n{categoryY}: {valueX}"
+                        })
                     }));
-
-                    series.columns.template.setAll({
-                        tooltipText: "{name}, {categoryY}: {valueX}",
-                        width: am5.percent(90),
-                        tooltipY: 0
-                    });
-
     
                     series.columns.template.setAll({
                         height: am5.p100,

@@ -46,6 +46,20 @@
         tooltip: am5.Tooltip.new(root, {})
       }));
 
+      // Aggiungi la fascia evidenziata per 2020-2022
+      var highlightBand = xAxis.createAxisRange(xAxis.makeDataItem({
+        category: "2020",
+        endCategory: "2022"
+      }));
+
+      highlightBand.get("grid").setAll({
+        strokeOpacity: 0,
+        visible: true,
+        location: 0,
+        fill: am5.color(0xFFFF00),
+        fillOpacity: 0.3
+      });
+
       var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
         renderer: am5xy.AxisRendererY.new(root, {
           pan: "zoom"
@@ -60,7 +74,7 @@
         return am5.color(0xFF0000 + Math.random() * 0xFFFFFF);
       }
 
-      am5.net.load("../summarised-tables/summarised_morti_eta.csv").then(function(response) {
+      am5.net.load("./summarised-tables/summarised_feriti_eta.csv").then(function(response) {
         var csvData = am5.CSVParser.parse(response.response, {
           skipEmpty: true,
           useColumnNames: true
@@ -135,6 +149,9 @@
           ageGroups.forEach(function(ageGroup) {
             series[ageGroup].data.setAll(chartData);
           });
+
+          // Assicurati che la fascia evidenziata sia sempre visibile
+          xAxis.zoomToCategories("2020", "2022");
         }
 
         regionSelector.addEventListener("change", function() {

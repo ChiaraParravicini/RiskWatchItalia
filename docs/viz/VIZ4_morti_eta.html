@@ -60,7 +60,7 @@
         return am5.color(0xFF0000 + Math.random() * 0xFFFFFF);
       }
 
-      am5.net.load("../summarised-tables/summarised_feriti_eta.csv").then(function(response) {
+      am5.net.load("./summarised-tables/summarised_morti_eta.csv").then(function(response) {
         var csvData = am5.CSVParser.parse(response.response, {
           skipEmpty: true,
           useColumnNames: true

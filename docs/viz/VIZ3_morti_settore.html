@@ -129,7 +129,7 @@
     document.body.insertBefore(regionSelector, document.getElementById("chartdiv"));
     
     // Load CSV data
-    d3.csv("../summarised-tables/summarised_morti_settore.csv").then(function(csvData) {
+    d3.csv("./summarised-tables/summarised_morti_settore.csv").then(function(csvData) {
       console.log("CSV data loaded:", csvData);
       if (csvData.length === 0) {
         console.error("No data loaded from CSV");

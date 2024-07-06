@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grafico Feriti per Sesso e Regione</title>
+    <title>Grafico Feriti per Nazionalità e Regione</title>
     <style>
-        #viz_feriti_genere {
+        #chartdiv {
             width: 100%;
-            height: 1000px;
+            height: 2000px;
         }
     </style>
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
@@ -17,24 +17,16 @@
 </head>
 <body>
     <select id="yearSelector" onchange="updateChart()">
-        <!-- Options will be populated by JavaScript -->
     </select>
-    <select id="dataTypeSelector" onchange="updateChart()">
-        <option value="Count">Count</option>
-        <option value="Percentage">Percentage</option>
-    </select>
-    <div id="viz_feriti_genere"></div>
+    <div id="chartdiv"></div>
 
     <script>
-        function formatValue(value, dataType) {
+        function formatValue(value) {
             if (value === undefined || value === null) return "N/A";
-            if (dataType === 'Percentage') {
-                return Number(value).toFixed(2) + '%';
-            }
             return Number(value).toLocaleString();
         }
-
-        d3.csv('../summarised-tables/summarised_feriti_genere.csv').then(function(data) {
+    
+        d3.csv('./summarised-tables/summarised_morti_nazionalita.csv').then(function(data) {
             // Process data
             let years = [...new Set(data.map(d => d.Year))];
             let yearSelector = document.getElementById('yearSelector');
@@ -44,23 +36,23 @@
                 option.value = year;
                 yearSelector.add(option);
             });
-
+    
             window.chartData = data; // Make data available globally
-
+    
             // Initialize chart
             am5.ready(function() {
-                var root = am5.Root.new("viz_feriti_genere");
-
+                var root = am5.Root.new("chartdiv");
+    
                 var myTheme = am5.Theme.new(root);
                 myTheme.rule("Grid", ["base"]).setAll({
                     strokeOpacity: 0.1
                 });
-
+    
                 root.setThemes([
                     am5themes_Animated.new(root),
                     myTheme
                 ]);
-
+    
                 var chart = root.container.children.push(am5xy.XYChart.new(root, {
                     panX: false,
                     panY: false,
@@ -68,23 +60,31 @@
                     wheelY: "zoomY",
                     layout: root.verticalLayout
                 }));
-
+    
                 var yAxis = chart.yAxes.push(am5xy.CategoryAxis.new(root, {
                     categoryField: "Regione",
-                    renderer: am5xy.AxisRendererY.new(root, {})
+                    renderer: am5xy.AxisRendererY.new(root, {
+                        inversed: true,
+                        cellStartLocation: 0.1,
+                        cellEndLocation: 0.9,
+                        minorGridEnabled: true
+                    })
                 }));
-
+                yAxis.data.setAll(data)
+    
                 var xAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
                     min: 0,
-                    renderer: am5xy.AxisRendererX.new(root, {}),
-                    numberFormat: "#.##'%'"
+                    renderer: am5xy.AxisRendererX.new(root, {
+                        strokeOpacity: 0.1,
+                        minGridDistance: 50
+                    })
                 }));
-
+    
                 var legend = chart.children.push(am5.Legend.new(root, {
                     centerX: am5.p50,
                     x: am5.p50
                 }));
-
+    
                 function createSeries(name, fieldName) {
                     var series = chart.series.push(am5xy.ColumnSeries.new(root, {
                         name: name,
@@ -92,7 +92,7 @@
                         yAxis: yAxis,
                         valueXField: fieldName,
                         categoryYField: "Regione",
-                        stacked: true
+                        sequencedInterpolation: true,
                     }));
 
                     series.columns.template.setAll({
@@ -101,72 +101,84 @@
                         tooltipY: 0
                     });
 
+    
+                    series.columns.template.setAll({
+                        height: am5.p100,
+                        strokeOpacity: 0
+                    });
+    
                     series.bullets.push(function() {
                         return am5.Bullet.new(root, {
-                            locationX: 0.5,
+                            locationX: 1,
+                            locationY: 0.5,
                             sprite: am5.Label.new(root, {
-                                text: "{bulletSettings.text" + fieldName + "}",
-                                fill: root.interfaceColors.get("alternativeText"),
                                 centerY: am5.p50,
-                                centerX: am5.p50,
-                                populateText: true,
-                                fontSize: 12,
-                                textAlign: "center"
+                                text: "{valueX}",
+                                populateText: true
                             })
                         });
                     });
-
-                    legend.data.push(series);
+    
+                    series.bullets.push(function() {
+                        return am5.Bullet.new(root, {
+                            locationX: 1,
+                            locationY: 0.5,
+                            sprite: am5.Label.new(root, {
+                                centerX: am5.p100,
+                                centerY: am5.p50,
+                                text: "{name}",
+                                fill: am5.color(0xffffff),
+                                populateText: true
+                            })
+                        });
+                    });
+    
+                    series.data.setAll(data);
+                    series.appear();
+    
+                    return series;
                 }
-
+    
                 function updateChart() {
                     let selectedYear = document.getElementById('yearSelector').value;
-                    let selectedDataType = document.getElementById('dataTypeSelector').value;
-                    xAxis.set("numberFormat", selectedDataType === 'Percentage' ? "#.##'%'" : "#,###.##");
                     let filteredData = window.chartData.filter(d => d.Year === selectedYear && d.DescrRegione != "Total");
-
+    
                     let processedData = {};
                     filteredData.forEach(d => {
                         if (!processedData[d.DescrRegione]) {
-                            processedData[d.DescrRegione] = { Regione: d.DescrRegione, M: 0, F: 0 };
+                            processedData[d.DescrRegione] = { Regione: d.DescrRegione, Italian: 0, "Not Italian": 0 };
                         }
-                        let value = selectedDataType === 'Count' ? +d.Count : +d.Percentage;
+                        let value = +d.Count;
                         if (!isNaN(value)) {
-                            processedData[d.DescrRegione][d.Genere] = value;
+                            processedData[d.DescrRegione][d.Nazionalita === '0' ? 'Italian' : 'Not Italian'] = value;
                         }
                     });
-
+    
                     let chartData = Object.values(processedData);
                     chartData.forEach(d => {
                         d.bulletSettings = {
-                            textM: formatValue(d.M, selectedDataType),
-                            textF: formatValue(d.F, selectedDataType)
+                            textItalian: formatValue(d.Italian),
+                            textNotItalian: formatValue(d["Not Italian"])
                         };
                     });
-
+    
                     chart.series.each(function(series) {
                         series.data.setAll(chartData);
                     });
-
+    
                     yAxis.data.setAll(chartData);
-
+    
                     if (chart.series.length === 0) {
-                        createSeries("Maschi", "M");
-                        createSeries("Femmine", "F");
+                        createSeries("Italian", "Italian");
+                        createSeries("Not Italian", "Not Italian");
                     }
-
-                    // Aggiorna il titolo dell'asse X
-                    xAxis.set("title", am5.Label.new(root, {
-                        text: selectedDataType,
-                        fontSize: 16,
-                        fontWeight: "500",
-                        fill: am5.color(0x000000)
-                    }));
                 }
                 window.updateChart = updateChart;
                 updateChart();
             });
         });
     </script>
+    
+    
 </body>
 </html>
