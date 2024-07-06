@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Choropleth 2</title>
+    <title>Choropleth 1</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-slider/dist/Slider.min.css" />
     <style>
-        #choropleth2 { height: 600px; }
+        #choropleth1 { height: 600px; }
         .slider-container { width: 80%; margin: auto; text-align: center; }
         .slider { width: 80%; margin: auto; }
         .year-labels { display: flex; justify-content: space-between; }
     </style>
 </head>
 <body>
-    <div id="choropleth2"></div>
+    <div id="choropleth1"></div>
     <div class="slider-container">
         <input type="range" min="2018" max="2023" value="2018" step="1" id="yearSlider" class="slider">
         <div class="year-labels">
@@ -31,7 +31,7 @@
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script>
         // Load the map
-        var map = L.map('choropleth2').setView([41.8719, 12.5674], 6);
+        var map = L.map('choropleth1').setView([41.8719, 12.5674], 6);
 
         // Add the tile layer
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -40,12 +40,12 @@
 
         // Define the gradient color scale using d3
         var colorScale = d3.scaleSequential(d3.interpolateYlOrRd)
-            .domain([0, 0.08]);  // Adjust the domain as per your data range
+            .domain([0, 400]); // Adjust the domain based on the extracted numeric values
 
         // Define a style function
         function style(feature) {
             return {
-                fillColor: colorScale(feature.properties.percentuale_occupati),
+                fillColor: colorScale(feature.properties.Count),
                 weight: 2,
                 opacity: 1,
                 color: 'white',
@@ -57,20 +57,22 @@
         // Define a function to add tooltips
         function onEachFeature(feature, layer) {
             layer.bindTooltip(
-                `<strong>${feature.properties.macroregion_name}</strong><br>
-                 Percentuale Morti su Occupati: ${feature.properties.percentuale_occupati.toFixed(2)}%<br>
-                 Numero incidenti mortali: ${feature.properties.total_count}<br>
-                 Regioni: ${feature.properties.regions.join(/(?<=[a-z])(?=[A-Z])|, /)}`
+                `<strong>${feature.properties.reg_name}</strong><br>Fatalities count: ${feature.properties.Count}`
             );
         }
 
-        // Define the mapping between region names and macroregions
-        var regionToMacroregion = {
-            'Liguria': 'NordOvest', "Valle d'Aosta/Vallée d'Aoste": 'NordOvest', 'Piemonte': 'NordOvest', 'Lombardia': 'NordOvest',
-            "Trentino-Alto Adige/Südtirol": 'NordEst', 'Veneto': 'NordEst', 'Friuli-Venezia Giulia': 'NordEst', 'Emilia-Romagna': 'NordEst',
-            'Toscana': 'Centro', 'Umbria': 'Centro', 'Lazio': 'Centro', 'Marche': 'Centro',
-            'Abruzzo': 'Sud', 'Molise': 'Sud', 'Puglia': 'Sud', 'Campania': 'Sud', 'Basilicata': 'Sud', 'Calabria': 'Sud', 'Sicilia': 'Sud', 'Sardegna': 'Sud'
+        // Define the mapping between CSV region names and GeoJSON region names
+        var regionNameMapping = {
+            "Valle D'Aosta": "Valle d'Aosta/Vallée d'Aoste",
+            "Trentino Alto Adige": "Trentino-Alto Adige/Südtirol",
+            "Emilia Romagna": "Emilia-Romagna",
+            "Friuli Venezia Giulia": "Friuli-Venezia Giulia"
         };
+
+        // Function to get the standardized region name
+        function getStandardRegionName(csvRegionName) {
+            return regionNameMapping[csvRegionName] || csvRegionName;
+        }
 
         // Load GeoJSON data
         var geojsonData = null;
@@ -81,43 +83,22 @@
 
         // Load CSV data
         var csvData = null;
-        d3.csv("summarised_morti_totali.csv").then(function(data) {
+        d3.csv("../summarised-tables/summarised_morti_totali.csv").then(function(data) {
             csvData = data;
         });
 
         // Update the map based on the selected year
         function updateMap(year) {
             if (geojsonData && csvData) {
-                // Aggregate data by macroregion
-                var macroregionData = {};
-                csvData.forEach(function(row) {
-                    if (+row.Anno === year) {
-                        var macroregion = row["Area Geografica"];
-                        if (!macroregionData[macroregion]) {
-                            macroregionData[macroregion] = {
-                                regions: [],
-                                total_count: 0,
-                                total_occupati: 0,
-                                percentuale_occupati: 0
-                            };
-                        }
-                        macroregionData[macroregion].regions.push(row.Regione);
-                        macroregionData[macroregion].total_count += +row.Count;
-                        macroregionData[macroregion].total_occupati += +row.Occupati;
-                        macroregionData[macroregion].percentuale_occupati += +row.PercentageOccupati;
-                    }
-                });
-
-                // Update the properties in geojsonData based on the aggregated data
+                // Update the properties in geojsonData based on the year
                 geojsonData.features.forEach(function(feature) {
                     var regionName = feature.properties.reg_name;
-                    var macroregion = regionToMacroregion[regionName];
-                    if (macroregionData[macroregion]) {
-                        feature.properties.macroregion_name = macroregion;
-                        feature.properties.regions = macroregionData[macroregion].regions;
-                        feature.properties.total_count = macroregionData[macroregion].total_count;
-                        feature.properties.percentuale_occupati = macroregionData[macroregion].percentuale_occupati;
-                    }
+                    var csvRegionName = getStandardRegionName(regionName);
+                    var yearData = csvData.find(function(d) {
+                        return getStandardRegionName(d.DescrRegione) === csvRegionName && +d.Year === year;
+                    });
+                    
+                    feature.properties.Count = yearData ? +yearData.Count : 0;
                 });
 
                 // Clear existing layers
