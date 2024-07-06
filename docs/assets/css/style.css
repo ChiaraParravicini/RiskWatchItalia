@@ -1095,7 +1095,7 @@ section {
 --------------------------------------------------------------*/
 .team .member {
   margin-bottom: 20px;
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 4px;
   background: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
@@ -1103,7 +1103,7 @@ section {
 
 .team .member .member-img {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .team .member .social {
