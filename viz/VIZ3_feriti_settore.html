@@ -7,8 +7,8 @@
     <!-- Styles -->
     <style>
         #chartdiv {
-        width: 100%;
-        height: 1000px;
+            width: 100%;
+            height: 500px;
         }
     </style>
     
@@ -44,7 +44,7 @@
     // Create axes
     var xAxis = chart.xAxes.push(
       am5xy.CategoryAxis.new(root, {
-        categoryField: "Anno",
+        categoryField: "Year",
         renderer: am5xy.AxisRendererX.new(root, {}),
         tooltip: am5.Tooltip.new(root, {})
       })
@@ -79,9 +79,9 @@
           xAxis: xAxis,
           yAxis: yAxis,
           valueYField: sector,
-          categoryXField: "Anno",
+          categoryXField: "Year",
           tooltip: am5.Tooltip.new(root, {
-            labelText: "[bold]{name}[/]\n{categoryX}: {valueY}"
+            labelText: "[bold]{name}[/]\nCount: {valueY}\nSummarisedCount: {SummarisedCount}"
           })
         })
       );
@@ -95,6 +95,18 @@
         });
       });
     
+      series.events.on("tooltipshow", function(ev) {
+        var dataItem = ev.dataItem;
+        if (dataItem) {
+          var count = dataItem.get("valueY");
+          if (count == 10) {
+            ev.tooltip.set("labelText", "[bold]{name}[/]\nCount: <10\nSummarisedCount: {SummarisedCount}");
+          } else {
+            ev.tooltip.set("labelText", "[bold]{name}[/]\nCount: {valueY}\nSummarisedCount: {SummarisedCount}");
+          }
+        }
+      });
+    
       seriesMap[sector] = series;
     });
     
@@ -103,21 +115,21 @@
       orientation: "horizontal"
     }));
     
-    // Create a dropdown for Area Geografica selection
-    var areaSelector = document.createElement("select");
-    areaSelector.id = "areaSelector";
-    var areas = ["Centro", "NordEst", "NordOvest", "Sud"];
-    areas.forEach(function(area) {
+    // Create a dropdown for Region selection
+    var regionSelector = document.createElement("select");
+    regionSelector.id = "regionSelector";
+    var regions = ["Abruzzo", "Basilicata", "Calabria", "Campania", "Emilia Romagna", "Friuli Venezia Giulia","Lazio","Liguria","Lombardia","Marche","Molise","Piemonte","Puglia","Sardegna","Sicilia","Toscana","Trentino Alto Adige","Umbria","Valle D'Aosta","Veneto"]; // Adjust based on your CSV data
+    regions.forEach(function(region) {
       var option = document.createElement("option");
-      option.value = area;
-      option.text = area;
-      areaSelector.appendChild(option);
+      option.value = region;
+      option.text = region;
+      regionSelector.appendChild(option);
     });
     
-    document.body.insertBefore(areaSelector, document.getElementById("chartdiv"));
+    document.body.insertBefore(regionSelector, document.getElementById("chartdiv"));
     
     // Load CSV data
-    d3.csv("../tabelle/anonimizzato_feriti_settore.csv").then(function(csvData) {
+    d3.csv("../summarised-tables/summarised_feriti_settore.csv").then(function(csvData) {
       console.log("CSV data loaded:", csvData);
       if (csvData.length === 0) {
         console.error("No data loaded from CSV");
@@ -125,18 +137,19 @@
       }
 
       // Function to update the chart data
-      function updateChartData(selectedArea) {
+      function updateChartData(selectedRegion) {
         var filteredData = csvData.filter(function(item) {
-          return item["Area Geografica"] === selectedArea;
+          return item["DescrRegione"] === selectedRegion;
         });
         console.log("Filtered data:", filteredData);
 
         var chartData = {};
         filteredData.forEach(function(item) {
-          if (!chartData[item.Anno]) {
-            chartData[item.Anno] = { Anno: item.Anno };
+          if (!chartData[item.Year]) {
+            chartData[item.Year] = { Year: item.Year };
           }
-          chartData[item.Anno][item.Settore] = parseInt(item["Numero Incidenti"], 10);
+          chartData[item.Year][item.Settore] = parseInt(item["Count"], 10);
+          chartData[item.Year]["SummarisedCount"] = item["SummarisedCount"];
         });
         console.log("Chart data:", chartData);
 
@@ -147,8 +160,9 @@
         sectors.forEach(function(sector) {
           var seriesData = finalData.map(function(item) {
             return {
-              Anno: item.Anno,
-              [sector]: item[sector] || 0
+              Year: item.Year,
+              [sector]: item[sector] || 0,
+              SummarisedCount: item["SummarisedCount"]
             };
           });
           console.log("Series data for " + sector + ":", seriesData);
@@ -157,12 +171,12 @@
       }
     
       // Event listener for dropdown change
-      areaSelector.addEventListener("change", function() {
+      regionSelector.addEventListener("change", function() {
         updateChartData(this.value);
       });
     
       // Initial chart update
-      updateChartData("Centro");
+      updateChartData("Abruzzo");
     
       // Make stuff animate on load
       chart.appear(1000, 100);

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grafico Feriti per Sesso e Regione</title>
     <style>
-        #chartdiv {
+        #viz_feriti_genere {
             width: 100%;
             height: 1000px;
         }
@@ -23,7 +23,7 @@
         <option value="Count">Count</option>
         <option value="Percentage">Percentage</option>
     </select>
-    <div id="chartdiv"></div>
+    <div id="viz_feriti_genere"></div>
 
     <script>
         function formatValue(value, dataType) {
@@ -34,7 +34,7 @@
             return Number(value).toLocaleString();
         }
 
-        d3.csv('../tabelle/feriti_genere.csv').then(function(data) {
+        d3.csv('../summarised-tables/summarised_feriti_genere.csv').then(function(data) {
             // Process data
             let years = [...new Set(data.map(d => d.Year))];
             let yearSelector = document.getElementById('yearSelector');
@@ -49,7 +49,7 @@
 
             // Initialize chart
             am5.ready(function() {
-                var root = am5.Root.new("chartdiv");
+                var root = am5.Root.new("viz_feriti_genere");
 
                 var myTheme = am5.Theme.new(root);
                 myTheme.rule("Grid", ["base"]).setAll({

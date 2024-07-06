@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafico Feriti per Nazionalità e Regione</title>
+    <style>
+        #chartdiv {
+            width: 100%;
+            height: 2000px;
+        }
+    </style>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+    <select id="yearSelector" onchange="updateChart()">
+    </select>
+    <div id="chartdiv"></div>
+
+    <script>
+        function formatValue(value) {
+            if (value === undefined || value === null) return "N/A";
+            return Number(value).toLocaleString();
+        }
+    
+        d3.csv('../summarised-tables/summarised_morti_nazionalita.csv').then(function(data) {
+            // Process data
+            let years = [...new Set(data.map(d => d.Year))];
+            let yearSelector = document.getElementById('yearSelector');
+            years.forEach(year => {
+                let option = document.createElement('option');
+                option.text = year;
+                option.value = year;
+                yearSelector.add(option);
+            });
+    
+            window.chartData = data; // Make data available globally
+    
+            // Initialize chart
+            am5.ready(function() {
+                var root = am5.Root.new("chartdiv");
+    
+                var myTheme = am5.Theme.new(root);
+                myTheme.rule("Grid", ["base"]).setAll({
+                    strokeOpacity: 0.1
+                });
+    
+                root.setThemes([
+                    am5themes_Animated.new(root),
+                    myTheme
+                ]);
+    
+                var chart = root.container.children.push(am5xy.XYChart.new(root, {
+                    panX: false,
+                    panY: false,
+                    wheelX: "panY",
+                    wheelY: "zoomY",
+                    layout: root.verticalLayout
+                }));
+    
+                var yAxis = chart.yAxes.push(am5xy.CategoryAxis.new(root, {
+                    categoryField: "Regione",
+                    renderer: am5xy.AxisRendererY.new(root, {
+                        inversed: true,
+                        cellStartLocation: 0.1,
+                        cellEndLocation: 0.9,
+                        minorGridEnabled: true
+                    })
+                }));
+                yAxis.data.setAll(data)
+    
+                var xAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
+                    min: 0,
+                    renderer: am5xy.AxisRendererX.new(root, {
+                        strokeOpacity: 0.1,
+                        minGridDistance: 50
+                    })
+                }));
+    
+                var legend = chart.children.push(am5.Legend.new(root, {
+                    centerX: am5.p50,
+                    x: am5.p50
+                }));
+    
+                function createSeries(name, fieldName) {
+                    var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+                        name: name,
+                        xAxis: xAxis,
+                        yAxis: yAxis,
+                        valueXField: fieldName,
+                        categoryYField: "Regione",
+                        sequencedInterpolation: true,
+                    }));
+
+                    series.columns.template.setAll({
+                        tooltipText: "{name}, {categoryY}: {valueX}",
+                        width: am5.percent(90),
+                        tooltipY: 0
+                    });
+
+    
+                    series.columns.template.setAll({
+                        height: am5.p100,
+                        strokeOpacity: 0
+                    });
+    
+                    series.bullets.push(function() {
+                        return am5.Bullet.new(root, {
+                            locationX: 1,
+                            locationY: 0.5,
+                            sprite: am5.Label.new(root, {
+                                centerY: am5.p50,
+                                text: "{valueX}",
+                                populateText: true
+                            })
+                        });
+                    });
+    
+                    series.bullets.push(function() {
+                        return am5.Bullet.new(root, {
+                            locationX: 1,
+                            locationY: 0.5,
+                            sprite: am5.Label.new(root, {
+                                centerX: am5.p100,
+                                centerY: am5.p50,
+                                text: "{name}",
+                                fill: am5.color(0xffffff),
+                                populateText: true
+                            })
+                        });
+                    });
+    
+                    series.data.setAll(data);
+                    series.appear();
+    
+                    return series;
+                }
+    
+                function updateChart() {
+                    let selectedYear = document.getElementById('yearSelector').value;
+                    let filteredData = window.chartData.filter(d => d.Year === selectedYear && d.DescrRegione != "Total");
+    
+                    let processedData = {};
+                    filteredData.forEach(d => {
+                        if (!processedData[d.DescrRegione]) {
+                            processedData[d.DescrRegione] = { Regione: d.DescrRegione, Italian: 0, "Not Italian": 0 };
+                        }
+                        let value = +d.Count;
+                        if (!isNaN(value)) {
+                            processedData[d.DescrRegione][d.Nazionalita === '0' ? 'Italian' : 'Not Italian'] = value;
+                        }
+                    });
+    
+                    let chartData = Object.values(processedData);
+                    chartData.forEach(d => {
+                        d.bulletSettings = {
+                            textItalian: formatValue(d.Italian),
+                            textNotItalian: formatValue(d["Not Italian"])
+                        };
+                    });
+    
+                    chart.series.each(function(series) {
+                        series.data.setAll(chartData);
+                    });
+    
+                    yAxis.data.setAll(chartData);
+    
+                    if (chart.series.length === 0) {
+                        createSeries("Italian", "Italian");
+                        createSeries("Not Italian", "Not Italian");
+                    }
+                }
+                window.updateChart = updateChart;
+                updateChart();
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>

@@ -27,6 +27,12 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Amcharts -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
   <!-- =======================================================
   * Template Name: Valera
   * Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
@@ -2440,12 +2446,147 @@
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <ul id="portfolio-flters" class="d-flex justify-content-center">
+        
+        <div class="align-items-stretch mb-5 mb-lg-0">
+          <div class="analysis-box">
+            <div class="analysis-box-title">
+              <!-- <p class="year-result-text">Visualization</p> -->
+            </div>
+
+            <!-- tabs -->
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="gender-tab" data-bs-toggle="tab" data-bs-target="#gender" type="button" role="tab" aria-controls="gender" aria-selected="true"><b>Gender</b></button>
+                <button class="nav-link" id="work-tab" data-bs-toggle="tab" data-bs-target="#worksector" type="button" role="tab" aria-controls="worksector" aria-selected="false" tabindex="-1"><b>Work Sector</b></button>
+                <button class="nav-link" id="age-tab" data-bs-toggle="tab" data-bs-target="#age" type="button" role="tab" aria-controls="age" aria-selected="false" tabindex="-1"><b>Age</b></button>
+                <button class="nav-link" id="nationality" data-bs-toggle="tab" data-bs-target="#nationality" type="button" role="tab" aria-controls="nationality" aria-selected="false" tabindex="-1"><b>Nationality</b></button>
+
+              </div>
+            </nav>
+
+            <!-- Both divs for graphs -->
+            <div class="tab-content" id="nav-tabContent">
+              <!-- Gender -->
+              <div class="tab-pane fade show active" id="gender" role="tabpanel" aria-labelledby="gender-tab">
+                <p class="explanatory-text">                </p>
+
+                <!-- Accidents -->
+                <div class="row content">
+                  <div class="col-lg-12">
+                    <div class="centered-subtitle">
+                      <p class="factor-text">Accidents by Gender</p>
+                    </div>
+                    <!-- Code  -->
+                    <iframe src="../viz/VIZ2_feriti_genere.html" width="100%" height="600px" frameborder="0"></iframe>
+                  </div>
+                </div>
+
+                <!-- Deaths -->
+                <div class="row content">
+                  <div class="col-lg-12">
+                    <div class="centered-subtitle">
+                      <p class="factor-text">Deaths by Gender</p>
+                    </div>
+                    <!-- Code  -->
+                    <iframe src="../viz/VIZ2_morti_genere.html" width="100%" height="600px" frameborder="0"></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Work Sector -->
+              <div class="tab-pane fade" id="worksector" role="tabpanel" aria-labelledby="work-tab">
+                <p class="explanatory-text">                </p>
+
+                <!-- Accidents -->
+                <div class="row content">
+                  <div class="col-lg-12">
+                    <div class="centered-subtitle">
+                      <p class="factor-text">Accidents by Work Sector</p>
+                    </div>
+                    <!-- Code  -->
+                    <iframe src="../viz/VIZ3_feriti_settore.html" width="100%" height="600px" frameborder="0"></iframe>
+                  </div>
+                </div>
+
+                <!-- Deaths -->
+                <div class="row content">
+                  <div class="col-lg-12">
+                    <div class="centered-subtitle">
+                      <p class="factor-text">Deaths by Work Sector</p>
+                    </div>
+                    <!-- Code  -->
+                    <iframe src="../viz/VIZ3_morti_settore.html" width="100%" height="600px" frameborder="0"></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Age -->
+              <div class="tab-pane fade" id="age" role="tabpanel" aria-labelledby="age-tab">
+                <p class="explanatory-text">                </p>
+
+                <!-- Accidents -->
+                <div class="row content">
+                  <div class="col-lg-12">
+                    <div class="centered-subtitle">
+                      <p class="factor-text">Accidents by Age</p>
+                    </div>
+                    <!-- Code  -->
+                    <iframe src="../viz/VIZ4_feriti_eta.html" width="100%" height="600px" frameborder="0"></iframe>
+                  </div>
+                </div>
+
+                <!-- Deaths -->
+                <div class="row content">
+                  <div class="col-lg-12">
+                    <div class="centered-subtitle">
+                      <p class="factor-text">Deaths by Work Sector</p>
+                    </div>
+                    <!-- Code  -->
+                    <iframe src="../viz/VIZ4_morti_eta.html" width="100%" height="600px" frameborder="0"></iframe>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Nationality -->
+              <div class="tab-pane fade" id="nationality" role="tabpanel" aria-labelledby="nationality-tab">
+                <p class="explanatory-text">                </p>
+
+                <!-- Accidents -->
+                <div class="row content">
+                  <div class="col-lg-12">
+                    <div class="centered-subtitle">
+                      <p class="factor-text">Accidents by Nationality</p>
+                    </div>
+                    <!-- Code  -->
+                    <iframe src="../viz/VIZ5_feriti_nazionalita.html" width="100%" height="600px" frameborder="0"></iframe>
+                  </div>
+                </div>
+
+                <!-- Deaths -->
+                <div class="row content">
+                  <div class="col-lg-12">
+                    <div class="centered-subtitle">
+                      <p class="factor-text">Deaths by Nationality/p>
+                    </div>
+                    <!-- Code  -->
+                    <iframe src="../viz/VIZ5_morti_nazionalita.html" width="100%" height="600px" frameborder="0"></iframe>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      
+
+        <!-- <ul id="portfolio-flters" class="d-flex justify-content-center">
           <li data-filter="*" class="filter-active">All</li>
           <li data-filter=".filter-app">App</li>
           <li data-filter=".filter-card">Card</li>
           <li data-filter=".filter-web">Web</li>
-        </ul>
+        </ul> -->
 
         <!-- <div class="row portfolio-container">
 

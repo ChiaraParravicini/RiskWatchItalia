@@ -1,4 +1,4 @@
-Year,DescrRegione,Occupati,MacroRegione,Nazionalità,Count,Percentage,PercentageOccupati,SummarisedCount
+Year,DescrRegione,Occupati,MacroRegione,Nazionalita,Count,Percentage,PercentageOccupati,SummarisedCount
 2018,Abruzzo,493923,Sud,0,1592,0.0,0.0032231744624162065,Low (1001-10000)
 2018,Abruzzo,493923,Sud,1,12321,0.0,0.024945183763461106,Moderate (10001-50000)
 2018,Basilicata,185328,Sud,0,295,0.0,0.001591772425105758,Very low (1-1000)

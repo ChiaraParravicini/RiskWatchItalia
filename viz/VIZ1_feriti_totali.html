@@ -26,9 +26,7 @@
             <span>2023</span>
         </div>
     </div>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet-slider/dist/Slider.min.js"></script>
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+
     <script>
         // Load the map
         var map = L.map('choropleth1').setView([41.8719, 12.5674], 6);
@@ -40,12 +38,12 @@
 
         // Define the gradient color scale using d3
         var colorScale = d3.scaleSequential(d3.interpolateYlOrRd)
-            .domain([0, 5]);  // Adjust the domain as per your data range
+            .domain([0, 50000]); // Adjust the domain based on the extracted numeric values
 
         // Define a style function
         function style(feature) {
             return {
-                fillColor: colorScale(feature.properties.percentuale_occupati),
+                fillColor: colorScale(feature.properties.Count),
                 weight: 2,
                 opacity: 1,
                 color: 'white',
@@ -57,7 +55,7 @@
         // Define a function to add tooltips
         function onEachFeature(feature, layer) {
             layer.bindTooltip(
-                `<strong>${feature.properties.reg_name}</strong><br>Percentuale Feriti su Occupati: ${feature.properties.percentuale_occupati}<br>Numero infortuni: ${feature.properties.count}`
+                `<strong>${feature.properties.DescrRegione}</strong><br>Numero infortuni: ${feature.properties.Count}<br>Percentuale Feriti su Occupati: ${(feature.properties.IncidentiPerOccupati).toFixed(2)}%`
             );
         }
 
@@ -83,7 +81,7 @@
 
         // Load CSV data
         var csvData = null;
-        d3.csv("../tabelle/feriti_totali.csv").then(function(data) {
+        d3.csv("summarised_feriti_totali.csv").then(function(data) {
             csvData = data;
         });
 
@@ -92,13 +90,13 @@
             if (geojsonData && csvData) {
                 // Update the properties in geojsonData based on the year
                 geojsonData.features.forEach(function(feature) {
-                    var regionName = feature.properties.reg_name;
+                    var regionName = feature.properties.DescrRegione;
                     var csvRegionName = getStandardRegionName(regionName);
                     var yearData = csvData.find(function(d) {
                         return getStandardRegionName(d.DescrRegione) === csvRegionName && +d.Year === year;
                     });
-                    feature.properties.percentuale_occupati = yearData ? +yearData.IncidentiPerOccupati : 0;
-                    feature.properties.count = yearData ? +yearData.Count : 0;
+                    feature.properties.IncidentiPerOccupati = yearData ? +yearData.IncidentiPerOccupati : 0;
+                    feature.properties.Count = yearData ? +yearData.Count : 0;
                 });
 
                 // Clear existing layers

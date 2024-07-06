@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stacked Area Graph - Dati Regionali per Fasce d'Età</title>
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <style>
+    #chartdiv {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div id="chartdiv"></div>
+  <select id="regionSelector"></select>
+
+  <script>
+    am5.ready(function() {
+      var root = am5.Root.new("chartdiv");
+      root.setThemes([am5themes_Animated.new(root)]);
+
+      var chart = root.container.children.push(am5xy.XYChart.new(root, {
+        panX: true,
+        panY: true,
+        wheelX: "panX",
+        wheelY: "zoomX",
+        pinchZoomX: true,
+        paddingLeft: 0
+      }));
+
+      var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
+        behavior: "none"
+      }));
+      cursor.lineY.set("visible", false);
+
+      var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+        categoryField: "Year",
+        startLocation: 0.5,
+        endLocation: 0.5,
+        renderer: am5xy.AxisRendererX.new(root, {
+          minorGridEnabled: true,
+          minGridDistance: 70
+        }),
+        tooltip: am5.Tooltip.new(root, {})
+      }));
+
+      var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+        renderer: am5xy.AxisRendererY.new(root, {
+          pan: "zoom"
+        })
+      }));
+
+      var regionSelector = document.getElementById("regionSelector");
+      var data = {};
+      var ageGroups = [];
+
+      function getRandomColor() {
+        return am5.color(0xFF0000 + Math.random() * 0xFFFFFF);
+      }
+
+      am5.net.load("../summarised-tables/summarised_morti_eta.csv").then(function(response) {
+        var csvData = am5.CSVParser.parse(response.response, {
+          skipEmpty: true,
+          useColumnNames: true
+        });
+
+        csvData.forEach(function(row) {
+          var year = row.Year;
+          var region = row.DescrRegione;
+          var ageGroup = row.AgeGroup;
+          var count = parseInt(row.Count);
+
+          if (!data[region]) {
+            data[region] = {};
+          }
+          if (!data[region][year]) {
+            data[region][year] = { Year: year };
+          }
+          data[region][year][ageGroup] = count;
+
+          if (!ageGroups.includes(ageGroup) && ageGroup !== "15+") {
+            ageGroups.push(ageGroup);
+          }
+        });
+
+        Object.keys(data).forEach(function(region) {
+          var option = document.createElement("option");
+          option.value = region;
+          option.text = region;
+          regionSelector.appendChild(option);
+        });
+
+        function createSeries(name, field) {
+          var series = chart.series.push(am5xy.LineSeries.new(root, {
+            name: name,
+            xAxis: xAxis,
+            yAxis: yAxis,
+            valueYField: field,
+            categoryXField: "Year",
+            fill: getRandomColor(),
+            stacked: true,
+            tooltip: am5.Tooltip.new(root, {
+              pointerOrientation: "horizontal",
+              labelText: "[bold]{name}[/]\n{categoryX}: {valueY}"
+            })
+          }));
+
+          series.fills.template.setAll({
+            fillOpacity: 0.5,
+            visible: true
+          });
+
+          series.data.setAll([]);
+
+          return series;
+        }
+
+        var series = {};
+        ageGroups.forEach(function(ageGroup) {
+          series[ageGroup] = createSeries(ageGroup, ageGroup);
+        });
+
+        function updateChart(region) {
+          var chartData = Object.values(data[region]).map(yearData => {
+            var processedData = { Year: yearData.Year };
+            ageGroups.forEach(ageGroup => {
+              processedData[ageGroup] = yearData[ageGroup] || 0;
+            });
+            return processedData;
+          });
+
+          xAxis.data.setAll(chartData);
+          ageGroups.forEach(function(ageGroup) {
+            series[ageGroup].data.setAll(chartData);
+          });
+        }
+
+        regionSelector.addEventListener("change", function() {
+          updateChart(this.value);
+        });
+
+        updateChart(Object.keys(data)[0]);
+
+        // Add scrollbar
+        chart.set("scrollbarX", am5.Scrollbar.new(root, {
+          orientation: "horizontal"
+        }));
+      });
+
+      chart.appear(1000, 100);
+
+    }); // end am5.ready()
+  </script>
+</body>
+</html>
