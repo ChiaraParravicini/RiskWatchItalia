@@ -254,7 +254,7 @@
 
         <div class="section-title">
           <h2>Datasets</h2>
-          <p>We collected our data from <a href="https://dati.inail.it/portale/it/dataset/infortuni-sul-lavoro.html" target="_blank">INAIL</a> (Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro) and <a href="https://www.istat.it/tag/occupati-e-disoccupati/">ISTAT (Istituto Nazionale di Statistica)</a></p>
+          <p>We collected our data from <a href="https://dati.inail.it/portale/it/dataset/infortuni-sul-lavoro.html" target="_blank">INAIL</a> (Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro), <a href="https://www.istat.it/tag/occupati-e-disoccupati/">ISTAT (Istituto Nazionale di Statistica)</a> and <a href="https://www.normattiva.it/">Normattiva</a>.</p>
         </div>
         
         
@@ -274,8 +274,14 @@
             </div>
             <div class="row">
 
-              <div style="text-align: center; color: rgb(252, 124, 92);"><h4>AKOMA NTOSO</h4></div>
-              <p>From ISTAT, we downloaded 1 CSV dataset containing data on the employment status of the Italian population.</p>
+              <div style="text-align: center; color: rgb(252, 124, 92);"><h4>NORMATTIVA - AKOMA NTOSO</h4></div>
+              <p>Normattiva is a textual database where all numbered state regulatory acts published in the Official Gazette from 1861 to the present day are stored.</p>
+                <p>The database is structured to present acts in three formats:</p>
+                <p>1 - In the text as originally published.</p>
+                <p>2 - In the text as currently in force as of a specified date.</p>
+                <p>3 - In the so-called "multivigente" text, which reconstructs the lifecycle of a regulatory act including explicit modifications it has undergone over time.</p>
+                <p>We have decided to extract the Akoma Ntoso XML files from Normattiva related to work safety decrees from recent years. To accomplish this, an advanced search was conducted on the portal using keywords. The resulting 7 regulations were downloaded in XML format and metadata was added by creating a descriptive RDF turtle file. These files will help us frame the legislative changes concerning our research topic. XPath queries will be proposed to answer specific research questions of our project.
+                </p>
             
           </div>
 
@@ -285,7 +291,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button custom-hover" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Dataset 1 - <b>INAIL</b>
+                Dataset 1 - <b> INAIL</b>
               </button>
             </h2>
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
@@ -354,7 +360,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed custom-hover" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Dataset 2 - <b>ISTAT</b>
+                Dataset 2 - <b> ISTAT</b>
               </button>
             </h2>
             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
@@ -367,19 +373,28 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed custom-hover" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Dataset 3 - <b>Ako Mantoso</b>
+                Dataset 3 - <b> Normattiva - Akoma Ntoso</b>
               </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
               <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <p>Using advanced search functions, we extracted 7 documents by filtering them with the keywords 'security' and 'work'.</p>
+                <p>The 7 documents are:</p>
+                <ul>
+                  <li><a href="http://www.normattiva.it/eli/id/2008/04/30/008G0104/CONSOLIDATED/20240501">20080430_008G0104_VIGENZA_20240501.xml</a></li>
+                  <li><a href="http://www.normattiva.it/eli/id/2011/07/15/011G0151/CONSOLIDATED/20160112">20110715_011G0151_VIGENZA_20160112.xml</a></li>
+                  <li><a href="http://www.normattiva.it/eli/id/2012/05/07/012G0072/ORIGINAL">20120507_012G0072_ORIGINALE.xml</a></li>
+                  <li><a href="http://www.normattiva.it/eli/id/2012/07/13/012G0122/ORIGINAL">20120713_012G0122_ORIGINALE.xml</a></li>
+                  <li><a href="http://www.normattiva.it/eli/id/2012/07/25/012G0136/CONSOLIDATED/20160129">20120725_012G0136_VIGENZA_20160129.xml</a></li>
+                  <li><a href="http://www.normattiva.it/eli/id/2020/09/09/20G00131/ORIGINAL">20200909_20G00131_ORIGINALE.xml</a></li>
+                  <li><a href="http://www.normattiva.it/eli/id/2020/10/28/20G00166/CONSOLIDATED/20231231">20201028_20G00166_VIGENZA_20231231.xml</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-          <br>
-          <br>
-        
+
+
 
       </div>
       <div class="container">
@@ -2694,27 +2709,179 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Akoma Ntoso</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Normattiva - Akoma Ntoso</h2>
+          <p style="text-align: left;">Observing the results of our analyses and visualizations, we have noticed a peak in fatalities in certain specific sectors of work during the years 2019-2020. These data appear to correlate with the COVID-19 pandemic. </p>
+          <br>
+          <p style="text-align: left;">To delve deeper into this scenario, we have decided to analyze <strong>DECRETO-LEGGE 17 Marzo 2020, n. 18</strong>, which addresses Measures to strengthen the National Health Service and provide economic support to families, workers, and businesses affected by the COVID-19 epidemiological emergency.</p>
+          <br>
+          <p style="text-align: left;">To achieve this, the following <strong>research questions</strong> have been defined and subsequently transformed into XPath queries for the automatic interrogation of the document itself:</p>
         </div>
 
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">1 - What is the title of the document? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <br>
+                <strong>XPath:</strong>
+                <p style="font-style:italic ;">
+                  eli_title_contents = root.xpath('//nrdfa:span[@property="eli:title"]/@content', namespaces=namespaces)
+                </p>
+                <br>
+                <strong>Result:</strong>
                 <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  Document title:
+                  Misure di potenziamento del Servizio sanitario nazionale e di sostegno economico per famiglie, lavoratori e imprese connesse all'emergenza epidemiologica 
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">2 - What it the URI of the document? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                <br>
+                <strong>XPath:</strong>
+                <p style="font-style:italic ;">
+                  document_uri = root.xpath('//akn:FRBRuri/@value', namespaces=namespaces)
                 </p>
+                <br>
+                <strong>Result:</strong>
+                <p>
+                  Document URI:
+                  <p>/akn/it/act/decreto-legge/stato/2020-03-17/18/ita@2024-03-27</p>
+                  <p>/akn/it/act/decreto-legge/stato/2020-03-17/18</p>
+                  <p>/akn/it/act/decreto-legge/stato/2020-03-17/18/ita@2024-03-27.xml</p>
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-3">3 - And its publication number? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse show" data-bs-parent=".faq-list">
+                <br>
+                <strong>XPath:</strong>
+                <p style="font-style:italic ;">
+                  document_pub_num = root.xpath('//akn:publication/@number', namespaces=namespaces)
+                </p>
+                <br>
+                <strong>Result:</strong>
+                <p>
+                  Publication number:
+                  70
+                  
+              </div>
+            </li>
+
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-4">4 - What are the dates and sources of each amendment to the decree?               <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse show" data-bs-parent=".faq-list">
+                <br>
+                <strong>XPath:</strong>
+                <p style="font-style:italic ;">
+                  dates_of_modification = root.xpath('//akn:eventRef/@date', namespaces=namespaces)
+                </p>
+                <p style="font-style:italic ;">
+                  sources_of_modification = root.xpath('//akn:eventRef/@source', namespaces=namespaces)
+
+                </p>
+                <br>
+                <strong>Result:</strong>
+                <p>
+                  Amendment regulation dates:
+                  <ul>
+                    <li>Date: 2020-03-17, Source: ro1</li>
+                    <li>Date: 2020-03-18, Source: rp1</li>
+                    <li>Date: 2020-04-08, Source: rp2</li>
+                    <li>Date: 2020-04-08, Source: rp3</li>
+                    <li>Date: 2020-04-29, Source: rp4</li>
+                    <li>Date: 2020-04-30, Source: rp5</li>
+                    <li>Date: 2020-05-10, Source: rp6</li>
+                    <li>Date: 2020-05-16, Source: rp7</li>
+                    <li>Date: 2020-05-19, Source: rp8</li>
+                    <li>Date: 2020-06-06, Source: rp9</li>
+                    <li>Date: 2020-06-06, Source: rp10</li>
+                    <li>Date: 2020-06-16, Source: rp11</li>
+                    <li>Date: 2020-06-29, Source: rp12</li>
+                    <li>Date: 2020-07-09, Source: rp13</li>
+                    <li>Date: 2020-07-15, Source: rp14</li>
+                    <li>Date: 2020-07-16, Source: rp15</li>
+                    <li>Date: 2020-07-18, Source: rp16</li>
+                    <li>Date: 2020-07-30, Source: rp17</li>
+                    <li>Date: 2020-08-14, Source: rp18</li>
+                    <li>Date: 2020-09-14, Source: rp19</li>
+                    <li>Date: 2020-09-28, Source: rp20</li>
+                    <li>Date: 2020-10-07, Source: rp21</li>
+                    <li>Date: 2020-10-13, Source: rp22</li>
+                    <li>Date: 2020-10-20, Source: rp23</li>
+                    <li>Date: 2020-10-28, Source: rp24</li>
+                    Date: 2020-11-09, Source: rp25
+                    Date: 2020-11-30, Source: rp26
+                    Date: 2020-12-03, Source: rp27
+                    Date: 2020-12-24, Source: rp28
+                    Date: 2020-12-30, Source: rp29
+                    Date: 2020-12-31, Source: rp30
+                    Date: 2021-01-14, Source: rp31
+                    Date: 2021-01-15, Source: rp32
+                    Date: 2021-01-30, Source: rp33
+                    Date: 2021-03-01, Source: rp34
+                    Date: 2021-03-01, Source: rp35
+                    Date: 2021-03-22, Source: rp36
+                    Date: 2021-04-01, Source: rp37
+                    Date: 2021-04-22, Source: rp38
+                    Date: 2021-04-29, Source: rp39
+                    Date: 2021-04-30, Source: rp40
+                    Date: 2021-05-21, Source: rp41
+                    Date: 2021-05-25, Source: rp42
+                    Date: 2021-05-31, Source: rp43
+                    Date: 2021-06-21, Source: rp44
+                    Date: 2021-06-23, Source: rp45
+                    Date: 2021-06-30, Source: rp46
+                    Date: 2021-07-07, Source: rp47
+                    Date: 2021-07-23, Source: rp48
+                    Date: 2021-07-24, Source: rp49
+                    Date: 2021-07-30, Source: rp50
+                    Date: 2021-08-06, Source: rp51
+                    Date: 2021-09-10, Source: rp52
+                    Date: 2021-09-18, Source: rp53
+                    Date: 2021-09-27, Source: rp54
+                    Date: 2021-10-01, Source: rp55
+                    Date: 2021-10-21, Source: rp56
+                    Date: 2021-11-06, Source: rp57
+                    Date: 2021-11-09, Source: rp58
+                    Date: 2021-12-20, Source: rp59
+                    Date: 2021-12-24, Source: rp60
+                    Date: 2021-12-30, Source: rp61
+                    Date: 2021-12-31, Source: rp62
+                    Date: 2021-12-31, Source: rp63
+                    Date: 2022-01-27, Source: rp64
+                    Date: 2022-02-18, Source: rp65
+                    Date: 2022-02-28, Source: rp66
+                    Date: 2022-03-01, Source: rp67
+                    Date: 2022-03-21, Source: rp68
+                    Date: 2022-03-24, Source: rp69
+                    Date: 2022-03-28, Source: rp70
+                    Date: 2022-04-28, Source: rp71
+                    Date: 2022-04-30, Source: rp72
+                    Date: 2022-05-20, Source: rp73
+                    Date: 2022-05-23, Source: rp74
+                    Date: 2022-06-16, Source: rp75
+                    Date: 2022-06-21, Source: rp76
+                    Date: 2022-06-29, Source: rp77
+                    Date: 2022-08-05, Source: rp78
+                    Date: 2022-08-09, Source: rp79
+                    Date: 2022-08-19, Source: rp80
+                    Date: 2022-09-21, Source: rp81
+                    Date: 2022-12-29, Source: rp82
+                    Date: 2022-12-29, Source: rp83
+                    Date: 2023-02-27, Source: rp84
+                    Date: 2023-09-29, Source: rp85
+                    Date: 2023-11-28, Source: rp86
+                    Date: 2023-12-30, Source: rp87
+                    Date: 2023-12-30, Source: rp88
+                    Date: 2024-02-28, Source: rp89
+                    Date: 2024-03-12, Source: rp90
+
+                  
               </div>
             </li>
 
