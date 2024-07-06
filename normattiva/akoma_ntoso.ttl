@@ -1,0 +1,168 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.normattiva.it/eli/id/2008/04/30/008G0104/CONSOLIDATED/20240501>
+    a dcat:Dataset ;
+    dct:title "Attuazione dell'articolo 1 della legge 3 agosto 2007, n. 123, in materia di tutela della salute e della sicurezza nei luoghi di lavoro."@it ;
+    dct:description "Decreto Legislativo relativo alla tutela della salute e sicurezza nei luoghi di lavoro."@it ;
+    dct:identifier "008G0104" ;
+    dct:issued "2008-04-09"^^xsd:date ;
+    dct:modified "2024-05-01"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <http://www.ipzs.it> ;
+    dct:source <http://www.normattiva.it/eli/id/2008/04/30/008G0104/CONSOLIDATED/20240501> ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dct:format <http://www.iana.org/assignments/media-types/xml> ;
+        dcat:accessURL <http://www.normattiva.it/eli/id/2008/04/30/008G0104/CONSOLIDATED/20240501/ita/akn> ;
+        dct:language <http://publications.europa.eu/resource/authority/language/ITA>
+    ] ;
+    dcat:theme <http://www.gazzettaufficiale.it/eli/> ;
+    dcat:contactPoint [
+        a vcard:Organization ;
+        vcard:fn "IPZS" ;
+        vcard:hasURL <http://www.ipzs.it>
+    ] .
+
+<http://www.normattiva.it/eli/id/2011/07/15/011G0151/CONSOLIDATED/20160112>
+    a dcat:Dataset ;
+    dct:title "Regolamento di attuazione dell'articolo 10, comma 1, della legge 4 gennaio 1990, n. 1, relativo agli apparecchi elettromeccanici utilizzati per l'attivita' di estetista. (11G0151)"@it ;
+    dct:description "Decreto relativo agli apparecchi elettromeccanici per l'attività di estetista."@it ;
+    dct:identifier "011G0151" ;
+    dct:issued "2011-05-12"^^xsd:date ;
+    dct:modified "2016-01-12"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <http://www.ipzs.it> ;
+    dct:source <http://www.normattiva.it/eli/id/2011/07/15/011G0151/CONSOLIDATED/20160112> ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dct:format <http://www.iana.org/assignments/media-types/xml> ;
+        dcat:accessURL <http://www.normattiva.it/eli/id/2011/07/15/011G0151/CONSOLIDATED/20160112/ita/akn> ;
+        dct:language <http://publications.europa.eu/resource/authority/language/ITA>
+    ] ;
+    dcat:theme <http://www.gazzettaufficiale.it/eli/> ;
+    dcat:contactPoint [
+        a vcard:Organization ;
+        vcard:fn "IPZS" ;
+        vcard:hasURL <http://www.ipzs.it>
+    ] .
+
+<http://www.normattiva.it/eli/id/2012/07/13/012G0122/ORIGINAL>
+    a dcat:Dataset ;
+    dct:title "Conversione in legge, con modificazioni, del decreto-legge 12 maggio 2012, n. 57, recante disposizioni urgenti in materia di tutela della salute e della sicurezza nei luoghi di lavoro nel settore dei trasporti e delle microimprese. (12G0122)"@it ;
+    dct:description "Legge relativa alla tutela della salute e della sicurezza nei luoghi di lavoro nel settore dei trasporti e delle microimprese."@it ;
+    dct:identifier "012G0122" ;
+    dct:issued "2012-07-12"^^xsd:date ;
+    dct:modified "2012-07-13"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <http://www.ipzs.it> ;
+    dct:source <http://www.normattiva.it/eli/id/2012/07/13/012G0122/ORIGINAL> ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dct:format <http://www.iana.org/assignments/media-types/xml> ;
+        dcat:accessURL <http://www.normattiva.it/eli/id/2012/07/13/012G0122/ORIGINAL/ita/akn> ;
+        dct:language <http://publications.europa.eu/resource/authority/language/ITA>
+    ] ;
+    dcat:theme <http://www.gazzettaufficiale.it/eli/> ;
+    dcat:contactPoint [
+        a vcard:Organization ;
+        vcard:fn "IPZS" ;
+        vcard:hasURL <http://www.ipzs.it>
+    ] .
+
+<http://www.normattiva.it/eli/id/2012/05/07/012G0072/ORIGINAL>
+    a dcat:Dataset ;
+    dct:title "Regolamento recante disposizioni in materia di tutela della salute e della sicurezza degli uffici all'estero ai sensi dell'articolo 3, comma 2, del decreto legislativo 9 aprile 2008, n. 81. (12G0072)"@it ;
+    dct:description "Decreto relativo alla tutela della salute e sicurezza degli uffici all'estero."@it ;
+    dct:identifier "012G0072" ;
+    dct:issued "2012-02-16"^^xsd:date ;
+    dct:modified "2012-05-07"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <http://www.ipzs.it> ;
+    dct:source <http://www.normattiva.it/eli/id/2012/05/07/012G0072/ORIGINAL> ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dct:format <http://www.iana.org/assignments/media-types/xml> ;
+        dcat:accessURL <http://www.normattiva.it/eli/id/2012/05/07/012G0072/ORIGINAL/ita/akn> ;
+        dct:language <http://publications.europa.eu/resource/authority/language/ITA>
+    ] ;
+    dcat:theme <http://www.gazzettaufficiale.it/eli/> ;
+    dcat:contactPoint [
+        a vcard:Organization ;
+        vcard:fn "IPZS" ;
+        vcard:hasURL <http://www.ipzs.it>
+    ] .
+
+<http://www.normattiva.it/eli/id/2012/07/25/012G0136/CONSOLIDATED/20160129>
+    a dcat:Dataset ;
+    dct:title "Attuazione della direttiva 2009/52/CE che introduce norme minime relative a sanzioni e a provvedimenti nei confronti di datori di lavoro che impiegano cittadini di Paesi terzi il cui soggiorno è irregolare. (12G0136)"@it ;
+    dct:description "Decreto legislativo relativo all'attuazione della direttiva 2009/52/CE, con norme minime su sanzioni e provvedimenti contro datori di lavoro che impiegano cittadini di Paesi terzi in soggiorno irregolare."@it ;
+    dct:identifier "012G0136" ;
+    dct:issued "2012-07-16"^^xsd:date ;
+    dct:modified "2016-01-29"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <http://www.ipzs.it> ;
+    dct:source <http://www.normattiva.it/eli/id/2012/07/25/012G0136/CONSOLIDATED/20160129> ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dct:format <http://www.iana.org/assignments/media-types/xml> ;
+        dcat:accessURL <http://www.normattiva.it/eli/id/2012/07/25/012G0136/CONSOLIDATED/20160129/ita/akn> ;
+        dct:language <http://publications.europa.eu/resource/authority/language/ITA>
+    ] ;
+    dcat:theme <http://www.gazzettaufficiale.it/eli/> ;
+    dcat:contactPoint [
+        a vcard:Organization ;
+        vcard:fn "IPZS" ;
+        vcard:hasURL <http://www.ipzs.it>
+    ] .
+
+<http://www.normattiva.it/eli/id/2020/09/09/20G00131/ORIGINAL>
+    a dcat:Dataset ;
+    dct:title "Disposizioni in materia di sicurezza per gli esercenti le professioni sanitarie e socio-sanitarie nell'esercizio delle loro funzioni. (20G00131)"@it ;
+    dct:description "Legge concernente disposizioni sulla sicurezza per gli esercenti delle professioni sanitarie e socio-sanitarie durante l'esercizio delle loro funzioni."@it ;
+    dct:identifier "20G00131" ;
+    dct:issued "2020-08-14"^^xsd:date ;
+    dct:modified "2020-09-24"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <http://www.ipzs.it> ;
+    dct:source <http://www.normattiva.it/eli/id/2020/09/09/20G00131/ORIGINAL> ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dct:format <http://www.iana.org/assignments/media-types/xml> ;
+        dcat:accessURL <http://www.normattiva.it/eli/id/2020/09/09/20G00131/ORIGINAL/ita/akn> ;
+        dct:language <http://publications.europa.eu/resource/authority/language/ITA>
+    ] ;
+    dcat:theme <http://www.gazzettaufficiale.it/eli/> ;
+    dcat:contactPoint [
+        a vcard:Organization ;
+        vcard:fn "IPZS" ;
+        vcard:hasURL <http://www.ipzs.it>
+    ] .
+
+<http://www.normattiva.it/eli/id/2020/10/28/20G00166/CONSOLIDATED/20231231>
+    a dcat:Dataset ;
+    dct:title "Ulteriori misure urgenti in materia di tutela della salute, sostegno ai lavoratori e alle imprese, giustizia e sicurezza, connesse all'emergenza epidemiologica da COVID-19. (20G00166)"@it ;
+    dct:description "Decreto-legge contenente ulteriori misure urgenti in materia di tutela della salute, sostegno ai lavoratori e alle imprese, giustizia e sicurezza, connesse all'emergenza epidemiologica da COVID-19."@it ;
+    dct:identifier "20G00166" ;
+    dct:issued "2020-10-28"^^xsd:date ;
+    dct:modified "2023-12-31"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:publisher <http://www.ipzs.it> ;
+    dct:source <http://www.normattiva.it/eli/id/2020/10/28/20G00166/CONSOLIDATED/20231231> ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dct:format <http://www.iana.org/assignments/media-types/xml> ;
+        dcat:accessURL <http://www.normattiva.it/eli/id/2020/10/28/20G00166/CONSOLIDATED/20231231/ita/akn> ;
+        dct:language <http://publications.europa.eu/resource/authority/language/ITA>
+    ] ;
+    dcat:theme <http://www.gazzettaufficiale.it/eli/> ;
+    dcat:contactPoint [
+        a vcard:Organization ;
+        vcard:fn "IPZS" ;
+        vcard:hasURL <http://www.ipzs.it>
+    ] .
+
