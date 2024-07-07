@@ -9,6 +9,10 @@
             width: 100%;
             height: 2000px;
         }
+
+        #yearSelector {
+            font-family: "Poppins", sans-serif;
+        }
     </style>
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
@@ -93,16 +97,14 @@
                         valueXField: fieldName,
                         categoryYField: "Regione",
                         sequencedInterpolation: true,
-                        tooltip: am5.Tooltip.new(root, {
-                            dy: -30,
-                            pointerOrientation: "vertical",
-                            labelText: "[bold]{name}[/]\n{categoryY}: {valueX}"
-                        })
                     }));
     
                     series.columns.template.setAll({
                         height: am5.p100,
-                        strokeOpacity: 0
+                        strokeOpacity: 0,
+                        tooltipText: "{name}, {categoryY}: {valueX}",
+                        width: am5.percent(90),
+                        tooltipY: 0
                     });
     
                     series.bullets.push(function() {
@@ -144,19 +146,19 @@
                     let processedData = {};
                     filteredData.forEach(d => {
                         if (!processedData[d.DescrRegione]) {
-                            processedData[d.DescrRegione] = { Regione: d.DescrRegione, Italian: 0, "Not Italian": 0 };
+                            processedData[d.DescrRegione] = { Regione: d.DescrRegione, "Not Italian": 0, Italian: 0 };
                         }
                         let value = +d.Count;
                         if (!isNaN(value)) {
-                            processedData[d.DescrRegione][d.Nazionalita === '0' ? 'Italian' : 'Not Italian'] = value;
+                            processedData[d.DescrRegione][d.Nazionalita === '0' ? 'Not Italian' : 'Italian'] = value;
                         }
                     });
     
                     let chartData = Object.values(processedData);
                     chartData.forEach(d => {
-                        d.bulletSettings = {
+                        d.bulletSettings = {                            
                             textItalian: formatValue(d.Italian),
-                            textNotItalian: formatValue(d["Not Italian"])
+                            textNotItalian: formatValue(d["Not Italian"])       
                         };
                     });
     
@@ -168,7 +170,7 @@
     
                     if (chart.series.length === 0) {
                         createSeries("Italian", "Italian");
-                        createSeries("Not Italian", "Not Italian");
+                        createSeries("Not Italian", "Not Italian");                        
                     }
                 }
                 window.updateChart = updateChart;

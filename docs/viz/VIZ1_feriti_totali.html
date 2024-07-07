@@ -9,8 +9,15 @@
     <style>
         #choropleth1 { height: 400px; }
         .slider-container { width: 80%; margin: auto; text-align: center; }
-        .slider { width: 80%; margin: auto; }
-        .year-labels { display: flex; justify-content: space-between; }
+        .slider { 
+            width: 80%; 
+            margin: auto; 
+            form-range
+        }
+        .slider::-webkit-slider-thumb { background-color: #007bff; }
+        .slider::-moz-range-thumb { background-color: #007bff; }
+        .year-labels { font-size: small; font-family: "Poppins", sans-serif; display: flex; justify-content: space-evenly; }
+    
     </style>
 </head>
 <body>
