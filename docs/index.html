@@ -280,7 +280,7 @@
         
         <div class="row">
           <div style="text-align: center; color: rgb(252, 124, 92);"><h4>Normattiva - Akoma Ntoso</h4></div>
-          <p>Normattiva is a textual database storing all numbered state regulatory acts published in the Official Gazette from 1861 to the present day. The database presents acts in three formats:</p>
+          <p>Normattiva is a textual database storing all numbered state regulatory acts published in the Gazzetta Ufficiale from 1861 to the present day. <br>The database presents acts in three formats:</p>
           <p>1. As originally published.</p>
           <p>2. As currently in force as of a specified date.</p>
           <p>3. As a "multivigente" text, reconstructing the lifecycle of a regulatory act, including explicit modifications over time.</p>
@@ -816,6 +816,21 @@
             </div>
           </div>
         </div>
+        <br>
+        <div class="container">
+          <h2 style="text-align: center;">RDF Metadata</h2>
+          <p style="text-align: center;">We generated turtle rdf files to semantically describe our datasets through controlled vocabularies.</p>
+          <div class="row">
+            <div class="col-6">
+              <h3><a href="https://github.com/ChiaraParravicini/RiskWatchItalia/blob/main/DCAT-IT.ttl" target="_blank">DCAT-IT</a></h3>
+              <p style="text-align: center;">RDF for all the generated dataset from Inail and Istat</p>
+            </div>
+            <div class="col-6">
+              <h3><a href="https://github.com/ChiaraParravicini/RiskWatchItalia/blob/main/normattiva/akoma_ntoso.ttl" target="_blank">Akoma_Ntoso</a></h3>
+              <p style="text-align: center;">RDF for all the legal norms from Normattiva</p>
+            </div>
+          </div>
+        </div>
 
       </div>
     </section><!-- End Services Section -->
@@ -834,7 +849,7 @@
 
         <div class="row">
           <!-- === Quality Analysis === -->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#target1" aria-expanded="false">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#target1" aria-expanded="false">
             <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bi bi-patch-check"></i></div>
               <h4 class="title"><a>Quality analysis</a></h4>
@@ -843,7 +858,7 @@
           </div>
 
           <!-- === Legal Analysis === -->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#target2" aria-expanded="true">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#target2" aria-expanded="false">
             <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bi bi-shield-shaded"></i></div>
               <h4 class="title"><a href="">Legal Analysis</a></h4>
@@ -852,7 +867,7 @@
           </div>
 
           <!-- === Ethical Analysis === -->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#target3" aria-expanded="false">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#target3" aria-expanded="false">
             <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bi bi-universal-access"></i></div>
               <h4 class="title"><a href="">Ethical Analysis</a></h4>
@@ -861,7 +876,7 @@
           </div>
 
           <!-- === Technical Analysis === -->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#target4" aria-expanded="false">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#target4" aria-expanded="false">
             <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
               <div class="icon"><i class="bi bi-wrench"></i></div>
               <h4 class="title"><a href="">Technical Analysis</a></h4>
@@ -895,9 +910,10 @@
               <li class="list-group-item"><b>Timeliness (or promptness of updating)</b>: the data and its attributes
                 refer to the "correct time" (up to date) with respect to the procedure they refer to</li>
             </ul>
-            
+            <br>
             <p>The following table showcases the quality of each of the source datasets and highlights possible flaws.</p>
-            <!-- Table for quality analysis -->
+
+
             <div class="table-responsive">
               <table class="table table-hover align-middle">
                 <thead class="table-light">
@@ -1298,6 +1314,7 @@
                 </div>
               </div>
             </div>
+            <br>
             <h3 class="analysis-second-title">Publication license</h3>
             <p class="analysis-text">
               Finally, a crucial aspect of the legal analysis involves selecting the <span class="underlined--bg underlined--offset--bg"><b>publication license</b></span> for the newly created mashup datasets.
@@ -1371,7 +1388,6 @@
               <h2 class="analysis-title">Ethical analysis</h2>
             </div>
             <br>
-            <br>
             <p style="padding: 0 4em 2em 2em;" class="analysis-text">
               <br>
               When evaluating the ethical aspects of our project's data, we drew inspiration from the <span class="underlined--bg underlined--offset--bg active--bg"><b><a href="https://dataethics.eu/data-ethics-principles/" target="_blank">Data Ethics Principles and Guidelines</a></b></span> and the detailed <span class="underlined--bg underlined--offset--bg active--bg"><b>Ethical Canvas</b></span> from the <a href="https://theodi2022.wpengine.com/article/the-data-ethics-canvas-2021/#1674123020653-5e9f001c-5eb8" target="_blank"><b>ODI project</b></a>, to ensure we thoroughly considered every ethical aspect in our data management.
@@ -1379,8 +1395,6 @@
             <p style="padding: 0 4em 2em 2em;" class="analysis-text">
               Since both our source and mashup datasets exclusively feature information provided by the National Institute for Insurance against Work Accidents (INAIL), our initial focus was on examining the <b>fairness of data collection and management</b> by INAIL. Subsequently, we developed <b>guidelines</b> to address ethical concerns in processing the source datasets for our project.
             </p>            
-            <br>
-            <br>
             <br>
 
             <h3 class="analysis-second-title">Data Ethics Principles</h3>
@@ -1402,7 +1416,7 @@
 
               <li class="list-group-item">
                 <span class="underlined--bg underlined--offset--bg active--bg"><b>Transparency</b></span>
-                While <b>ISTAT</b></span> provides comprehensive documentation (insert this link as an href <a href="https://siqual.istat.it/SIQual/documenti.do" target="_blank"><b>https://siqual.istat.it/SIQual/documenti.do</b></a>) describing the methodologies for data collection, processing, and storage, <span class="underlined--bg underlined--offset--bg active--bg"><b>INAIL</b></span> does not provide any information regarding this in the production of its open data.
+                While <b>ISTAT</b></span> provides comprehensive documentation (<a href="https://siqual.istat.it/SIQual/documenti.do" target="_blank"><b>SIQual</b></a>) describing the methodologies for data collection, processing, and storage, <span class="underlined--bg underlined--offset--bg active--bg"><b>INAIL</b></span> does not provide any information regarding this in the production of its open data.
               </li>
 
               <li class="list-group-item">
@@ -1414,7 +1428,7 @@
                 <span class="underlined--bg underlined--offset--bg active--bg"><b>Individual data protection</b></span>
                 <b>ISTAT anonymizes its datasets</b> to prioritize respondent privacy, safeguard data confidentiality, and operate transparently and independently. Collected information is protected by statistical confidentiality and adheres to personal data protection legislation.
 
-                <b>I dataset dell'INAIL</b> presentano una struttura "event-oriented", raccogliendo i singoli eventi. Quest'approccio, nonostante l'anonimizzazione dei soggetti partecipanti (infortunato e datore di lavoro), non è compliant con i GDPR, dal momento che, soprattutto nei casi di infortuni gravi o morti, l'identificazione può essere ottenuta indirettamente controllando le informazioni disponibili online.
+                <b>The INAIL datasets</b> present an "event-oriented" structure, collecting individual events. This approach, despite the anonymization of the participating subjects (injured person and employer), is not compliant with the GDPR, since, especially in cases of serious injuries or deaths, identification can be obtained indirectly by checking the available information online.
               </li>
             </ul>
             <br>
@@ -1435,19 +1449,19 @@
                 To ensure <b>equality</b> and protect vulnerable groups, clear <span class="underlined--bg underlined--offset--bg active--bg"><b>boundaries</b></span> were set by intentionally excluding certain data provided by ISTAT, such as distinctions based on citizenship, to mitigate potential discriminatory practices.
               </li>
             </ul>
-
+            <br>
             <h3 class="analysis-second-title">Anonymization</h3>
             <br>
             <p class="analysis-text">
-              The data as collected in our final mashed up were not compliant with the General Data Protection Regulation (GDPR) https://gdpr-info.eu/. In fact eight out of thirteen contained personal data. Personal data are defined as: 
+              The data as collected in our final mashed up were not compliant with the <a href="https://gdpr-info.eu/"><b>General Data Protection Regulation (GDPR)</b></a>. In fact eight out of thirteen contained personal data. <br>Personal data are defined as: 
               Personal data is any information that relates to an identified or identifiable living individual. Different pieces of information, which collected together can lead to the identification of a particular person, also constitute personal data. 
             </p>
             <blockquote class="blockquote text-center text-muted" style="font-size: 10pt;">
               <p class="mb-0"><i>Personal data is any information that relates to an identified or identifiable living individual. Different pieces of information, which collected together can lead to the identification of a particular person, also constitute personal data.</i></p>
             </blockquote>
             <p class="analysis-text">
-              Our data analysis created the final output dataset counting INAIL datasets’ instances of events of injuries and fatalities for each year in each region. In many cases in a specific region in a given year only one event occurred. Therefore, we were producing personal data that indirectly. While the GDPR does not apply to deceased persons (as specified in Recital 27 https://gdpr-info.eu/recitals/no-27/), Italy has availed itself of the option of proposing a different approach with the harmonization decree of the Privacy Code (Legislative Decree 101/2018), which, through Article 2-terdecies, extended the provisions of the GDPR to the processing of personal data of deceased persons.
-              Therefore we have processed a double approach to ensure that no living individual was going to be identified. We grouped the result in different layers and at the same time we hidden the unique values signing all values between 1 and 10 as 10. 
+              Our data analysis created the final output dataset counting INAIL datasets’ instances of events of injuries and fatalities for each year in each region. In many cases in a specific region in a given year only <b>one event</b> occurred. Therefore, we were producing personal data that indirectly. <br><br>While the GDPR does not apply to deceased persons (as specified in <a href="https://gdpr-info.eu/recitals/no-27/">Recital 27</a>), Italy has availed itself of the option of proposing a different approach with the harmonization decree of the Privacy Code (Legislative Decree 101/2018), which, through Article 2-terdecies, extended the provisions of the GDPR to the processing of personal data of deceased persons.
+              Therefore we have processed a double approach to ensure that no living individual was going to be identified. <br>We grouped the result in different layers and at the same time we <b>hidden the unique values</b> signing all values between 1 and 10 as 10. 
             </p>
 
 
@@ -1475,9 +1489,10 @@
               <table class="table table-hover align-middle">
                 <thead class="table-light">
                   <tr>
+                    <th scope="col">Dataset</th>
                     <th scope="col">Provenience</th>
                     <th scope="col">Format</th>
-                    <th scope="col" style="width:50%">Metadata</th>
+                    <th scope="col">Metadata</th>
                     <th scope="col">URI</th>
                     <th scope="col">License</th>
                   </tr>
@@ -1539,6 +1554,11 @@
             </ul>
             <p></p>
 
+            <h3 class="analysis-second-title">
+              FAIR
+            </h3>
+
+            <p>Finally, we assessed the datasets against the FAIR principles proposed by the GO FAIR Initiative. These principles, advocated by a consortium of scientists and organizations, aim to enhance the Findability, Accessibility, Interoperability, and Reusability of digital assets.</p>
             
             <!-- FAIR accordion -->
             <div class="accordion" id="accordionexample">
@@ -1617,11 +1637,11 @@
                     <table class="table table-hover align-middle">
                       <thead class="table-light">
                         <tr>
-                      
-                         <th scope="col">Inail</th>
-                         <th scope="col">Istat</th>
-                         <th scope="col">Normattiva</th>
-                         <th scope="col">Mashup data</th>
+                          <th scope="col"></th>
+                          <th scope="col">Inail</th>
+                          <th scope="col">Istat</th>
+                          <th scope="col">Normattiva</th>
+                          <th scope="col">Mashup data</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -1673,10 +1693,11 @@
                     <table class="table table-hover align-middle">
                       <thead class="table-light">
                         <tr>
+                          <th scope="col"></th>
                           <th scope="col">Inail</th>
-                         <th scope="col">Istat</th>
-                         <th scope="col">Normattiva</th>
-                         <th scope="col">Mashup data</th>
+                          <th scope="col">Istat</th>
+                          <th scope="col">Normattiva</th>
+                          <th scope="col">Mashup data</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -1720,10 +1741,11 @@
                     <table class="table table-hover align-middle">
                       <thead class="table-light">
                         <tr>
+                          <th scope="col"></th>
                           <th scope="col">Inail</th>
-                         <th scope="col">Istat</th>
-                         <th scope="col">Normattiva</th>
-                         <th scope="col">Mashup data</th>
+                          <th scope="col">Istat</th>
+                          <th scope="col">Normattiva</th>
+                          <th scope="col">Mashup data</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -1862,13 +1884,16 @@
     <!-- End Cta Section -->
 
     <!-- ======= Soustainability Section ======= -->
-    <div class="section-title">
-      <h2>SUSTAINABILITY OF THE DATASETS</h2>
-      <p>
-        The data we collect is based on three main sources: INAIL OpenData, ISTAT database, and Normattiva. The initial datasets are organized to ensure their long-term sustainability. Regular updates keep these data collections alive and dynamic.
-        On the other hand, the datasets produced by our team are part of the final output of the "Open Access and Digital Ethics" project at the University of Bologna (<a href="https://www.unibo.it/en" target="_blank">https://www.unibo.it/en</a>). For this reason, the website development team members do not commit to ensuring the update of the data we collect. Their storage on GitHub (<a href="https://github.com/ChiaraParravicini/RiskWatchItalia" target="_blank">https://github.com/ChiaraParravicini/RiskWatchItalia</a>) ensures their persistence for a medium to long period. However, since no permalink is produced for each of them and their existence is linked to the developers' account, no long-term durability inference can be made.
-      </p>   
-   </div>
+    <div class="container">
+      <div class="section-title">
+        <h2>SUSTAINABILITY OF THE DATASETS</h2>
+        <p style="color: black;">
+          The data we collect is based on three main sources: INAIL OpenData, ISTAT database, and Normattiva. <br><br>
+          The initial datasets are organized to ensure their <b>long-term sustainability</b>. Regular updates keep these data collections alive and dynamic.<br><br>
+          On the other hand, the datasets produced by our team are part of the final output of the <b>Open Access and Digital Ethics</b> project at the University of Bologna (<a href="https://www.unibo.it/en" target="_blank">https://www.unibo.it/en</a>). For this reason, the website development team members do not commit to ensuring the update of the data we collect. <br><br>Their storage on GitHub (<a href="https://github.com/ChiaraParravicini/RiskWatchItalia" target="_blank">https://github.com/ChiaraParravicini/RiskWatchItalia</a>) ensures their persistence for a medium to long period. <br>However, since no permalink is produced for each of them and their existence is linked to the developers' account, no long-term durability inference can be made.
+        </p>   
+      </div>
+    </div>
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -1876,10 +1901,10 @@
 
         <div class="section-title">
           <h2>Visualization</h2>
-          <p>In this section, we aim to provide a <b>comprehensive overview of workplace deaths and accidents</b> across Italy. <br/>
+          <p style="color: black;">In this section, we aim to provide a <b>comprehensive overview of workplace deaths and accidents</b> across Italy. <br/>
             The <b>first part</b> focuses on presenting a <b>general overview using choropleth maps</b> with a time slider to select the year for which you want to view the data. This will also include the percentage comparison between workplace deaths and accidents.
             
-            <br/>In the <b>second part</b>, we delve deeper into the data, analyzing it based on variables such as <b>gender, nationality, industry sector and age</b> of the individuals involved in workplace incidents. For the gender variable, a <b>stacked bar chart</b> is used. The nationality data is presented with a <b>clustered bar chart. Age data is visualized through a <b>stacked area graph</b>, and the industry sector data with a <b>line graph</b></b>.
+            <br><br/>In the <b>second part</b>, we delve deeper into the data, analyzing it based on variables such as <b>gender, nationality, industry sector and age</b> of the individuals involved in workplace incidents. For the gender variable, a <b>stacked bar chart</b> is used. The nationality data is presented with a <b>clustered bar chart. Age data is visualized through a <b>stacked area graph</b>, and the industry sector data with a <b>line graph</b></b>.
             
             <br/>Some visualizations allow for <b>regional comparisons</b> by enabling the selection of specific years, while others provide a <b>diachronic perspective</b>, allowing the selection of individual regions.</p>        
         </div>
@@ -1887,7 +1912,7 @@
         <div class="row content">
           <div class="col-lg-4 align-items-stretch mb-5 mb-lg-0">
             <div class="centered-subtitle">
-              <h4><center>Percentage Fatalities by Accidents</center></h4>
+              <h4><center>Perc. Fatalities/Accidents</center></h4>
             </div>
             <!-- Code  -->
             <iframe src="./viz/VIZ1_mortalita.html" width="100%" height="500px" frameborder="0"></iframe>
@@ -1917,13 +1942,13 @@
               <!-- <p class="year-result-text">Visualization</p> -->
             </div>
 
-            <!-- tabs -->
+            <!-- tabs --> 
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="gender-tab" data-bs-toggle="tab" data-bs-target="#gender" type="button" role="tab" aria-controls="gender" aria-selected="true"><b>Gender</b></button>
-                <button class="nav-link" id="nationality-tab" data-bs-toggle="tab" data-bs-target="#nationality" type="button" role="tab" aria-controls="nationality" aria-selected="false" tabindex="-1"><b>Nationality</b></button>
-                <button class="nav-link" id="work-tab" data-bs-toggle="tab" data-bs-target="#worksector" type="button" role="tab" aria-controls="worksector" aria-selected="false" tabindex="-1"><b>Work Sector</b></button>
-                <button class="nav-link" id="age-tab" data-bs-toggle="tab" data-bs-target="#age" type="button" role="tab" aria-controls="age" aria-selected="false" tabindex="-1"><b>Age</b></button>
+                <button class="nav-link active" id="gender-tab" data-bs-toggle="tab" data-bs-target="#gender" type="button" role="tab" aria-controls="gender" aria-selected="true" style="color: rgb(252, 124, 92);"><b>Gender</b></button>
+                <button class="nav-link" id="nationality-tab" data-bs-toggle="tab" data-bs-target="#nationality" type="button" role="tab" aria-controls="nationality" aria-selected="false" tabindex="-1" style="color: rgb(252, 124, 92);"><b>Nationality</b></button>
+                <button class="nav-link" id="work-tab" data-bs-toggle="tab" data-bs-target="#worksector" type="button" role="tab" aria-controls="worksector" aria-selected="false" tabindex="-1" style="color: rgb(252, 124, 92);"><b>Work Sector</b></button>
+                <button class="nav-link" id="age-tab" data-bs-toggle="tab" data-bs-target="#age" type="button" role="tab" aria-controls="age" aria-selected="false" tabindex="-1" style="color: rgb(252, 124, 92);"><b>Age</b></button>
               </div>
             </nav>
 
@@ -2240,11 +2265,11 @@
 
         <div class="section-title">
           <h2>Normattiva - Akoma Ntoso</h2>
-          <p style="text-align: left;">Observing the results of our analyses and visualizations, we have noticed a peak in fatalities in certain specific sectors of work during the years 2019-2020. These data appear to correlate with the COVID-19 pandemic. </p>
+          <p style="text-align: left; color: black;">Observing the results of our analyses and visualizations, we have noticed a peak in fatalities in certain specific sectors of work during the years 2019-2020. These data appear to correlate with the COVID-19 pandemic. </p>
           <br>
-          <p style="text-align: left;">To delve deeper into this scenario, we have decided to analyze <strong>DECRETO-LEGGE 17 Marzo 2020, n. 18</strong>, which addresses <i>Measures to strengthen the National Health Service and provide economic support to families, workers, and businesses affected by the COVID-19 epidemiological emergency.</i></p>
+          <p style="text-align: left; color: black;">To delve deeper into this scenario, we have decided to analyze <strong>DECRETO-LEGGE 17 Marzo 2020, n. 18</strong>, which addresses <i>Measures to strengthen the National Health Service and provide economic support to families, workers, and businesses affected by the COVID-19 epidemiological emergency.</i></p>
           <br>
-          <p style="text-align: left;">To achieve this, the following <strong>research questions</strong> have been defined and subsequently transformed into XPath queries for the automatic interrogation of the document itself:</p>
+          <p style="text-align: left; color: black;">To achieve this, the following <strong>research questions</strong> have been defined and subsequently transformed into XPath queries for the automatic interrogation of the document itself:</p>
         </div>
 
         <div class="faq-list">
@@ -2285,9 +2310,9 @@
               </div>
             </li>
 
-            <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-3">3 - And its publication number? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse show" data-bs-parent=".faq-list">
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-3">3 - And its publication number? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 <br>
                 <strong>XPath:</strong>
                 <p style="font-style:italic ;">
@@ -2302,9 +2327,9 @@
               </div>
             </li>
 
-            <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-4">4 - What are the dates and sources of each amendment to the decree?               <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse show" data-bs-parent=".faq-list">
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-4">4 - What are the dates and sources of each amendment to the decree?               <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                 <br>
                 <strong>XPath:</strong>
                 <p style="font-style:italic ;">
@@ -2425,6 +2450,8 @@
 
           </ul>
         </div>
+        <br>
+        <p style="text-align: center;"> The python file containing the xPath query and all the procedures is available <b><a href="https://github.com/ChiaraParravicini/RiskWatchItalia/blob/main/normattiva/query_xpath.py">here</a></b>.</p>
 
       </div>
     </section><!-- End Frequently Asked Questions Section -->
