@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grafico Morti per Sesso e Regione</title>
     <style>
-        #viz_morti_genere {
+        #viz_feriti_genere {
             width: 100%;
             height: 1000px;
         }
-
-        #dataTypeSelector, #yearSelector {
-            font-family: "Poppins", sans-serif;
-        }
-
     </style>
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
@@ -24,21 +19,11 @@
     <select id="yearSelector" onchange="updateChart()">
         <!-- Options will be populated by JavaScript -->
     </select>
-    <select id="dataTypeSelector" onchange="updateChart()">
-        <option value="Count">Count</option>
-        <option value="Percentage">Percentage</option>
-    </select>
-    <div id="viz_morti_genere"></div>
+    <div id="viz_feriti_genere"></div>
 
     <script>
-        function formatValue(value, dataType) {
+        function formatValue(value) {
             if (value === undefined || value === null) return "N/A";
-            if (dataType === 'Percentage') {
-                return Number(value).toFixed(2) + '%';
-            }
-            if (dataType === 'Count' && value == 10) {
-                return "<10";
-            }
             return Number(value).toLocaleString();
         }
 
@@ -50,6 +35,9 @@
                 let option = document.createElement('option');
                 option.text = year;
                 option.value = year;
+                if (year === "2018") {
+                    option.selected = true;  // Imposta l'anno 2018 come selezionato di default
+                }
                 yearSelector.add(option);
             });
 
@@ -57,7 +45,7 @@
 
             // Initialize chart
             am5.ready(function() {
-                var root = am5.Root.new("viz_morti_genere");
+                var root = am5.Root.new("viz_feriti_genere");
 
                 var myTheme = am5.Theme.new(root);
                 myTheme.rule("Grid", ["base"]).setAll({
@@ -85,7 +73,7 @@
                 var xAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
                     min: 0,
                     renderer: am5xy.AxisRendererX.new(root, {}),
-                    numberFormat: "#.##'%'"
+                    numberFormat: "#,###"
                 }));
 
                 var legend = chart.children.push(am5.Legend.new(root, {
@@ -129,8 +117,6 @@
 
                 function updateChart() {
                     let selectedYear = document.getElementById('yearSelector').value;
-                    let selectedDataType = document.getElementById('dataTypeSelector').value;
-                    xAxis.set("numberFormat", selectedDataType === 'Percentage' ? "#.##'%'" : "#,###.##");
                     let filteredData = window.chartData.filter(d => d.Year === selectedYear && d.DescrRegione != "Total");
 
                     let processedData = {};
@@ -138,7 +124,7 @@
                         if (!processedData[d.DescrRegione]) {
                             processedData[d.DescrRegione] = { Regione: d.DescrRegione, M: 0, F: 0 };
                         }
-                        let value = selectedDataType === 'Count' ? +d.Count : +d.Percentage;
+                        let value = +d.Count;
                         if (!isNaN(value)) {
                             processedData[d.DescrRegione][d.Genere] = value;
                         }
@@ -147,8 +133,8 @@
                     let chartData = Object.values(processedData);
                     chartData.forEach(d => {
                         d.bulletSettings = {
-                            textM: formatValue(d.M, selectedDataType),
-                            textF: formatValue(d.F, selectedDataType)
+                            textM: formatValue(d.M),
+                            textF: formatValue(d.F)
                         };
                     });
 
@@ -165,14 +151,19 @@
 
                     // Aggiorna il titolo dell'asse X
                     xAxis.set("title", am5.Label.new(root, {
-                        text: selectedDataType,
+                        text: "Count",
                         fontSize: 16,
                         fontWeight: "500",
                         fill: am5.color(0x000000)
                     }));
                 }
+
                 window.updateChart = updateChart;
+
+                createSeries("Maschi", "M");
+                createSeries("Femmine", "F");
                 updateChart();
+                chart.appear(1000, 100);  // Aggiungi animazione al grafico
             });
         });
     </script>

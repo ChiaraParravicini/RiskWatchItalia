@@ -38,6 +38,9 @@
                 let option = document.createElement('option');
                 option.text = year;
                 option.value = year;
+                if (year === "2018") {
+                    option.selected = true;
+                }
                 yearSelector.add(option);
             });
     
@@ -167,18 +170,15 @@
                     });
     
                     yAxis.data.setAll(chartData);
-    
-                    if (chart.series.length === 0) {
-                        createSeries("Italian", "Italian");
-                        createSeries("Not Italian", "Not Italian");                        
-                    }
                 }
                 window.updateChart = updateChart;
+                
+                // Create series and update chart
+                createSeries("Italian", "Italian");
+                createSeries("Not Italian", "Not Italian");
                 updateChart();
             });
         });
     </script>
-    
-    
 </body>
 </html>

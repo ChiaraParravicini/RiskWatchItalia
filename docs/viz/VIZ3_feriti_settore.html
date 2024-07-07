@@ -182,20 +182,19 @@
       // Initial chart update
       updateChartData("Abruzzo");
 
-      // Highlight range for the years 2020, 2021, and 2022
       var range = xAxis.createAxisRange(xAxis.makeDataItem({
         category: "2020",
         endCategory: "2022"
       }));
-      
+
       range.get("axisFill").setAll({
         fill: am5.color(0xff0000),
         fillOpacity: 0.2,
         visible: true
       });
 
-      range.set("location", 0); // Start from the middle of 2020
-      range.set("endLocation", 0); // End at the middle of 2022
+      range.set("location", 0.5); // Start from the middle of 2020
+      range.set("endLocation", 0.5); // End at the middle of 2022
 
       // Make stuff animate on load
       chart.appear(1000, 100);

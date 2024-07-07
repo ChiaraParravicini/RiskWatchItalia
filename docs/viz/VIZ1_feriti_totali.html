@@ -9,15 +9,8 @@
     <style>
         #choropleth1 { height: 400px; }
         .slider-container { width: 80%; margin: auto; text-align: center; }
-        .slider { 
-            width: 80%; 
-            margin: auto; 
-            form-range
-        }
-        .slider::-webkit-slider-thumb { background-color: #007bff; }
-        .slider::-moz-range-thumb { background-color: #007bff; }
+        .slider { width: 80%; margin: auto; }
         .year-labels { font-size: small; font-family: "Poppins", sans-serif; display: flex; justify-content: space-evenly; }
-    
     </style>
 </head>
 <body>
@@ -85,13 +78,18 @@
         var geojsonData = null;
         d3.json("limits_IT_regions.geojson").then(function(data) {
             geojsonData = data;
-            updateMap(2018); // Initial map for the year 2018
+            if (csvData) {
+                updateMap(2018); // Update map once CSV data is loaded
+            }
         });
 
         // Load CSV data
         var csvData = null;
         d3.csv("./summarised-tables/summarised_feriti_totali.csv").then(function(data) {
             csvData = data;
+            if (geojsonData) {
+                updateMap(2018); // Update map once GeoJSON data is loaded
+            }
         });
 
         // Update the map based on the selected year

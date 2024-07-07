@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grafico Feriti per Nazionalità e Regione</title>
+    <title>Grafico Morti per Nazionalità e Regione</title>
     <style>
         #chartdiv {
             width: 100%;
@@ -38,6 +38,9 @@
                 let option = document.createElement('option');
                 option.text = year;
                 option.value = year;
+                if (year === "2018") {
+                    option.selected = true;
+                }
                 yearSelector.add(option);
             });
     
@@ -98,17 +101,13 @@
                         categoryYField: "Regione",
                         sequencedInterpolation: true,
                     }));
-
-                    series.columns.template.setAll({
-                        tooltipText: "{name}, {categoryY}: {valueX}",
-                        width: am5.percent(90),
-                        tooltipY: 0
-                    });
-
     
                     series.columns.template.setAll({
                         height: am5.p100,
-                        strokeOpacity: 0
+                        strokeOpacity: 0,
+                        tooltipText: "{name}, {categoryY}: {valueX}",
+                        width: am5.percent(90),
+                        tooltipY: 0
                     });
     
                     series.bullets.push(function() {
@@ -160,9 +159,9 @@
     
                     let chartData = Object.values(processedData);
                     chartData.forEach(d => {
-                        d.bulletSettings = {
+                        d.bulletSettings = {                            
                             textItalian: formatValue(d.Italian),
-                            textNotItalian: formatValue(d["Not Italian"])
+                            textNotItalian: formatValue(d["Not Italian"])       
                         };
                     });
     
@@ -171,18 +170,15 @@
                     });
     
                     yAxis.data.setAll(chartData);
-    
-                    if (chart.series.length === 0) {
-                        createSeries("Not Italian", "Not Italian");
-                        createSeries("Italian", "Italian");
-                    }
                 }
                 window.updateChart = updateChart;
+                
+                // Create series and update chart
+                createSeries("Italian", "Italian");
+                createSeries("Not Italian", "Not Italian");
                 updateChart();
             });
         });
     </script>
-    
-    
 </body>
 </html>
