@@ -55,10 +55,10 @@
   
   // Create root element
   var root = am5.Root.new("chartdiv");
-  
+
   // Set themes
   root.setThemes([am5themes_Animated.new(root)]);
-  
+
   // Create chart
   var chart = root.container.children.push(
     am5xy.XYChart.new(root, {
@@ -70,41 +70,38 @@
       pinchZoomX: true
     })
   );
-  
+
   // Create axes
   var xAxis = chart.xAxes.push(
     am5xy.CategoryAxis.new(root, {
       categoryField: "Year",
-      renderer: am5xy.AxisRendererX.new(root, {
-        minGridDistance: 30,  // Adjust this value to prevent label overlap
-        labelRotation: -45    // Rotate labels if necessary
-      }),
+      renderer: am5xy.AxisRendererX.new(root, {}),
       tooltip: am5.Tooltip.new(root, {})
     })
   );
-  
+
   var yAxis = chart.yAxes.push(
     am5xy.ValueAxis.new(root, {
       renderer: am5xy.AxisRendererY.new(root, {})
     })
   );
-  
+
   // Add legend
   var legend = chart.children.push(am5.Legend.new(root, {
     centerX: am5.p50,
     x: am5.p50
   }));
-  
+
   // Add cursor
   var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
     behavior: "none"
   }));
   cursor.lineY.set("visible", false);
-  
+
   // Create series for each sector
   var sectors = ["Primario", "Secondario", "Terziario"];
   var seriesMap = {};
-  
+
   sectors.forEach(function(sector) {
     var series = chart.series.push(
       am5xy.LineSeries.new(root, {
@@ -118,7 +115,7 @@
         })
       })
     );
-  
+
     series.bullets.push(function() {
       return am5.Bullet.new(root, {
         sprite: am5.Circle.new(root, {
@@ -127,7 +124,7 @@
         })
       });
     });
-  
+
     series.events.on("tooltipshow", function(ev) {
       var dataItem = ev.dataItem;
       if (dataItem) {
@@ -139,28 +136,28 @@
         }
       }
     });
-  
+
     seriesMap[sector] = series;
   });
-  
+
   // Add scrollbar
   chart.set("scrollbarX", am5.Scrollbar.new(root, {
     orientation: "horizontal"
   }));
-  
+
   // Create a dropdown for Region selection
   var regionSelector = document.createElement("select");
   regionSelector.id = "regionSelector";
-  var regions = ["Abruzzo", "Basilicata", "Calabria", "Campania", "Emilia Romagna", "Friuli Venezia Giulia","Lazio","Liguria","Lombardia","Marche","Molise","Piemonte","Puglia","Sardegna","Sicilia","Toscana","Trentino Alto Adige","Umbria","Valle D'Aosta","Veneto"]; // Adjust based on your CSV data
+  var regions = ["Abruzzo", "Basilicata", "Calabria", "Campania", "Emilia Romagna", "Friuli Venezia Giulia","Lazio","Liguria","Lombardia","Marche", "Molise","Piemonte","Puglia","Sardegna","Sicilia","Toscana","Trentino Alto Adige","Umbria","Valle D'Aosta","Veneto"]; // Adjust based on your CSV data
   regions.forEach(function(region) {
     var option = document.createElement("option");
     option.value = region;
     option.text = region;
     regionSelector.appendChild(option);
   });
-  
+
   document.body.insertBefore(regionSelector, document.getElementById("chartdiv"));
-  
+
   // Load CSV data
   d3.csv("./summarised-tables/summarised_feriti_settore.csv").then(function(csvData) {
     console.log("CSV data loaded:", csvData);
@@ -201,46 +198,38 @@
         console.log("Series data for " + sector + ":", seriesData);
         seriesMap[sector].data.setAll(seriesData);
       });
+
+      // Create the highlighted area
+      var highlightedArea = chart.plotContainer.children.push(am5.Rectangle.new(root, {
+        x1: xAxis.getDataItemById("2020").x,
+        x2: xAxis.getDataItemById("2022").x,
+        fillOpacity: 0.2,
+        fill: am5.color(0x4CAF50), // Green color
+        height: am5.p100
+      }));
     }
-  
+
     // Event listener for dropdown change
     regionSelector.addEventListener("change", function() {
       updateChartData(this.value);
     });
-  
+
     // Initial chart update
     updateChartData("Abruzzo");
 
-    // Highlight range for the years 2020, 2021, and 2022
-    chart.events.on("datavalidated", function(ev) {
-      var range = xAxis.createAxisRange(xAxis.makeDataItem({}));
-        range.set("value", new Date(2020, 6, 1).getTime());  // 1 luglio 2020
-        range.set("endValue", new Date(2022, 6, 1).getTime());  // 1 luglio 2022
-        
-        range.get("axisFill").setAll({
-          fill: am5.color("#396478"),
-          fillOpacity: 0.2,
-          visible: true
-        });
-        
-        range.get("grid").setAll({
-          strokeOpacity: 0
-        });
-      });
-
-      // Imposta la posizione di inizio e fine
-      range.set("location", 0.5);  // Inizia a metà del 2020
-      range.set("endLocation", 0.5);  // Termina a metà del 2022
-    });
+    // Make stuff animate on load
+    chart.appear(1000, 100);
 
     console.log("Series map:", seriesMap);
-      }).catch(function(error) {
-        console.error("Error loading CSV:", error);
+  }).catch(function(error) {
+    console.error("Error loading CSV:", error);
   });
 
+  }); // end am5.ready()
   </script>
-  
+
   <!-- HTML -->
   <div id="chartdiv"></div>
+
 </body>
 </html>

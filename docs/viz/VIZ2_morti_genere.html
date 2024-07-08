@@ -9,7 +9,6 @@
             width: 100%;
             height: 1000px;
         }
-
         
         #yearSelector {
             font-family: "Poppins", sans-serif;
@@ -55,6 +54,7 @@
     <script>
         function formatValue(value) {
             if (value === undefined || value === null) return "N/A";
+            if (value === 10) return "<10";
             return Number(value).toLocaleString();
         }
 
@@ -167,6 +167,9 @@
                             textM: formatValue(d.M),
                             textF: formatValue(d.F)
                         };
+                        // Aggiungiamo questa parte per gestire il caso speciale per il grafico
+                        if (d.M === 10) d.M = 9.9;  // Usiamo 9.9 invece di 10 per il grafico
+                        if (d.F === 10) d.F = 9.9;  // Usiamo 9.9 invece di 10 per il grafico
                     });
 
                     chart.series.each(function(series) {
